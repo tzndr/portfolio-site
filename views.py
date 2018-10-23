@@ -6,11 +6,9 @@ app = Flask(__name__)
 def showMain():
     return render_template('index.html')
 
-
-
-
-
-
+@app.route('/featured_work')
+def showFeaturedWork():
+    return render_template('featured_work.html')
 
 
 if __name__ == '__main__':

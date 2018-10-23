@@ -7,8 +7,8 @@ var typeIt = function() {
 
 var retypeIt = function() {
   new TypeIt('.retype', {
-    strings: ["a coder", "a creator", "a leader",
-      "a reliable colleague", "a Full-Stack Developer."],
+    strings: ["a coder", "a life-long learner", "a creator", "a leader",
+      "a Full-Stack Developer."],
     breakLines: false,
     autoStart: false,
     deleteSpeed: 40,
