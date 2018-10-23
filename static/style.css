@@ -1,0 +1,30 @@
+body,
+html {
+  height: 100%;
+  width: 100%;
+  background-color: #69A4B8;
+}
+
+.heading-container {
+  margin: 50px auto;
+  width: 65%;
+  height: auto;
+  text-align: center;
+}
+
+.heading {
+  font: bold 40pt helvetica, arial;
+  color: white;
+  margin: 0;
+}
+
+.background-img {
+  position: absolute;
+  bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  width: 55%;
+  height: auto;
+}
