@@ -1,70 +1,27 @@
 body,
 html  {
-  background-color: #69A4B8;
   width: 100%;
   height: auto;
 }
 
-.header {
-  width: 95%;
-  margin: auto;
-  text-align: center;
-}
-
-.social-link-menu {
-  display: inline;
-  margin: 0 0 0 40px;
-}
-
-.nav-link-menu {
-  display: inline;
-}
-
-.nav-link {
-  font: 16pt helvetica, arial;
-  color: white;
-  padding: 5px 15px 5px 15px;
-  background-color: #EF8555;
-  border-radius: 4px;
-  letter-spacing: 8px;
-  margin: 0 40px 0 0;
-}
-
-.nav-link:hover {
-  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.50),
-              0 5px 15px 0 rgba(0, 0, 0, 0.47);
-  cursor: pointer;
-}
-
-.nav-social-link {
-  width: 50px;
-  margin: 0 10px 0 0;
-}
-
-.heading-container {
-  margin: 70px auto;
-  width: 80%;
-  height: auto;
-  text-align: center;
-}
-
-.heading {
-  font: bolder 50pt helvetica, arial;
-  color: white;
-  margin: 0;
-}
-
 .background-img {
-  display: block;
-  position: absolute;
-  bottom: 0;
-  margin: auto;
-  left: 0;
-  right: 0;
-  width: 900px;
-  height: auto;
+min-height: 100%;
+min-width: 1024px;
+width: 100%;
+height: auto;
+position: fixed;
+top: 0;
+left: 0;
+z-index: -1;
 }
 
 a {
   text-decoration: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .background-img {
+    left: 50%;
+    margin-left: -512px;
+  }
 }
