@@ -7,10 +7,20 @@
     <title>Tim Zander Portfolio</title>
   </head>
   <body>
-    <div>
-      <span>Featured Work</span>
-      <span>My Story</span>
-      <span>Reach Out</span>
-    <div>
+    <div class='nav-bar'>
+      <span class="nav-link">
+        <a href="{{url_for('showFeaturedWork')}}">Featured Work</a>
+      </span>
+      <span class="nav-link">My Story</span>
+      <span class="nav-link">Reach Out</span>
+      <span class="social-link">
+        <a href="https://www.linkedin.com/in/timothyzander/">
+        <img class="social-link-1" src="../static/img/linked_in.png"></a>
+      </span>
+      <span>
+        <a href="https://github.com/tzndr">
+        <img class="social-link-2" src="../static/img/github.png"></a>
+      </span>
+    </div>
   </body>
 </html>
