@@ -58,7 +58,6 @@ a {
 
 .image-container {
   width: 40%;
-  min-width: 385px;
   height: auto;
   background-color: #FAFCFC;
   border-radius: 5px;
@@ -76,9 +75,11 @@ a {
 }
 
 .work-img {
+  display: block;
   margin: 10px auto;
   width: 95%;
   height: 95%;
+  border-radius: 4px;
 }
 
 .work-description-container {
@@ -94,7 +95,7 @@ a {
 }
 
 .work-description-text {
-  margin: 20px auto;
+  margin: 20px 0 0 0;
   font: 16pt helvetica, arial;
   text-align: justify;
 }
