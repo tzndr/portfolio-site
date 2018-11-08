@@ -2,6 +2,7 @@ body,
 html  {
   width: 100%;
   height: auto;
+  text-align: center;
 }
 
 a {
@@ -46,6 +47,29 @@ a {
 .page-title {
   margin: 0;
   font-family: helvetica, arial;
+}
+
+.work-selector-container {
+  display: inline-flex;
+  width: 700px;
+  margin: 85px 0 0 0;
+  text-align: center;
+}
+
+.selector {
+  margin: auto;
+  font-family: helvetica, arial;
+  padding: 0 0 5px 0;
+  border-bottom: 5px solid white;
+  cursor: pointer;
+}
+
+.underlined-selector {
+  margin: auto;
+  font-family: helvetica, arial;
+  padding: 0 0 5px 0;
+  border-bottom: 5px solid red;
+  cursor: pointer;
 }
 
 .work-container {

@@ -4,54 +4,36 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="../static/style.css">
+    <link rel="shortcut icon" href="../static/img/ocean.png">
     <title>Tim Zander Portfolio</title>
   </head>
   <body>
     {% block content %}
       {% include "header.html" %}
     {% endblock %}
-    <div class="work-container">
-      <div class="image-container">
-        <img class="work-img" src="../static/img/catalog_app1.png">
-      </div>
-      <div class="element-break"></div>
-      <div class="work-description-container">
-        <h1 class="work-description-title">Editable Catalog with User Authentication</h1>
-        <div id="catalog-description" class="work-description-text"></div>
-      </div>
+    <div class="work-selector-container" data-bind="foreach: featuredWorkList">
+      <h3
+        id="selector-title" class="selector"
+        data-bind="text: title, click: $parent.changeFeaturedWork, css: {'underlined-selector': title == $parent.selectedWork()}">
+      </h3>
     </div>
     <div class="work-container">
       <div class="image-container">
-        <img class="work-img" src="../static/img/logs_analysis.png">
+        <img class="work-img" data-bind="attr: {src: selectedWorkImg}">
       </div>
       <div class="element-break"></div>
       <div class="work-description-container">
-        <h1 class="work-description-title">Logs Analysis Program</h1>
-        <div id="logs-analysis-description" class="work-description-text"></div>
+        <h1
+          class="work-description-title" data-bind="text: selectedWorkHeader">
+        </h1>
+        <div
+          class="work-description-text" data-bind="text: selectedWorkDescription">
+        </div>
       </div>
     </div>
-    <div class="work-container">
-      <div class="image-container">
-        <img class="work-img" src="../static/img/google_mapsAPI.png">
-      </div>
-      <div class="element-break"></div>
-      <div class="work-description-container">
-        <h1 class="work-description-title">Interactive Google Maps API Application</h1>
-        <div id="google-maps-description" class="work-description-text"></div>
-      </div>
-    </div>
-    <div class="work-container">
-      <div class="image-container">
-        <img class="work-img" src="../static/img/linux_config.png">
-      </div>
-      <div class="element-break"></div>
-      <div class="work-description-container">
-        <h1 class="work-description-title">Linux Server Configuration</h1>
-        <div id="linux-server-description" class="work-description-text"></div>
-      </div>
-    </div>
+    <script src="../static/js/libs/knockout-3.2.0.js"></script>
     <script src="../static/js/libs/jquery.min.js"></script>
-    <script src="../static/js/libs/typeit.min.js"></script>
+    <script src="../static/js/featured_work.js"></script>
     <script src="../static/js/app.js"></script>
   </body>
 </html>
