@@ -5,6 +5,7 @@ var Work = function(data) {
   this.header = data.header;
   this.imgPath = data.imgPath;
   this.description = data.description;
+  this.languages = data.languages;
 };
 
 var ViewModel = function() {
@@ -17,6 +18,8 @@ var ViewModel = function() {
   this.selectedWorkImg = ko.observable(featuredWork[0].imgPath);
 
   this.selectedWorkHeader = ko.observable(featuredWork[0].header);
+
+  this.selectedWorkLanguages = ko.observableArray(featuredWork[0].languages);
 
   this.selectedWorkDescription = ko.observable(featuredWork[0].description);
 
@@ -31,31 +34,10 @@ var ViewModel = function() {
         self.selectedWorkImg(clickedWork.imgPath);
         self.selectedWorkHeader(clickedWork.header);
         self.selectedWorkDescription(clickedWork.description);
+        self.selectedWorkLanguages(clickedWork.languages);
       }
     }
   }
 }
 
 ko.applyBindings(new ViewModel());
-
-
-//var typeIt = function() {
-//  new TypeIt('.type-it', {
-//    strings: ['Hello.', "I'm Tim Zander,"],
-//    cursor: false
-//  });
-//}
-
-//var retypeIt = function() {
-//  new TypeIt('.retype', {
-//    strings: ["a coder", "a life-long learner", "a creator", "a leader",
-//      "a Full-Stack Developer."],
-//    breakLines: false,
-//    autoStart: false,
-//    deleteSpeed: 40,
-//    loop: false
-//  });
-//}
-
-//typeIt();
-//setTimeout(retypeIt, 4000);

@@ -14,7 +14,9 @@
     <div class="work-selector-container" data-bind="foreach: featuredWorkList">
       <h3
         id="selector-title" class="selector"
-        data-bind="text: title, click: $parent.changeFeaturedWork, css: {'underlined-selector': title == $parent.selectedWork()}">
+        data-bind="text: title,
+                   click: $parent.changeFeaturedWork,
+                   css: {'underlined-selector': title == $parent.selectedWork()}">
       </h3>
     </div>
     <div class="work-container">
@@ -29,11 +31,14 @@
         <div
           class="work-description-text" data-bind="text: selectedWorkDescription">
         </div>
+        <div data-bind="foreach: selectedWorkLanguages">
+          <span><img class="language-img" data-bind="attr: {src: path}"></span>
+        </div>
       </div>
     </div>
     <script src="../static/js/libs/knockout-3.2.0.js"></script>
     <script src="../static/js/libs/jquery.min.js"></script>
-    <script src="../static/js/featured_work.js"></script>
+    <script src="../static/js/model.js"></script>
     <script src="../static/js/app.js"></script>
   </body>
 </html>

@@ -11,8 +11,12 @@
     {% block content %}
       {% include "header.html" %}
     {% endblock %}
-    <img class="background-img" src="../static/img/ocean.png">
+    <div class="story-container">
+      <span class="story-text" data-bind="text: myStory"></span>
+      <span><img class="story-img" src="../static/img/story_img.jpg"></span>
+    </div>
     <script src="../static/js/libs/knockout-3.2.0.js"></script>
+    <script src="../static/js/model.js"></script>
     <script src="../static/js/app.js"></script>
   </body>
 </html>

@@ -10,6 +10,10 @@ def showMain():
 def showFeaturedWork():
     return render_template('featured_work.html')
 
+@app.route('/my_story')
+def showMyStory():
+    return render_template('my_story.html')
+
 
 if __name__ == '__main__':
     app.secret_key = 'Magnesium21!'

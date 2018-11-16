@@ -118,10 +118,31 @@ a {
   font: bold 25pt helvetica, arial;
 }
 
+.language-img {
+  width: auto;
+  height: 50px;
+  margin: auto 15px;
+}
+
 .work-description-text {
-  margin: 20px 0 0 0;
+  margin: 50px auto;
   font: 16pt helvetica, arial;
   text-align: justify;
+}
+
+.story-container {
+  display: flex;
+  text-align: center;
+  margin: 100px auto;
+}
+
+.story-text {
+  width: 40%;
+}
+
+.story-img {
+  width: 40%;
+  height: auto;
 }
 
 @media screen and (max-width: 1024px) {
