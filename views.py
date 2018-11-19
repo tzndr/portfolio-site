@@ -14,6 +14,10 @@ def showFeaturedWork():
 def showMyStory():
     return render_template('my_story.html')
 
+@app.route('/reach_out')
+def showReachOut():
+    return render_template('reach_out.html')
+
 
 if __name__ == '__main__':
     app.secret_key = 'Magnesium21!'

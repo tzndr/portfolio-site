@@ -28,6 +28,13 @@ a {
   right: 7px;
 }
 
+.logo {
+  width: 40px;
+  position: absolute;
+  top: 7px;
+  left: 7px;
+}
+
 .nav-link {
   margin: auto;
   padding: 0 20px 0 0;
@@ -132,17 +139,30 @@ a {
 
 .story-container {
   display: flex;
-  text-align: center;
-  margin: 100px auto;
+  margin: 125px 0 0 auto;
+  justify-content: space-around;
 }
 
 .story-text {
   width: 40%;
+  font: 16pt helvetica, arial;
+  margin: auto;
+  text-align: justify;
+}
+
+.story-img-container {
+  width: 40%;
+  margin: auto;
 }
 
 .story-img {
-  width: 40%;
+  width: 90%;
   height: auto;
+  border-radius: 50%;
+}
+
+.udacity-img {
+  width: 10%;
 }
 
 @media screen and (max-width: 1024px) {
