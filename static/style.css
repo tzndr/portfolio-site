@@ -29,7 +29,7 @@ a {
 }
 
 .logo {
-  width: 40px;
+  width: 50px;
   position: absolute;
   top: 7px;
   left: 7px;
@@ -143,11 +143,22 @@ a {
   justify-content: space-around;
 }
 
-.story-text {
+.story-text-container {
   width: 40%;
-  font: 16pt helvetica, arial;
   margin: auto;
   text-align: justify;
+}
+
+.quote-text {
+  font: italic 22pt Georgia, serif;
+  width: 100%;
+  marign-bottom: 30px;
+  text-align: center;
+}
+
+.story-text {
+  font: 16pt helvetica, arial;
+  margin: 30px auto;
 }
 
 .story-img-container {
@@ -159,15 +170,69 @@ a {
   width: 90%;
   height: auto;
   border-radius: 50%;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.50),
+              0 5px 15px 0 rgba(0, 0, 0, 0.47);
 }
 
 .udacity-img {
   width: 10%;
 }
 
+.connect-container {
+  display: flex;
+  width: 50%;
+  margin: 250px auto;
+  justify-content: space-around;
+}
+
+.information-container {
+  width: auto;
+}
+
+.contact-options-container {
+
+}
+
+.info-box-header {
+  display: inline-block;
+  font: 69pt bold helvetica, arial;
+  padding: 0 0 20px 0;
+  height: 80px;
+  border-bottom: 15px solid red;
+  margin: auto;
+}
+
+.info-box-data {
+  margin: 50px 0 0 auto;
+  font: 30pt helvetica, arial;
+  font-weight: 900;
+}
+
+.email-img {
+  height: 100px;
+}
+
+.linkedin-img {
+  height: 100px;
+}
+
+.phone-img {
+  height: 100px;
+}
+
+.email-img:hover,
+.linkedin-img:hover,
+.phone-img:hover {
+  cursor: pointer;
+}
+
 @media screen and (max-width: 1024px) {
   .background-img {
     left: 50%;
     margin-left: -512px;
+  }
+
+  .connect-container {
+    width: 75%;
   }
 }

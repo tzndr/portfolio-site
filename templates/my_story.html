@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="../static/style.css">
-    <link rel="shortcut icon" href="../static/img/ocean.png">
+    <link rel="shortcut icon" href="../static/img/tz.png">
     <title>Tim's Story</title>
   </head>
   <body>
@@ -12,12 +12,19 @@
       {% include "header.html" %}
     {% endblock %}
     <div class="story-container">
-      <span class="story-text" data-bind="text: myStory"></span>
+      <span class="story-text-container">
+        <div class="quote-text" data-bind="text: storyQuote"></div>
+        <div class="story-text" data-bind="text: myStory"></div>
+      </span>
       <span class="story-img-container">
         <img class="story-img" src="../static/img/story_img.jpg">
       </span>
     </div>
-    <div><img class="udacity-img" src="../static/img/udacity_alumni.png"></div>
+    <div>
+      <a href="https://www.udacity.com/">
+        <img class="udacity-img" src="../static/img/udacity_alumni.png">
+      </a>
+    </div>
     <script src="../static/js/libs/knockout-3.2.0.js"></script>
     <script src="../static/js/model.js"></script>
     <script src="../static/js/app.js"></script>

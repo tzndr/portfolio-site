@@ -4,13 +4,32 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="../static/style.css">
-    <link rel="shortcut icon" href="../static/img/ocean.png">
+    <link rel="shortcut icon" href="../static/img/tz.png">
     <title>Reach Tim</title>
   </head>
   <body>
     {% block content %}
       {% include "header.html" %}
     {% endblock %}
+    <div class="connect-container">
+      <div class="information-container">
+        <div class="info-box-header" data-bind="text: infoBoxHeader"></div>
+        <div class="info-box-data" data-bind="text: infoBoxData"></div>
+      </div>
+      <span class="contact-options-container">
+        <div data-bind="click: changeConnectInfo">
+          <img id="email" class="email-img" src="../static/img/email.png">
+        </div>
+        <div data-bind="click: changeConnectInfo">
+          <img id="phone" class="phone-img" src="../static/img/phone.png">
+        </div>
+        <div>
+          <a href="https://www.linkedin.com/in/timothyzander/">
+            <img id="linkedin" class="linkedin-img" src="../static/img/linkedin.png">
+          </a>
+        </div>
+      </span>
+    </div>
     <script src="../static/js/libs/knockout-3.2.0.js"></script>
     <script src="../static/js/model.js"></script>
     <script src="../static/js/app.js"></script>

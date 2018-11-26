@@ -27,7 +27,7 @@ var featuredWork = [
       "built in Python along with PostgreSQL. This program doesn't take any input from " +
       "the user and instead connects to their database and uses SQL queries to analyze " +
       "over a million of its rows of data that contain logs from each time a reader " +
-      "lodaed a page or article. It then builds an informational summary that gives " +
+      "loaded a page or article. It then builds an informational summary that gives " +
       "detailed answers to specific questions regarding the site's reader activity.",
       languages: [
         {path: "../static/img/python.png"},
@@ -70,4 +70,29 @@ var featuredWork = [
   }
 ];
 
-var myStory = "TLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+var storyQuote = "\"If knowledge is the key to all things, learning becomes everything.\"";
+
+var myStory = "TLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do " +
+  "eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim " +
+  "veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo " +
+  "consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum " +
+  "dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, " +
+  "sunt in culpa qui officia deserunt mollit anim id est laborum.";
+
+var connectInformation = [
+  {
+    type: "email",
+    text: "Email.",
+    info: "connect@timzander.com"
+  },
+  {
+    type: "phone",
+    text: "Talk or Text.",
+    info: "1.214.713.1096"
+  },
+  {
+    type: "linkedin",
+    text: "LinkedIn.",
+    info: ""
+  }
+];
