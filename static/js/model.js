@@ -70,14 +70,27 @@ var featuredWork = [
   }
 ];
 
-var storyQuote = "\"If knowledge is the key to all things, learning becomes everything.\"";
+var storyQuote = "\"If knowledge is the key to all things, learning becomes " +
+  "the most important thing one can do.\"";
 
-var myStory = "TLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do " +
-  "eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim " +
-  "veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo " +
-  "consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum " +
-  "dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, " +
-  "sunt in culpa qui officia deserunt mollit anim id est laborum.";
+var myStory = "Many successful people find their passion early in life and are able " +
+  "to dedicate themselves to that single particular subject or desired outcome for the " +
+  "rest of their lives - this is not my path.";
+
+var myStory2 = " Most of my professional story thus far has been in management in the " +
+  "electronic payments industry - a field I had an opportunity to join at a young age " +
+  "and fortunate enough to be able advance through, experiencing a full spectrum of " +
+  "responsibilities, perspective and levels of leadership. I'm grateful for those 10 " +
+  "years as they've given me the dynamic skill set needed to forge me into the unique " +
+  "developer I've become today. But there had just come a moment of realization when " +
+  "I knew it was time to leave the comfort of a successful management career and set " +
+  "sail into the turbulent, ever-changing sea of science and technology, with a lifetime " +
+  "of new challenges to overcome, new goals to achieve and, most importantly, " +
+  "a lifetime of things to learn. This is what I've come to realize about my story: " +
+  "it isn't one particular thing or subject that is my passion, but instead my life's " +
+  "passion is being in a sea of knowledge and having to learn how to swim over and over " +
+  "again - and what better sea to swim in than the world of software development.";
+
 
 var connectInformation = [
   {
@@ -89,10 +102,5 @@ var connectInformation = [
     type: "phone",
     text: "Talk or Text.",
     info: "1.214.713.1096"
-  },
-  {
-    type: "linkedin",
-    text: "LinkedIn.",
-    info: ""
   }
 ];
