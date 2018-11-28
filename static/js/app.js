@@ -6,6 +6,7 @@ var Work = function(data) {
   this.imgPath = data.imgPath;
   this.description = data.description;
   this.languages = data.languages;
+  this.link = data.link;
 };
 
 var ViewModel = function() {
@@ -23,6 +24,8 @@ var ViewModel = function() {
 
   this.selectedWorkDescription = ko.observable(featuredWork[0].description);
 
+  this.selectedWorkLink = ko.observable(featuredWork[0].link);
+
   this.infoBoxHeader = ko.observable("Let's Talk.");
 
   this.infoBoxData = ko.observable();
@@ -39,8 +42,10 @@ var ViewModel = function() {
         self.selectedWorkHeader(clickedWork.header);
         self.selectedWorkDescription(clickedWork.description);
         self.selectedWorkLanguages(clickedWork.languages);
+        self.selectedWorkLink(clickedWork.link);
       }
     }
+    console.log(self.selectedWorkLink())
   }
 
   this.changeConnectInfo = function(data, event) {

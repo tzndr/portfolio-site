@@ -12,6 +12,7 @@ var featuredWork = [
      "products. A user that is not logged in is able to view the catalog without " +
      "editing privileges. This application also has JSON endpoints for each created " +
      " category and item.",
+     link: "https://github.com/tzndr/catalog_application",
     languages: [
       {path: "../static/img/python.png"},
       {path: "../static/img/flask.png"},
@@ -29,6 +30,7 @@ var featuredWork = [
       "over a million of its rows of data that contain logs from each time a reader " +
       "loaded a page or article. It then builds an informational summary that gives " +
       "detailed answers to specific questions regarding the site's reader activity.",
+      link: "https://github.com/tzndr/logs_analysis",
       languages: [
         {path: "../static/img/python.png"},
         {path: "../static/img/postgresql.png"},
@@ -45,6 +47,7 @@ var featuredWork = [
       "on the selected marker. This information includes an interactive Google StreetView " +
       "image, company logo and address, as well as relevant New York Times and Wikipedia " +
       "articles gathered asynchronously using AJAX, JSON, and third party APIs.",
+      link: "https://github.com/tzndr/neighborhood_map",
       languages: [
         {path: "../static/img/javascript.png"},
         {path: "../static/img/googlemapslogo.png"},
@@ -62,6 +65,7 @@ var featuredWork = [
       "applications. The servers are secured with configured firewalls that allow or deny " +
       "specific ports and traffic, have seperate users with strict permissions, and a " +
       "key-based SSH authentication system to prevent outside threats and attacks.",
+      link: "https://github.com/tzndr/linux_server_configuration",
       languages: [
         {path: "../static/img/linux.jpg"},
         {path: "../static/img/apache.png"},
@@ -75,21 +79,21 @@ var storyQuote = "\"If knowledge is the key to all things, learning becomes " +
 
 var myStory = "Many successful people find their passion early in life and are able " +
   "to dedicate themselves to that single particular subject or desired outcome for the " +
-  "rest of their lives - this is not my path.";
+  "rest of their lives - this is not my story.";
 
-var myStory2 = " Most of my professional story thus far has been in management in the " +
-  "electronic payments industry - a field I had an opportunity to join at a young age " +
-  "and fortunate enough to be able advance through, experiencing a full spectrum of " +
+var myStory2 = "Most of my professional story thus far has been in management in the " +
+  "electronic payments industry - a field I had an opportunity to join at a very young age " +
+  "and fortunate enough to have been able advance through, experiencing a full spectrum of " +
   "responsibilities, perspective and levels of leadership. I'm grateful for those 10 " +
-  "years as they've given me the dynamic skill set needed to forge me into the unique " +
-  "developer I've become today. But there had just come a moment of realization when " +
-  "I knew it was time to leave the comfort of a successful management career and set " +
-  "sail into the turbulent, ever-changing sea of science and technology, with a lifetime " +
-  "of new challenges to overcome, new goals to achieve and, most importantly, " +
-  "a lifetime of things to learn. This is what I've come to realize about my story: " +
-  "it isn't one particular thing or subject that is my passion, but instead my life's " +
-  "passion is being in a sea of knowledge and having to learn how to swim over and over " +
-  "again - and what better sea to swim in than the world of software development.";
+  "years as they've given me the dynamic skill set needed to be forged into the unique " +
+  "developer I've become today. But there had come a moment of realization about what I " +
+  "truly wanted to do and I knew it was time to leave the comforts of a successful " +
+  "management career and set sail into the turbulent, ever-changing waters of technology " +
+  "with a lifetime of new challenges to overcome, new goals to achieve and, most importantly, " +
+  "a lifetime of new things to learn. This is what I've come to realize about my story: " +
+  "it isn't one particular thing that is my passion, but instead my true passion is " +
+  "being in a sea of knowledge and having to learn how to swim over and over " +
+  "again - and what better sea to swim in than that of software development.";
 
 
 var connectInformation = [
