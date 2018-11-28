@@ -74,8 +74,8 @@ var featuredWork = [
   }
 ];
 
-var storyQuote = "\"If knowledge is the key to all things, learning becomes " +
-  "the most important thing one can do.\"";
+var storyQuote = "\"If knowledge is the doorway to all things, then learning is " +
+  "the key.\"";
 
 var myStory = "Many successful people find their passion early in life and are able " +
   "to dedicate themselves to that single particular subject or desired outcome for the " +
