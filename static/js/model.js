@@ -83,7 +83,7 @@ var myStory = "Many successful people find their passion early in life and are a
 
 var myStory2 = "Most of my professional story thus far has been in management in the " +
   "electronic payments industry - a field I had an opportunity to join at a very young age " +
-  "and fortunate enough to have been able advance through, experiencing a full spectrum of " +
+  "and fortunate enough to have been able to advance through, experiencing a full spectrum of " +
   "responsibilities, perspective and levels of leadership. I'm grateful for those 10 " +
   "years as they've given me the dynamic skill set needed to be forged into the unique " +
   "developer I've become today. But there had come a moment of realization about what I " +
