@@ -63,7 +63,7 @@ var featuredWork = [
       "and set up for site and application hosting.  These Linux server instances are " +
       "configured using Apache2 web servers along with WSGI for Python " +
       "applications. The servers are secured with configured firewalls that allow or deny " +
-      "specific ports and traffic, have seperate users with strict permissions, and a " +
+      "specific ports and traffic, have separate users with strict permissions, and a " +
       "key-based SSH authentication system to prevent outside threats and attacks.",
       link: "https://github.com/tzndr/linux_server_configuration",
       languages: [
