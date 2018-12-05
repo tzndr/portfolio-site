@@ -74,7 +74,7 @@ var featuredWork = [
   }
 ];
 
-var storyQuote = "\"If knowledge is the doorway to all things, then learning is " +
+var storyQuote = "\"If knowledge is the door to all things, then a will to learn is " +
   "the key.\"";
 
 var myStory = "Many successful people find their passion early in life and are able " +
