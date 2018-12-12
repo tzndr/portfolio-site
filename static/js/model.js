@@ -12,7 +12,7 @@ var featuredWork = [
      "products. A user that is not logged in is able to view the catalog without " +
      "editing privileges. This application also has JSON endpoints for each created " +
      " category and item.",
-     link: "https://github.com/tzndr/catalog_application",
+     link: "https://github.com/tzndr/content-management-system",
     languages: [
       {path: "../static/img/python.png"},
       {path: "../static/img/flask.png"},
@@ -30,7 +30,7 @@ var featuredWork = [
       "over a million of its rows of data that contain logs from each time a reader " +
       "loaded a page or article. It then builds an informational summary that gives " +
       "detailed answers to specific questions regarding the site's reader activity.",
-      link: "https://github.com/tzndr/logs_analysis",
+      link: "https://github.com/tzndr/logs-analysis-reporting-tool",
       languages: [
         {path: "../static/img/python.png"},
         {path: "../static/img/postgresql.png"},
@@ -47,7 +47,7 @@ var featuredWork = [
       "on the selected marker. This information includes an interactive Google StreetView " +
       "image, company logo and address, as well as relevant New York Times and Wikipedia " +
       "articles gathered asynchronously using AJAX, JSON, and third party APIs.",
-      link: "https://github.com/tzndr/neighborhood_map",
+      link: "https://github.com/tzndr/interactive-map",
       languages: [
         {path: "../static/img/javascript.png"},
         {path: "../static/img/googlemapslogo.png"},
@@ -65,7 +65,7 @@ var featuredWork = [
       "applications. The servers are secured with configured firewalls that allow or deny " +
       "specific ports and traffic, have separate users with strict permissions, and a " +
       "key-based SSH authentication system to prevent outside threats and attacks.",
-      link: "https://github.com/tzndr/linux_server_configuration",
+      link: "https://github.com/tzndr/linux-server-configuration",
       languages: [
         {path: "../static/img/linux.jpg"},
         {path: "../static/img/apache.png"},
