@@ -5,13 +5,13 @@ var featuredWork = [
     title: "Catalog",
     header: "Editable Catalog with User Authentication",
     imgPath: "../static/img/catalog_app.png",
-    description: "A user-friendly, editable catalog application built " +
-     "in HTML, CSS, and Python with Flask and SQLAlchemy. This application queries " +
-     "a SQL database and uses CRUD (Create, Read, Update, Delete) functionality to " +
-     "allow a logged-in user to add, remove, and edit the catalog's categories and " +
-     "products. A user that is not logged in is able to view the catalog without " +
-     "editing privileges. This application also has JSON endpoints for each created " +
-     " category and item.",
+    description: "A user-friendly, editable content management system created " +
+      "with HTML, CSS, and Python with Flask and SQLAlchemy. This application " +
+      "queries a PostgreSQL database and uses CRUD (Create, Read, Update, Delete) " +
+      "functionality and OAuth to allow a logged-in user to add, remove, and edit " +
+      "the catalog's categories and products. An anonymous user is able to view the " +
+      "catalog without editing privileges. This application also has JSON endpoints " +
+      "for each created category and item.",
      link: "https://github.com/tzndr/content-management-system",
     languages: [
       {path: "../static/img/python.png"},
@@ -25,7 +25,7 @@ var featuredWork = [
     header: "Logs Analysis Program",
     imgPath: "../static/img/logs_analysis.png",
     description: "An internal reporting tool for a news website " +
-      "built in Python along with PostgreSQL. This program doesn't take any input from " +
+      "created with Python along with PostgreSQL. This program doesn't take any input from " +
       "the user and instead connects to their database and uses SQL queries to analyze " +
       "over a million of its rows of data that contain logs from each time a reader " +
       "loaded a page or article. It then builds an informational summary that gives " +
@@ -40,8 +40,8 @@ var featuredWork = [
     title: "Google Maps API",
     header: "Interactive Map with Google Maps API",
     imgPath: "../static/img/google_mapsAPI.png",
-    description: "An interactive map of Silicon Valley built " +
-      "in JavaScript, HTML, CSS, and the KnockoutJS framework. This dynamic map " +
+    description: "An interactive map of Silicon Valley created " +
+      "with JavaScript, HTML, CSS, and the KnockoutJS framework. This dynamic map " +
       "is filterable and includes highlighted locations that use observables to " +
       "update the webpage asynchronously with location-specific information, depending " +
       "on the selected marker. This information includes an interactive Google StreetView " +
@@ -59,8 +59,8 @@ var featuredWork = [
     title: "Linux Server",
     header: "Linux Server Configuration",
     imgPath: "../static/img/linux_config.png",
-    description: "An Amazon Web Services Lightsail Linux server secured " +
-      "and set up for site and application hosting.  These Linux server instances are " +
+    description: "An Amazon Web Services Lightsail baseline Ubuntu server secured " +
+      "and fully functional for site and application hosting.  These Linux server instances are " +
       "configured using Apache2 web servers along with WSGI for Python " +
       "applications. The servers are secured with configured firewalls that allow or deny " +
       "specific ports and traffic, have separate users with strict permissions, and a " +
