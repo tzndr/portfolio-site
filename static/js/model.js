@@ -40,8 +40,8 @@ var featuredWork = [
     title: "Google Maps API",
     header: "Interactive Map with Google Maps API",
     imgPath: "../static/img/google_mapsAPI.png",
-    description: "An interactive map of Silicon Valley created " +
-      "with JavaScript, HTML, CSS, and the KnockoutJS framework. This dynamic map " +
+    description: "An interactive map of Silicon Valley created with Google Maps " +
+      "API, JavaScript, HTML, CSS, and the KnockoutJS framework. This dynamic map " +
       "is filterable and includes highlighted locations that use observables to " +
       "update the webpage asynchronously with location-specific information, depending " +
       "on the selected marker. This information includes an interactive Google StreetView " +
