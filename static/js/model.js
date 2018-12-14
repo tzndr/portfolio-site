@@ -78,7 +78,7 @@ var storyQuote = "\"If knowledge is the door to all things, then a will to learn
   "the key.\"";
 
 var myStory = "Many successful people find their passion early in life and are able " +
-  "to dedicate themselves to that single particular subject or desired outcome for the " +
+  "to dedicate themselves to that single particular subject or role for the " +
   "rest of their lives - this is not my story.";
 
 var myStory2 = "Most of my professional story thus far has been in management in the " +
@@ -87,13 +87,13 @@ var myStory2 = "Most of my professional story thus far has been in management in
   "responsibilities, perspective and levels of leadership. I'm grateful for those 10 " +
   "years as they've given me the dynamic skill set needed to be forged into the unique " +
   "developer I've become today. But there had come a moment of realization about what I " +
-  "truly wanted to do and I knew it was time to leave the comforts of a successful " +
+  "truly wanted to spend my life doing and I knew it was time to leave the comforts of a successful " +
   "management career and set sail into the turbulent, ever-changing waters of technology " +
   "with a lifetime of new challenges to overcome, new goals to achieve and, most importantly, " +
   "a lifetime of new things to learn. This is what I've come to realize about my story: " +
-  "it isn't one particular thing that is my passion, but instead my true passion is " +
+  "it isn't one specific thing that I'm passionate about, but instead my true passion is " +
   "being in a sea of knowledge and having to learn how to swim over and over " +
-  "again - and what better sea to swim in than that of software development.";
+  "again - and the sea I belong in is technology, the web, and development.";
 
 
 var connectInformation = [
