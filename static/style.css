@@ -208,6 +208,7 @@ a {
 }
 
 .linkedin-img {
+  width: 300px;
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.50),
               0 5px 15px 0 rgba(0, 0, 0, 0.47);
 }
@@ -215,23 +216,32 @@ a {
 .email-img {
   display: inline-block;
   margin: 25px 0 0 0;
-  border: 1px solid red;
+  width: 60px;
+  color: #028CC9;
+  border: 1px solid #028CC9;
+  border-radius: 2px;
   padding: 5px 10px;
   font-family: helvetica, arial;
+  font-weight: bolder;
 }
 
 .phone-img {
   display: inline-block;
-  margin: 25px auto;
-  border: 1px solid red;
+  margin: 25px 0 0 0;
+  width: 60px;
+  text-align: center;
+  color: #028CC9;
+  border: 1px solid #028CC9;
   padding: 5px 10px;
+  border-radius: 2px;
   font-family: helvetica, arial;
+  font-weight: bold;
 }
 
 .email-img:hover,
 .phone-img:hover {
   cursor: pointer;
-  background-color: red;
+  background-color: #028CC9;
   color: white;
 }
 
@@ -362,6 +372,7 @@ a {
   .info-box-data {
     margin: 50px auto;
     font: 30pt helvetica, arial;
+    font-weight: 700;
   }
 
   .contact-options-container {
@@ -504,22 +515,14 @@ a {
     margin: 100px auto;
   }
 
-  .info-box-header {
-    display: inline-block;
-    font: 25pt bold helvetica, arial;
-    padding: 0 0 20px 0;
-    height: 20px;
-    border-bottom: 5px solid red;
-    margin: auto;
-  }
-
-  .info-box-data {
-    margin: 25px auto;
-    font: 12pt helvetica, arial;
-    font-weight: 700;
-  }
-
   .linkedin-img {
     width: 250px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .info-box-data {
+    font: 17pt helvetica, arial;
+    font-weight: 700;
   }
 }
