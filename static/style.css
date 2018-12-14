@@ -518,4 +518,8 @@ a {
     font: 12pt helvetica, arial;
     font-weight: 700;
   }
+
+  .linkedin-img {
+    width: 250px;
+  }
 }
