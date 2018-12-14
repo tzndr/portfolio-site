@@ -14,9 +14,9 @@ def showFeaturedWork():
 def showMyStory():
     return render_template('my_story.html')
 
-@app.route('/reach_out')
-def showReachOut():
-    return render_template('reach_out.html')
+@app.route('/connect')
+def showConnect():
+    return render_template('connect.html')
 
 
 if __name__ == '__main__':
