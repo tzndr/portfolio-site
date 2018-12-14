@@ -179,7 +179,7 @@ a {
 
 .connect-container {
   display: flex;
-  width: 50%;
+  width: 70%;
   margin: 250px auto;
   justify-content: space-around;
 }
@@ -203,22 +203,36 @@ a {
   font-weight: 900;
 }
 
-.email-img {
-  height: 100px;
+.contact-options-container {
+  margin: 0 50px auto;
 }
 
 .linkedin-img {
-  height: 100px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.50),
+              0 5px 15px 0 rgba(0, 0, 0, 0.47);
+}
+
+.email-img {
+  display: inline-block;
+  margin: 25px 0 0 0;
+  border: 1px solid red;
+  padding: 5px 10px;
+  font-family: helvetica, arial;
 }
 
 .phone-img {
-  height: 100px;
+  display: inline-block;
+  margin: 25px auto;
+  border: 1px solid red;
+  padding: 5px 10px;
+  font-family: helvetica, arial;
 }
 
 .email-img:hover,
-.linkedin-img:hover,
 .phone-img:hover {
   cursor: pointer;
+  background-color: red;
+  color: white;
 }
 
 @media screen and (max-width: 1024px) {
@@ -264,6 +278,10 @@ a {
   .story-img {
     width: 100%;
   }
+
+  .connect-container {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 1180px) {
@@ -290,7 +308,6 @@ a {
     text-align: center;
   }
 
-
   .story-container {
     display: block;
     width: 75%;
@@ -316,7 +333,7 @@ a {
   }
 
   .connect-container {
-    width: 90%;
+    width: 100%;
   }
 }
 
@@ -324,11 +341,38 @@ a {
   .work-img-container {
     width: 80%;
   }
+
+  .contact-options-container {
+    margin: 0 10px auto;
+  }
 }
 
 @media screen and (max-width: 860px) {
   .quote-text {
     width: 100%;
+  }
+
+  .connect-container {
+    display: block;
+    width: 100%;
+    margin: 100px auto;
+    justify-content: none;
+  }
+
+  .info-box-data {
+    margin: 50px auto;
+    font: 30pt helvetica, arial;
+  }
+
+  .contact-options-container {
+    margin: auto;
+  }
+
+  .linkedin-img {
+    margin: auto;
+    width: 300px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.50),
+                0 5px 15px 0 rgba(0, 0, 0, 0.47);
   }
 }
 
@@ -351,21 +395,9 @@ a {
   }
 
   .info-box-data {
-    margin: 50px 0 0 auto;
+    margin: 50px auto;
     font: 20pt helvetica, arial;
     font-weight: 700;
-  }
-
-  .email-img {
-    height: 70px;
-  }
-
-  .linkedin-img {
-    height: 70px;
-  }
-
-  .phone-img {
-    height: 70px;
   }
 
   .udacity-img {
@@ -469,7 +501,7 @@ a {
 
   .connect-container {
     width: 100%;
-    margin: 200px auto;
+    margin: 100px auto;
   }
 
   .info-box-header {
@@ -482,20 +514,8 @@ a {
   }
 
   .info-box-data {
-    margin: 25px 0 0 auto;
+    margin: 25px auto;
     font: 12pt helvetica, arial;
     font-weight: 700;
-  }
-
-  .email-img {
-    height: 50px;
-  }
-
-  .linkedin-img {
-    height: 50px;
-  }
-
-  .phone-img {
-    height: 50px;
   }
 }
