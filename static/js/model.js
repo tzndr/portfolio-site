@@ -46,7 +46,7 @@ var featuredWork = [
       "update the webpage asynchronously with location-specific information, depending " +
       "on the selected marker. This information includes an interactive Google StreetView " +
       "image, company logo and address, as well as relevant New York Times and Wikipedia " +
-      "articles gathered asynchronously using AJAX, JSON, and third party APIs.",
+      "articles populated using AJAX, JSON, and third party API requests."
       link: "https://github.com/tzndr/interactive-map",
       languages: [
         {path: "../static/img/javascript.png"},
