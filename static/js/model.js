@@ -37,7 +37,7 @@ var featuredWork = [
       ]
   },
   {
-    title: "Google Maps API",
+    title: "Interactive Map",
     header: "Interactive Map with Google Maps API",
     imgPath: "../static/img/google_mapsAPI.png",
     description: "An interactive map of Silicon Valley created with Google Maps " +
