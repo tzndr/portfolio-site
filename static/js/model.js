@@ -79,21 +79,22 @@ var storyQuote = "\"If knowledge is the door to all things, then a will to learn
 
 var myStory = "Many successful people find their passion early in life and are able " +
   "to dedicate themselves to that single particular subject or role for the " +
-  "rest of their lives - this is not my story.";
+  "rest of their lives - I have a different story.";
 
 var myStory2 = "Most of my professional story thus far has been in management in the " +
   "electronic payments industry - a field I had an opportunity to join at a very young age " +
   "and fortunate enough to have been able to advance through, experiencing a full spectrum of " +
-  "responsibilities, perspective and levels of leadership. I'm grateful for those 10 " +
+  "responsibilities, perspective, and levels of leadership. I'm grateful for those 10 " +
   "years as they've given me the dynamic skill set needed to be forged into the unique " +
-  "developer I've become today. But there had come a moment of realization about what I " +
-  "truly wanted to spend my life doing and I knew it was time to leave the comforts of a successful " +
-  "management career and set sail into the turbulent, ever-changing waters of technology " +
-  "with a lifetime of new challenges to overcome, new goals to achieve and, most importantly, " +
+  "developer I've become today. But there had come a moment when I took a step back and asked " +
+  "myself what I truly wanted to spend my days doing - and the answer was immediately clear. " +
+  "I knew then it was time to leave the comforts of a successful management career and " +
+  "set sail into the turbulent, ever-changing waters of technology with a lifetime of " +
+  "new challenges to overcome, new goals to achieve, ideas to foster and, most importantly, " +
   "a lifetime of new things to learn. This is what I've come to realize about my story: " +
-  "it isn't one specific thing that I'm passionate about, but instead my true passion is " +
-  "being in a sea of knowledge and having to learn how to swim over and over " +
-  "again - and the sea I belong in is technology, the web, and development.";
+  "Though I've enjoyed my prior career and am ever-thankful for the skills it's provided to " +
+  "me, my true passion is being in a sea of knowledge and having to learn how to swim over " +
+  "and over again - and the sea I belong in is technology and development.";
 
 
 var connectInformation = [
