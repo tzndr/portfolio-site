@@ -51,6 +51,7 @@ var featuredWork = [
       languages: [
         {path: "../static/img/javascript.png"},
         {path: "../static/img/googlemapslogo.png"},
+        {path: "../static/img/api.png"},
         {path: "../static/img/kojs.png"},
         {path: "../static/img/html_css.png"}
       ]
@@ -95,6 +96,12 @@ var myStory2 = "Most of my professional story thus far has been in management in
   "Though I've enjoyed my prior career and am ever-thankful for the skills it's provided to " +
   "me, my true passion is being in a sea of knowledge and having to learn how to swim over " +
   "and over again - and the sea I belong in is technology and development.";
+
+var skillSetDescription = "With an aptitude for bold, elegant, and clean design styles " +
+  "coupled with the ability to create applications, sites, and programs with feature-rich user " +
+  "experiences and efficient backend functionality, I currently use the these languages, " +
+  "frameworks and modules. However, I am always learning more and strive to continue " +
+  "the evolution of my skill set in parallel with the ever-changing landscape of development.";
 
 
 var connectInformation = [

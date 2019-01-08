@@ -36,7 +36,7 @@ a {
 
 .nav-link {
   margin: auto;
-  padding: 0 20px 0 0;
+  padding: 0 30px 0 0;
   font: 14pt helvetica, arial;
 }
 
@@ -177,6 +177,44 @@ a {
   width: 10%;
 }
 
+.skill-set-container {
+  width: 100%;
+  height: auto;
+  margin: 140px auto;
+}
+
+.skill-set-title {
+  margin: 20px auto;
+  font: bold 25pt helvetica, arial;
+}
+
+.skill-set-text {
+  display: block;
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  font: 16pt helvetica, arial;
+  text-align: justify;
+}
+
+.element-break-horizontal {
+  background-color: gray;
+  height: 1px;
+  width: 50%;
+  margin: 40px auto;
+}
+
+.languages-container {
+  width: 60%;
+  margin: auto;
+}
+
+.language-img-large {
+  width: auto;
+  height: 75px;
+  margin: 20px 20px;
+}
+
 .connect-container {
   display: flex;
   width: 70%;
@@ -253,6 +291,22 @@ a {
 
   .connect-container {
     width: 75%;
+  }
+
+  .skill-set-text {
+    width: 90%;
+  }
+
+  .element-break-horizontal {
+    width: 75%;
+  }
+
+  .languages-container {
+    width: 90%;
+  }
+
+  .language-img-large {
+    height: 60px;
   }
 }
 
@@ -385,6 +439,18 @@ a {
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.50),
                 0 5px 15px 0 rgba(0, 0, 0, 0.47);
   }
+
+  .skill-set-title {
+    font: bold 20pt helvetica, arial;
+  }
+
+  .skill-set-text {
+    font: 14pt helvetica, arial;
+  }
+
+  .language-img-large {
+    height: 40px;
+  }
 }
 
 @media screen and (max-width: 706px) {
@@ -421,16 +487,6 @@ a {
 }
 
 @media screen and (max-width: 600px) {
-  .work-selector-container {
-    width: 100%;
-  }
-
-  .selector {
-    font-size: 12pt;
-  }
-}
-
-@media screen and (max-width: 480px) {
   .nav-bar {
     top: 4px;
     right: 3px;
@@ -456,6 +512,17 @@ a {
     margin: 2px 0 0 3px;
     height: 21px;
   }
+
+  .work-selector-container {
+    width: 100%;
+  }
+
+  .selector {
+    font-size: 12pt;
+  }
+}
+
+@media screen and (max-width: 480px) {
 
   .work-container {
     margin: 45px 0 0 0;
@@ -510,6 +577,19 @@ a {
     width: 100%;
   }
 
+  .work-selector-container {
+    margin: 60px 0 0 0;
+  }
+
+  .skill-set-container {
+    margin: 80px auto;
+  }
+
+  .skill-set-title {
+    margin: 20px auto;
+    font: bold 18pt helvetica, arial;
+  }
+
   .connect-container {
     width: 100%;
     margin: 100px auto;
@@ -524,5 +604,37 @@ a {
   .info-box-data {
     font: 17pt helvetica, arial;
     font-weight: 700;
+  }
+
+  .work-selector-container {
+    margin: 60px 0 0 0;
+  }
+
+  .skill-set-container {
+    width: 90%;
+    margin: 80px auto;
+  }
+
+  .skill-set-text {
+    width: 98%;
+    font: 14pt helvetica, arial;
+    text-align: justify;
+  }
+
+  .element-break-horizontal {
+    background-color: gray;
+    height: 1px;
+    width: 75%;
+    margin: 30px auto;
+  }
+
+  .languages-container {
+    width: 98%;
+    margin: auto;
+  }
+
+  .language-img-large {
+    height: 40px;
+    margin: 10px 10px;
   }
 }

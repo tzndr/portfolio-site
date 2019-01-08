@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../static/style.css">
+    <link rel="shortcut icon" href="../static/img/tz.png">
+    <link rel="image_src" href="../static/img/tz.png">
+    <meta property="og:title" content="Tim Zander's Portfolio">
+    <meta property="og:image" content="http://timzander.com/static/img/og_tz.png">
+    <meta property="og:description"
+          content="View Tim's professional story, featured works, and contact information">
+    <meta property="og:url" content="www.timzander.com">
+    <title>Tim Zander Portfolio</title>
+  </head>
+  <body>
+    {% block content %}
+      {% include "header.html" %}
+    {% endblock %}
+    <div class="skill-set-container">
+      <div class="skill-set-title">An Evolving Collection of Technical Skills</div>
+      <div class="skill-set-text" data-bind="text: skillSetDescription"></div>
+      <div class="element-break-horizontal"></div>
+      <div class="languages-container">
+        <img class="language-img-large" src="../static/img/python.png">
+        <img class="language-img-large" src="../static/img/javascript.png">
+        <img class="language-img-large" src="../static/img/postgresql.png">
+        <img class="language-img-large" src="../static/img/googlemapslogo.png">
+        <img class="language-img-large" src="../static/img/html_css.png">
+        <img class="language-img-large" src="../static/img/flask.png">
+        <img class="language-img-large" src="../static/img/kojs.png">
+        <img class="language-img-large" src="../static/img/api.png">
+        <img class="language-img-large" src="../static/img/linux.jpg">
+        <img class="language-img-large" src="../static/img/apache.png">
+        <img class="language-img-large" src="../static/img/aws.png">
+      </div>
+    </div>
+    <script src="../static/js/libs/knockout-3.2.0.js"></script>
+    <script src="../static/js/model.js"></script>
+    <script src="../static/js/app.js"></script>
+  </body>
+</html>

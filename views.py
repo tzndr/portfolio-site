@@ -6,13 +6,17 @@ app = Flask(__name__)
 def showMain():
     return render_template('index.html')
 
-@app.route('/featured_work')
-def showFeaturedWork():
-    return render_template('featured_work.html')
-
 @app.route('/my_story')
 def showMyStory():
     return render_template('my_story.html')
+
+@app.route('/skill_set')
+def showSkillSet():
+    return render_template('skill_set.html')
+
+@app.route('/featured_work')
+def showFeaturedWork():
+    return render_template('featured_work.html')
 
 @app.route('/connect')
 def showConnect():
