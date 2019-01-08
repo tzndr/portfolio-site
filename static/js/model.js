@@ -99,7 +99,7 @@ var myStory2 = "Most of my professional story thus far has been in management in
 
 var skillSetDescription = "With an aptitude for bold, elegant, and clean design styles " +
   "coupled with the ability to create applications, sites, and programs with feature-rich user " +
-  "experiences and efficient backend functionality, I currently use the these languages, " +
+  "experiences and efficient backend functionality, I currently use these languages, " +
   "frameworks and modules. However, I am always learning more and strive to continue " +
   "the evolution of my skill set in parallel with the ever-changing landscape of development.";
 

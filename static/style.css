@@ -127,7 +127,7 @@ a {
 .language-img {
   width: auto;
   height: 50px;
-  margin: auto 15px;
+  margin: auto 10px;
 }
 
 .work-description-text {
@@ -310,13 +310,15 @@ a {
   }
 }
 
+@media screen and (max-width: 1619px) {
+  .language-img {
+    height: 35px;
+  }
+}
+
 @media screen and (max-width: 1530px) {
   .work-description-title {
     font: bold 20pt helvetica, arial;
-  }
-
-  .language-img {
-    height: 35px;
   }
 
   .work-description-text {
@@ -486,7 +488,7 @@ a {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 620px) {
   .nav-bar {
     top: 4px;
     right: 3px;
@@ -519,6 +521,12 @@ a {
 
   .selector {
     font-size: 12pt;
+  }
+
+  .language-img {
+    width: auto;
+    height: 29px;
+    margin: auto 3px;
   }
 }
 
