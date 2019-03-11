@@ -1,0 +1,261 @@
+html,
+body {
+ font-family: helvetica, arial;
+ height: 100%;
+ margin: 0;
+ padding: 0;
+}
+
+option {
+  text-align: center;
+}
+
+.map-canvas {
+ height: 100%;
+}
+
+.main-panel {
+  position: absolute;
+  line-height: 30px;
+  width: 13%;
+  height: auto;
+  min-width: 150px;
+  top: 40px;
+  left: 0;
+  z-index: 5;
+  background-color: white;
+  padding: 0;
+  border: 1px solid #464343;
+  border-radius: 0 10px 10px 0;
+  text-align: center;
+}
+
+.info-panel {
+  position: absolute;
+  line-height: 30px;
+  width: 13%;
+  height: auto;
+  min-width: 150px;
+  top: 20%;
+  right: 0;
+  z-index: 5;
+  background-color: white;
+  padding: 0 5px 10px 5px;
+  border: 1px solid #464343;
+  border-radius: 10px 0 0 10px;
+  text-align: center;
+}
+
+.news-img {
+  width: 75%;
+  margin: 10px 0 0 0;
+}
+
+.main-img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.link-text {
+  margin: 0 0 10px 0;
+  line-height: 2px;
+}
+
+.company-logo {
+  padding: 10px 0 0 0;
+  width: 75%;
+  height: auto;
+  margin: auto;
+  text-align: center;
+}
+
+.heading-text {
+  margin: 10px 0 0 0;
+  text-align: center;
+}
+
+.company-list {
+  margin: 0;
+  width: 80%;
+  text-align: center;
+  outline: none;
+  cursor: pointer;
+}
+
+.article-dropdown {
+  width: 90%;
+  font: 11pt helvetica, arial;
+  margin: 0 0 10px 0;
+}
+
+.hide-panel-btn {
+  font: 8pt helvetica, arial;
+  background-color: #F6CD0E;
+  color: black;
+  padding: 5px 0;
+  border-radius: 0 0 6px 6px;
+  position: absolute;
+  width: 100px;
+  top: 0;
+  left: 264px;
+  z-index: 5;
+  outline: none;
+  cursor: pointer;
+}
+
+.show-companies-btn {
+  font: 8pt helvetica, arial;
+  background-color: #F6CD0E;
+  color: black;
+  padding: 5px 0;
+  border-radius: 0 0 6px 0;
+  position: absolute;
+  width: 125px;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  outline: none;
+  cursor: pointer;
+}
+
+.drawing-btn {
+  font: 8pt helvetica, arial;
+  background-color: #DF4C4C;
+  color: white;
+  padding: 5px 0;
+  border-radius: 0 0 6px 6px;
+  position: absolute;
+  width: 125px;
+  top: 0;
+  left: 132px;
+  z-index: 5;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn-drawing-mode-on {
+  font: 8pt helvetica, arial;
+  background-color: #40CE53;
+  color: white;
+  padding: 5px 0;
+  border-radius: 0 0 6px 6px;
+  position: absolute;
+  width: 125px;
+  top: 0;
+  left: 132px;
+  z-index: 5;
+  cursor: pointer;
+  outline: none;
+}
+
+.panel-hr {
+  width: 90%;
+}
+
+.box-shadow {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.7),
+              0 12px 40px 0 rgba(0, 0, 0, 0.6);
+}
+
+.address {
+  font: bold 10pt helvetica, arial;
+  width: 90%;
+  margin: auto;
+}
+
+.search-field {
+  margin: auto;
+  width: 80%;
+}
+
+.panel-list {
+  list-style: none;
+  padding: 0;
+  font: 11pt helvetica, arial;
+}
+
+.panel-list-item {
+  margin: 0;
+  font: bold 11pt helvetica, arial;
+  text-align: center;
+  padding: 3px 2px;
+  cursor: pointer;
+}
+
+.panel-list-item:hover {
+  margin: 0;
+  font: bold 11pt helvetica, arial;
+  text-align: center;
+  padding: 3px 2px;
+  cursor: pointer;
+  background-color: #1AA86F;
+  color: white;
+}
+
+.panel-filter-text {
+  font: 10pt helvetica, arial;
+  margin: 0;
+}
+
+.zoom-pan-btn {
+  width: 80%;
+  background-color: #1AA86F;
+  color: white;
+  border-radius: 5px;
+  font: 10pt helvetica, arial;
+  padding: 5px 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.panorama {
+  width: 200px;
+  height: 200px;
+}
+
+@media screen and (max-width: 500px) {
+
+  .info-panel {
+    position: absolute;
+    line-height: 30px;
+    width: 13%;
+    height: auto;
+    min-width: 150px;
+    top: 340px;
+    right: 0;
+    z-index: 5;
+    background-color: white;
+    padding: 0 5px 10px 5px;
+    border: 1px solid #464343;
+    border-radius: 10px 0 0 10px;
+    text-align: center;
+  }
+
+  .link-text {
+    margin: 0 0 10px 0;
+    line-height: 2px;
+    font-size: 8pt;
+  }
+
+  .article-dropdown {
+    width: 90%;
+    font: 8pt helvetica, arial;
+    margin: 0 0 10px 0;
+  }
+
+  .address {
+    font: bold 6pt helvetica, arial;
+    width: 90%;
+    margin: auto;
+  }
+
+  .heading-text {
+    margin: auto;
+    font: 10pt helvetica, arial;
+  }
+
+  .news-img {
+    width: 75%;
+    margin: 5px 0 0 0;
+  }
+}

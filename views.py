@@ -22,6 +22,9 @@ def showFeaturedWork():
 def showConnect():
     return render_template('connect.html')
 
+@app.route('/interactive_map')
+def showInteractiveMap():
+    return render_template('interactive_map.html')
 
 if __name__ == '__main__':
     app.config['DEBUG'] = True
