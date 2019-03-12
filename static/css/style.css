@@ -34,6 +34,13 @@ a {
   left: 7px;
 }
 
+.slogan {
+  width: 400px;
+  position: absolute;
+  bottom: 30px;
+  right: 40px;
+}
+
 .nav-link {
   margin: auto;
   padding: 0 30px 0 0;
@@ -411,6 +418,10 @@ a {
   .contact-options-container {
     margin: 0 10px auto;
   }
+
+  .slogan {
+    width: 200px;
+  }
 }
 
 @media screen and (max-width: 860px) {
@@ -458,6 +469,12 @@ a {
 @media screen and (max-width: 706px) {
   .work-selector-container {
     width: 90%;
+  }
+
+  .slogan {
+    left: 0;
+    right: 0;
+    margin: auto;
   }
 
   .connect-container {
