@@ -47,7 +47,7 @@ var featuredWork = [
       "on the selected marker. This information includes an interactive Google StreetView " +
       "image, company logo and address, as well as relevant New York Times and Wikipedia " +
       "articles populated using AJAX, JSON, and third party API requests.",
-      link: "https://github.com/tzndr/interactive-map",
+      link: "http://timzander.com/interactive_map",
       languages: [
         {path: "../static/img/javascript.png"},
         {path: "../static/img/googlemapslogo.png"},

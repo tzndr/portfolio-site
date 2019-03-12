@@ -18,6 +18,11 @@
             class="drawing-btn"
             data-bind="click: toggleDrawingTools, text: drawingModeText">
     </button>
+    <a href="{{url_for('showFeaturedWork')}}">
+      <button class="return-btn box-shadow">
+        <img src="../static/img/tz.png" class="logo">
+      </button>
+    </a>
     <div id="floating-panel-main" class="main-panel box-shadow"
          data-bind="visible: showHideMainPanel">
       <img class="main-img" src="static/img/interactive_map_img/siliconvalley.jpeg" alt="Silicon Valley Banner">
