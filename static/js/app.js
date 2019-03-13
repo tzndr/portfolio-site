@@ -30,6 +30,10 @@ var ViewModel = function() {
 
   this.infoBoxData = ko.observable();
 
+  this.projectButtonText = ko.observable("View Project on GitHub");
+
+  this.projectIsLive = ko.observable(false);
+
   featuredWork.forEach(function(workInfo) {
     self.featuredWorkList.push(new Work(workInfo));
   });
@@ -43,9 +47,15 @@ var ViewModel = function() {
         self.selectedWorkDescription(clickedWork.description);
         self.selectedWorkLanguages(clickedWork.languages);
         self.selectedWorkLink(clickedWork.link);
+        if (clickedWork.title === "Interactive Map") {
+          self.projectButtonText("View Live Project Demo");
+          self.projectIsLive(true);
+        } else {
+          self.projectButtonText("View Project on GitHub");
+          self.projectIsLive(false);
+        }
       }
     }
-    console.log(self.selectedWorkLink())
   }
 
   this.changeConnectInfo = function(data, event) {
