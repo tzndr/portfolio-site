@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, redirect, jsonify, url_for, flash, make_response
 from sqlalchemy import create_engine, asc
 from sqlalchemy.orm import sessionmaker
-from models import Base, User, Category, Item
+from portfolio_site.models import Base, User, Category, Item
 from flask import session as login_session
 import random
 import string
@@ -16,7 +16,7 @@ app = Flask(__name__)
 
 
 CLIENT_ID = json.loads(
-    open('client_secrets.json', 'r').read())['web']['client_id']
+    open('/var/www/portfolio_site/portfolio_site/client_secrets.json', 'r').read())['web']['client_id']
 APPLICATION_NAME = 'catalogdb'
 
 
@@ -53,10 +53,7 @@ def showInteractiveMap():
 
 @app.route('/login')
 def showLogin():
-    state = ''.join(random.choice(string.ascii_uppercase + string.digits)
-                    for x in xrange(32))
-    login_session['state'] = state
-    return render_template('login.html', STATE=state)
+    flash("This application is for demonstration purposes only")
 
 
 @app.route('/gconnect', methods=['POST'])
@@ -246,18 +243,18 @@ def detailProductJSON(category_id, item_id):
 def showCategories():
     categories = session.query(Category).all()
     recent_products = session.query(Item).order_by(Item.id.desc()).limit(12).all()
-    if 'username' not in login_session:
-        return render_template('public_main.html', categories=categories,
+    #if 'username' not in login_session:
+    #    return render_template('public_main.html', categories=categories,
                                recent_products=recent_products)
-    else:
+    #else:
         return render_template('main.html', categories=categories,
                                recent_products=recent_products)
 
 
 @app.route('/catalog/categories/new/', methods=['GET', 'POST'])
 def newCategory():
-    if 'username' not in login_session:
-        return redirect('/login')
+    #if 'username' not in login_session:
+    #    return redirect('/login')
     if request.method == 'POST':
         newCat = Category(name=request.form['name'],
                           user_id=login_session['user_id'])
@@ -271,8 +268,8 @@ def newCategory():
 
 @app.route('/catalog/categories/<int:category_id>/delete/', methods=['GET', 'POST'])
 def deleteCategory(category_id):
-    if 'username' not in login_session:
-        return redirect('login')
+    #if 'username' not in login_session:
+    #    return redirect('login')
     deletedCategory = session.query(Category).filter_by(id=category_id).one()
     if request.method == 'POST':
         flash("%s has been successfully deleted!" % deletedCategory.name)
@@ -289,10 +286,10 @@ def deleteCategory(category_id):
 def showProducts(category_id):
     category = session.query(Category).filter_by(id=category_id).one()
     products = session.query(Item).filter_by(category_id=category_id).all()
-    if 'username' not in login_session:
-        return render_template('public_products.html', products=products,
-                               category=category)
-    else:
+    #if 'username' not in login_session:
+    #    return render_template('public_products.html', products=products,
+    #                           category=category)
+    #else:
         return render_template('products.html', products=products,
                                category=category)
 
@@ -300,12 +297,12 @@ def showProducts(category_id):
 @app.route('/catalog/categories/<int:category_id>/products/new/',
            methods=['GET', 'POST'])
 def newProduct(category_id):
-    if 'username' not in login_session:
-        return redirect('/login')
+    #if 'username' not in login_session:
+    #    return redirect('/login')
     category = session.query(Category).filter_by(id=category_id).one()
-    if login_session['user_id'] != category.user.id:
-        return flash("""You aren't authorized to edit these products.
-        Please log in""")
+    #if login_session['user_id'] != category.user.id:
+    #    return flash("""You aren't authorized to edit these products.
+    #    Please log in""")
     if request.method == 'POST':
         if request.form['image']:
             newItem = Item(
@@ -333,8 +330,8 @@ def newProduct(category_id):
 @app.route('/catalog/categories/<int:category_id>/products/<int:item_id>/edit/',
            methods=['GET', 'POST'])
 def editProduct(category_id, item_id):
-    if 'username' not in login_session:
-        return redirect('/login')
+    #if 'username' not in login_session:
+    #    return redirect('/login')
     editedProduct = session.query(Item).filter_by(id=item_id).one()
     if request.method == 'POST':
         if request.form['name']:
@@ -358,8 +355,8 @@ def editProduct(category_id, item_id):
 @app.route('/catalog/categories/<int:category_id>/products/<int:item_id>/delete/',
            methods=['GET', 'POST'])
 def deleteProduct(category_id, item_id):
-    if 'username' not in login_session:
-        return redirect('/login')
+    #if 'username' not in login_session:
+    #    return redirect('/login')
     deletedProduct = session.query(Item).filter_by(id=item_id).one()
     if request.method == 'POST':
         flash("%s has been successfully deleted!" % deletedProduct.name)
@@ -375,11 +372,11 @@ def deleteProduct(category_id, item_id):
            methods=['GET', 'POST'])
 def detailProduct(category_id, item_id):
     product = session.query(Item).filter_by(id=item_id).one()
-    if 'username' not in login_session:
-        return render_template('public_product_detail.html',
-                               category_id=category_id, item_id=item_id,
-                               product=product)
-    else:
+    #if 'username' not in login_session:
+    #    return render_template('public_product_detail.html',
+    #                           category_id=category_id, item_id=item_id,
+    #                           product=product)
+    #else:
         return render_template('product_detail.html', category_id=category_id,
                                item_id=item_id, product=product)
 
