@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel='stylesheet' type='text/css' href="{{url_for('static',
+      filename='../static/css/catalog_style.css')}}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    {% block content %}
+      {% include "catalog_header.html" %}
+    {% endblock %}
+
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        {% for message in messages %}
+          <div class="flash flash-box-shadow">
+            {{message}}
+          </div>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
+
+    <div class="product-detail-container box-shadow">
+      <div class="product-detail-heading">
+        <p class="product-detail-title">{{product.name}}</p>
+        <a class="product-detail-delete-btn" href="{{url_for('deleteProduct',
+          category_id=product.category_id, item_id=product.id)}}">Delete</a>
+        <a class="product-detail-edit-btn" href="{{url_for('editProduct',
+          category_id=product.category_id, item_id=product.id)}}">Edit</a>
+      </div>
+      <div class="product-detail-contents">
+        <img class="product-detail-img" src="{{product.image}}">
+        <p class="product-description">{{product.description}}</p>
+        <p class="product-detail-price">{{product.price}}</p>
+      </div>
+    </div>
+  </body>
+</html>

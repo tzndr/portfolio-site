@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel='stylesheet' type='text/css' href="{{url_for('static',
+      filename='../static/css/catalog_style.css')}}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    {% block content %}
+      {% include "catalog_header.html" %}
+    {%endblock%}
+
+    {%if products|length == 0%}
+    <div class="product-container box-shadow">
+      <div class="product-heading">
+        <p class="product-title">{{category.name}}</p>
+      </div>
+        <p class="no-products-warning flash-box-shadow">This category is empty.
+          Please log in to add a product.</p>
+      </div>
+    {%else%}
+      <div class="product-container box-shadow">
+        <div class="product-heading">
+          <p class="product-title">{{category.name}}</p>
+        </div>
+        {%for product in products%}
+          <div class="product-items">
+            <a href="{{url_for('detailProduct', item_id=product.id,
+              category_id=category.id)}}">
+            <p class="product-name-text">{{product.name}}</p>
+            <img class="product-img" src="{{product.image}}">
+            <p class="product-price-text">{{product.price}}<p></a>
+          </div>
+        {%endfor%}
+      </div>
+    {%endif%}
+  </body>
+</html>

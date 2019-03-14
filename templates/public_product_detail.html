@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel='stylesheet' type='text/css' href="{{url_for('static',
+      filename='../static/css/catalog_style.css')}}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    {% block content %}
+      {% include "catalog_header.html" %}
+    {%endblock%}
+
+    <div class="product-detail-container box-shadow">
+      <div class="product-detail-heading">
+        <p class="public-product-detail-title">{{product.name}}</p>
+      </div>
+      <div class="product-detail-contents">
+        <img class="product-detail-img" src="{{product.image}}">
+        <p class="product-description">{{product.description}}</p>
+        <p class="product-detail-price">{{product.price}}</p>
+      </div>
+    </div>
+  </body>
+</html>

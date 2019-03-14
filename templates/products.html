@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel='stylesheet' type='text/css' href="{{url_for('static',
+      filename='../static/css/catalog_style.css')}}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    {% block content %}
+      {% include "catalog_header.html" %}
+    {%endblock%}
+
+    {%with messages = get_flashed_messages()%}
+      {%if messages%}
+        {%for message in messages%}
+          <div class="flash flash-box-shadow">
+            {{message}}
+          </div>
+        {%endfor%}
+      {%endif%}
+    {%endwith%}
+
+    {%if products|length == 0%}
+    <div class="product-container box-shadow">
+      <div class="product-heading">
+        <p class="product-title">{{category.name}}</p>
+        <a class="category-delete-btn" href="{{url_for('deleteCategory',
+          category_id=category.id)}}">Delete Category</a>
+        <a class="new-product-confirm-btn" href="{{url_for('newProduct',
+          category_id=category.id)}}">Add New Product</a>
+      </div>
+        <p class="no-products-warning flash-box-shadow">You don't have any products
+          in this category. Please add a product.</p>
+      </div>
+    {%else%}
+      <div class="product-container box-shadow">
+        <div class="product-heading">
+          <p class="product-title">{{category.name}}</p>
+          <a class="category-delete-btn" href="{{url_for('deleteCategory',
+            category_id=category.id)}}">Delete Category</a>
+          <a class="new-product-confirm-btn" href="{{url_for('newProduct',
+            category_id=category.id)}}">Add New Product</a>
+        </div>
+        {%for product in products%}
+          <div class="product-items">
+            <a href="{{url_for('detailProduct', item_id=product.id,
+              category_id=category.id)}}">
+            <p class="product-name-text">{{product.name}}</p>
+            <img class="product-img" src="{{product.image}}">
+            <p class="product-price-text">{{product.price}}<p></a>
+            <a class="product-edit-btn" href="{{url_for('editProduct',
+              category_id=category.id, item_id=product.id)}}">Edit</a>
+            <a class="product-delete-btn" href="{{url_for('deleteProduct',
+                category_id=category.id, item_id=product.id)}}">Delete</a>
+          </div>
+        {%endfor%}
+      </div>
+    {%endif%}
+  </body>
+</html>

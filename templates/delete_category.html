@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel='stylesheet' type='text/css' href="{{url_for('static',
+      filename='../static/css/catalog_style.css')}}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    {% block content %}
+      {% include "catalog_header.html" %}
+    {%endblock%}
+
+    <div class="new-product-container box-shadow">
+      <h1 class="main-title">Delete all items in this category and remove
+        <strong>{{category.name}}</strong> from your catalog?</h1>
+      <form action="{{url_for('deleteCategory', category_id=category_id)}}"
+        method="POST">
+        <br>
+        <input class="delete-btn" type="submit" value="Delete">
+        <a class="standard-btn" href="{{url_for('showProducts',
+          category_id=category_id)}}">Cancel</a>
+      </form>
+    </div>
+  </body>
+</html>

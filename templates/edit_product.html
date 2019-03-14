@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel='stylesheet' type='text/css' href="{{url_for('static',
+      filename='../static/css/catalog_style.css')}}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    {% block content %}
+      {% include "catalog_header.html" %}
+    {%endblock%}
+
+    <div class="new-product-container box-shadow">
+      <h1 class="main-title">Edit {{product.name}}?</h1>
+      <form action="{{url_for('editProduct', category_id=category_id,
+        item_id=product.id)}}" method="POST">
+        <div class="new-product-form">
+          <p class="product-edit-text">Product Name</p>
+          <input class="product-input-box" type="text" value="{{product.name}}"
+            size="50" minlength="13" maxlength="26" name="name">
+          <p class="product-edit-text">Description</p>
+          <input class="product-input-box" type="text" value="{{product.description}}"
+            size="50" minlength="30" maxlength="1000" name="description">
+          <p class="product-edit-text">Image URL</p>
+          <input class="product-input-box" type="url" value="{{product.image}}"
+            size="50" maxlength="250" name="image">
+          <p class="product-edit-text">Price</p>
+          <input class="price-input-box" type="text" value="{{product.price}}" size="15"
+            maxlength="8" name="price">
+        </div>
+        <br>
+        <br>
+        <input class="confirm-btn" type="submit" value="Edit">
+        <a class="standard-btn" href="{{url_for('detailProduct', item_id=item_id,
+          category_id=category_id)}}">Cancel</a>
+      </form>
+    </div>
+  </body>
+</html>

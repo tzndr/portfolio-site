@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel='stylesheet' type='text/css' href="{{url_for('static',
+      filename='../static/css/catalog_style.css')}}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    {% block content %}
+      {% include "catalog_header.html" %}
+    {%endblock%}
+    <div class="new-product-container box-shadow">
+      <h1 class="main-title">Add a New Product to {{category.name}}?</h1>
+
+      <form action="{{url_for('newProduct', category_id=category.id)}}" method="POST">
+        <div class="new-product-form" required>
+          <input class="product-input-box" type="text" placeholder=" New Product Name"
+            size="50" minlength="14" maxlength="26" name="name" required>
+          <input class="product-input-box" type="text" placeholder=" Description"
+            size="50" maxlength="1000" name="description" required>
+          <input class="product-input-box" type="url" placeholder=" Image URL(optional)"
+            size="50" maxlength="250" name="image">
+          <input class="price-input-box" type="text" placeholder=" Price" size="15"
+            maxlength="8" name="price" required>
+        </div>
+        <br>
+        <br>
+        <input class="confirm-btn" type="submit" value="Add">
+        <a class="standard-btn" href="{{url_for('showProducts',
+          category_id=category_id)}}">Cancel</a>
+      </form>
+    </div>
+  </body>
+</html>
