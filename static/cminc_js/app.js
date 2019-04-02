@@ -20,7 +20,7 @@ function initMap() {
         };
 
   roundRockOverlay = new google.maps.GroundOverlay(
-    '../static/cminc_img/round_rock_overlay_3.png', imageBounds);
+    '../static/cminc_img/round_rock_overlay_3-min.png', imageBounds);
     roundRockOverlay.setMap(map);
 
   var ViewModel = function() {
