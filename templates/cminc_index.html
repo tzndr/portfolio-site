@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../static/cminc_css/style.css">
+    <title>Round Rock Interactive Map</title>
+  </head>
+  <body>
+    <div id="map" class="map-canvas"></div>
+
+    <script src="../static/cminc_js/libs/knockout-3.2.0.js"></script>
+    <script src="../static/cminc_js/libs/jquery.min.js"></script>
+    <script src="../static/cminc_js/locations.js"></script>
+    <script src="../static/cminc_js/app.js"></script>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2TAmyKPBNc2JHtEjaEtIezSSSg6_R4zk&libraries=places,drawing,geometry&v=3&callback=initMap"
+      onerror="googleMapsFail()">
+    </script>
+  </body>
+</html>
