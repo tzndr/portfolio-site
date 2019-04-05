@@ -3,16 +3,20 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="../static/cminc_css/style.css">
+    <link rel="stylesheet" type="text/css" href="static/css/cminc_css.css">
     <title>Round Rock Interactive Map</title>
   </head>
   <body>
+    <div class="main-ad-button"
+         data-bind="visible: showMainAd, click: launchMap">Launch Map</div>
+    <img class='main-ad-popup' data-bind="visible: showMainAd, attr: {src: mainAdSelection}">
+    <div class="page-mask" data-bind="visible: showMainAd"></div>
     <div id="map" class="map-canvas"></div>
 
-    <script src="../static/cminc_js/libs/knockout-3.2.0.js"></script>
-    <script src="../static/cminc_js/libs/jquery.min.js"></script>
-    <script src="../static/cminc_js/locations.js"></script>
-    <script src="../static/cminc_js/app.js"></script>
+    <script src="static/js/cminc_js/libs/knockout-3.2.0.js"></script>
+    <script src="static/js/cminc_js/libs/jquery.min.js"></script>
+    <script src="static/js/cminc_js/locations.js"></script>
+    <script src="static/js/cminc_js/app.js"></script>
     <script async defer
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2TAmyKPBNc2JHtEjaEtIezSSSg6_R4zk&libraries=places,drawing,geometry&v=3&callback=initMap"
       onerror="googleMapsFail()">

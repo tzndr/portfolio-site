@@ -1,0 +1,47 @@
+html,
+body {
+ height: 100%;
+ margin: 0;
+ padding: 0;
+}
+
+.map-canvas {
+  height: 100%;
+}
+
+.page-mask {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: rgba(0,0,0,0.6);
+  z-index: 1
+}
+
+.main-ad-popup {
+  position: fixed;
+  top:0; bottom: 0;
+  left: 0; right: 0;
+  width: auto;
+  height: 75%;
+  margin: auto;
+  z-index: 2;
+  border-radius: 4px;
+}
+
+.main-ad-button {
+  position: fixed;
+  width: 180px;
+  bottom: 35px;
+  left: 0; right: 0;
+  margin: auto;
+  text-align: center;
+  padding: 5px 10px 5px 10px;
+  background-color: #0ED854;
+  border-radius: 3px;
+  color: white;
+  font: 21pt bold helvetica, arial;
+  z-index: 2;
+  cursor: pointer;
+}
