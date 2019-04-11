@@ -6,8 +6,9 @@ var locations = [
     phone: '(512)324-5989',
     website: 'https://www.seton.net/locations/seton-medical-center-williamson/',
     category: 'Medical',
-    logo: '',
+    logo: 'static/img/logos/seton_medical.png',
     markerIcon: 'static/img/marker_logos/seton_medical.png',
+    ad: 'static/img/standard_ads/seton_med_williamson.png',
     premium: true
   },
   {
@@ -17,8 +18,9 @@ var locations = [
     phone: '(512)467-8080',
     website: 'https://www.ufcu.org/',
     category: 'Financial',
-    logo: '',
+    logo: 'static/img/logos/ufcu.png',
     markerIcon: 'static/img/marker_logos/ufcu.png',
+    ad: 'static/img/standard_ads/UFCU.png',
     premium: true
   },
   {
@@ -28,8 +30,9 @@ var locations = [
     phone: '(512)502-5286',
     website: 'https://angiesdiscountgrocery.com/',
     category: 'Food & Drink',
-    logo: '',
+    logo: 'static/img/logos/angies.png',
     markerIcon: 'static/img/marker_logos/angies.png',
+    ad: 'static/img/standard_ads/angies.png',
     premium: false
   },
   {
@@ -39,8 +42,9 @@ var locations = [
     phone: '(512)421-4811',
     website: 'https://www.austinregionalclinic.com/clinics/arc-round-rock/',
     category: 'Medical',
-    logo: '',
+    logo: 'static/img/logos/austin_regional.png',
     markerIcon: 'static/img/marker_logos/austin_regional.png',
+    ad: 'static/img/standard_ads/ARC.png',
     premium: false
   },
   {
@@ -50,8 +54,9 @@ var locations = [
     phone: '(512)421-4811',
     website: 'https://www.austinregionalclinic.com/clinics/arc-round-rock/',
     category: 'Medical',
-    logo: '',
+    logo: 'static/img/logos/austin_regional.png',
     markerIcon: 'static/img/marker_logos/austin_regional.png',
+    ad: 'static/img/standard_ads/arc.png',
     premium: false
   },
   {
@@ -61,8 +66,9 @@ var locations = [
     phone: '(512)255-3222',
     webpage: 'https://www.bestwestern.com/en_US/book/hotels-in-round-rock/best-western-executive-inn/propertyCode.44429.html/',
     category: 'Lodging',
-    logo: '',
+    logo: 'static/img/logos/best_western.png',
     markerIcon: 'static/img/marker_logos/best_western.png',
+    ad: 'static/img/standard_ads/best_western.png',
     premium: false
   },
   {
@@ -72,8 +78,9 @@ var locations = [
     phone: '(512)763-3000',
     webpage: 'https://celebration.church/',
     category: 'Religious',
-    logo: '',
+    logo: 'static/img/logos/celebration_church.png',
     markerIcon: 'static/img/marker_logos/celebration_church.png',
+    ad: 'static/img/standard_ads/celebration_church.png',
     premium: false
   },
   {
@@ -83,8 +90,9 @@ var locations = [
     phone: '(512-996-9778',
     webpage: 'https://www.mobilityauthority.com/',
     category: 'Government',
-    logo: '',
+    logo: 'static/img/logos/central_texas_mobility.png',
     markerIcon: 'static/img/marker_logos/central_texas_mobility.png',
+    ad: 'static/img/standard_ads/CTRMA.png',
     premium: false
   },
   {
@@ -94,8 +102,9 @@ var locations = [
     phone: '(512)248-1000',
     webpage: 'https://www.cbac.com/round-rock/',
     category: 'Service',
-    logo: '',
+    logo: 'static/img/logos/christian_brothers.png',
     markerIcon: 'static/img/marker_logos/christian_brothers.png',
+    ad: 'static/img/standard_ads/christian_bros.png',
     premium: false
   },
   {
@@ -105,8 +114,9 @@ var locations = [
     phone: '(512)218-5447',
     webpage: 'https://www.roundrocktexas.gov/',
     category: 'Government',
-    logo: '',
+    logo: 'static/img/logos/city_round_rock.png',
     markerIcon: 'static/img/marker_logos/city_round_rock.png',
+    ad: 'static/img/standard_ads/city_of_round_rock.png',
     premium: false
   },
   {
@@ -116,8 +126,9 @@ var locations = [
     phone: '(512)459-9560',
     webpage: 'https://www.cojocatering.com/',
     category: 'Food & Drink',
-    logo: '',
+    logo: 'static/img/logos/cojo.png',
     markerIcon: 'static/img/marker_logos/cojo.png',
+    ad: 'static/img/standard_ads/cojo.png',
     premium: false
   },
   {
@@ -127,8 +138,9 @@ var locations = [
     phone: '(512)250-2380',
     webpage: 'http://cynergydatatexas.com/',
     category: 'Service',
-    logo: '',
+    logo: 'static/img/logos/cynergy_data.png',
     markerIcon: 'static/img/marker_logos/cynergy_data.png',
+    ad: 'static/img/standard_ads/cynergy_data.png',
     premium: false
   },
   {
@@ -138,8 +150,9 @@ var locations = [
     phone: '(512)246-7000',
     webpage: 'https://www.holidayinn.com/hotels/us/en/find-hotels/hotel/list?qDest=Round%20Rock,%20TX,%20United%20States&qCiMy=12019&qCiD=21&qCoMy=12019&qCoD=22&qAdlt=1&qChld=0&qRms=1&qRtP=6CBARC&qIta=99504425&qAkamaiCC=US&qSrt=sBR&qBrs=re.ic.in.vn.cp.vx.hi.ex.rs.cv.sb.cw.ma.ul.ki.va&srb_u=1&setPMCookies=true&glat=SEAR&qRad=30&qRdU=mi',
     category: 'Lodging',
-    logo: '',
+    logo: 'static/img/logos/holiday_inn.png',
     markerIcon: 'static/img/marker_logos/holiday_inn.png',
+    ad: 'static/img/standard_ads/holiday_inn.png',
     premium: false
   },
   {
@@ -149,8 +162,9 @@ var locations = [
     phone: '(512)660-5230',
     webpage: 'https://www.mwschool.org/',
     category: 'Education',
-    logo: '',
+    logo: 'static/img/logos/meridian_school.png',
     markerIcon: 'static/img/marker_logos/meridian_school.png',
+    ad: 'static/img/standard_ads/meridian.png',
     premium: false
   },
   {
@@ -160,8 +174,9 @@ var locations = [
     phone: '(512)-943-4703',
     webpage: 'https://novakbros.com/',
     category: 'Real Estate',
-    logo: '',
+    logo: 'static/img/logos/novak.png',
     markerIcon: 'static/img/marker_logos/novak.png',
+    ad: 'static/img/standard_ads/novak_bros.png',
     premium: false
   },
   {
@@ -171,8 +186,9 @@ var locations = [
     phone: '(737)202-9095',
     webpage: 'https://www.homeadvisor.com/rated.OCPDCleaningWith.70997242.html/',
     category: 'Service',
-    logo: '',
+    logo: 'static/img/logos/ocpd.png',
     markerIcon: 'static/img/marker_logos/ocpd.png',
+    ad: 'static/img/standard_ads/ocpd.png',
     premium: false
   },
   {
@@ -182,8 +198,9 @@ var locations = [
     phone: '(512)825-8808',
     webpage: 'https://mdpremier.com/round-rock-emergency-room/',
     category: 'Medical',
-    logo: '',
+    logo: 'static/img/logos/physician_premier.png',
     markerIcon: 'static/img/marker_logos/physician_premier.png',
+    ad: 'static/img/standard_ads/physicians_premier.png',
     premium: false
   },
   {
@@ -193,8 +210,9 @@ var locations = [
     phone: '(512)815-7959',
     webpage: 'http://piejacked.wixsite.com/glutenfreepies/menu/',
     category: 'Food & Drink',
-    logo: '',
+    logo: 'static/img/logos/pie_jacked.png',
     markerIcon: 'static/img/marker_logos/pie_jacked.png',
+    ad: 'static/img/standard_ads/pie_jacked.png',
     premium: false
   },
   {
@@ -204,8 +222,9 @@ var locations = [
     phone: '(512)246-0055',
     webpage: 'https://www.choicehotels.com/texas/round-rock/quality-inn-hotels/tx705?mc=smgogousqil&cid=Search%7CQuality_Inn%7CUS%7CTexas%7CExact%7CCPC%7CDesktop%7CEN%7CB_G&ag=US%7CTX%7CRound%20Rock&pmf=GOOGLE&kw=quality%20inn%20round%20rock&gclid=Cj0KCQiAtbnjBRDBARIsAO3zDl8jLz8i90pXS54s9g-UoCj5yoFLxBllLFQXT1I-gmJ8RheYxXraU2YaAklzEALw_wcB&gclsrc=aw.ds',
     category: 'Lodging',
-    logo: '',
+    logo: 'static/img/logos/quality_inn.png',
     markerIcon: 'static/img/marker_logos/quality_inn.png',
+    ad: 'static/img/standard_ads/quality_inn.png',
     premium: false
   },
   {
@@ -215,8 +234,9 @@ var locations = [
     phone: '(512)310-8027',
     webpage: 'https://www.ikea.com/us/en/store/round_rock/',
     category: 'Retail',
-    logo: '',
+    logo: 'static/img/logos/ikea.png',
     markerIcon: 'static/img/marker_logos/ikea.png',
+    ad: 'static/img/standard_ads/ikea.png',
     premium: false
   },
   {
@@ -226,8 +246,9 @@ var locations = [
     phone: '(512)610-3990',
     webpage: 'https://karavelshoes.com/',
     category: 'Retail',
-    logo: '',
+    logo: 'static/img/logos/karavel.png',
     markerIcon: 'static/img/marker_logos/karavel.png',
+    ad: 'static/img/standard_ads/karavel.png',
     premium: false
   },
   {
@@ -237,8 +258,9 @@ var locations = [
     phone: '(512)751-4834',
     webpage: 'https://www.kw.com/kw/GetAgent.action?personId=132558/',
     category: 'Real Estate',
-    logo: '',
+    logo: 'static/img/logos/keller_williams.png',
     markerIcon: 'static/img/marker_logos/keller_williams.png',
+    ad: 'static/img/standard_ads/KW_tara.png',
     premium: false
   },
   {
@@ -248,8 +270,9 @@ var locations = [
     phone: '(512)469-0925',
     webpage: 'http://www.graniteproperties.com/',
     category: 'Real Estate',
-    logo: '',
+    logo: 'static/img/logos/la_frontera.png',
     markerIcon: 'static/img/marker_logos/la_frontera.png',
+    ad: 'static/img/standard_ads/la_frontera.png',
     premium: false
   },
   {
@@ -259,8 +282,9 @@ var locations = [
     phone: '(512)837-8034',
     webpage: 'https://www.localplumbingservice.org/',
     category: 'Service',
-    logo: '',
+    logo: 'static/img/logos/local_plumbing.png',
     markerIcon: 'static/img/marker_logos/local_plumbing.png',
+    ad: 'static/img/standard_ads/local_plumbing.png',
     premium: false
   },
   {
@@ -270,8 +294,9 @@ var locations = [
     phone: '(713)823-5896',
     webpage: 'https://www.remax.com/realestateagentoffice/cedarpark-tx-78613-cathykinney-id28973375.html/',
     category: 'Real Estate',
-    logo: '',
+    logo: 'static/img/logos/remax_cathy.png',
     markerIcon: 'static/img/marker_logos/remax_cathy.png',
+    ad: 'static/img/standard_ads/remax_cathy.png',
     premium: false
   },
   {
@@ -281,8 +306,9 @@ var locations = [
     phone: '(512)590-1833',
     webpage: 'https://www.realtytexas.homes/',
     category: 'Real Estate',
-    logo: '',
+    logo: 'static/img/logos/realty_texas.png',
     markerIcon: 'static/img/marker_logos/realty_texas.png',
+    ad: 'static/img/standard_ads/realty_texas.png',
     premium: false
   },
   {
@@ -292,8 +318,9 @@ var locations = [
     phone: '(512)645-0823',
     webpage: 'http://www.rejuviyouth.com/',
     category: 'Health & Wellness',
-    logo: '',
+    logo: 'static/img/logos/rejuvi.png',
     markerIcon: 'static/img/marker_logos/rejuvi.png',
+    ad: 'static/img/standard_ads/rejuvi.png',
     premium: false
   },
   {
@@ -303,8 +330,9 @@ var locations = [
     phone: '(512)255-5805',
     webpage: 'https://roundrockchamber.org/',
     category: 'Government',
-    logo: '',
+    logo: 'static/img/logos/round_rock_chamber.png',
     markerIcon: 'static/img/marker_logos/round_rock_chamber.png',
+    ad: 'static/img/standard_ads/chamber.png',
     premium: false
   },
   {
@@ -314,8 +342,9 @@ var locations = [
     phone: '(512)255-4491',
     webpage: 'https://www.rrca-tx.org/',
     category: 'Education',
-    logo: '',
+    logo: 'static/img/logos/round_rock_christian.png',
     markerIcon: 'static/img/marker_logos/round_rock_christian.png',
+    ad: 'static/img/standard_ads/round_rock_christian.png',
     premium: false
   },
   {
@@ -325,8 +354,9 @@ var locations = [
     phone: '(512)733-7874',
     webpage: 'https://www.myrushauto.com/',
     category: 'Service',
-    logo: '',
+    logo: 'static/img/logos/rush_auto.png',
     markerIcon: 'static/img/marker_logos/rush_auto.png',
+    ad: 'static/img/standard_ads/rush_auto.png',
     premium: false
   },
   {
@@ -336,8 +366,9 @@ var locations = [
     phone: '(512)634-3003',
     webpage: 'https://senior-care-centers.com/find-a-community/austin-central-texas/trinity-care-center/',
     category: 'Medical',
-    logo: '',
+    logo: 'static/img/logos/senior_care.png',
     markerIcon: 'static/img/marker_logos/senior_care.png',
+    ad: 'static/img/standard_ads/trinity_care.png',
     premium: false
   },
   {
@@ -347,8 +378,9 @@ var locations = [
     phone: '(512)733-1111',
     webpage: 'https://skinnybobs.com/',
     category: 'Entertainment',
-    logo: '',
+    logo: 'static/img/logos/skinny_bobs.png',
     markerIcon: 'static/img/marker_logos/skinny_bobs.png',
+    ad: 'static/img/standard_ads/skinny_bobs.png',
     premium: false
   },
   {
@@ -358,8 +390,9 @@ var locations = [
     phone: '(512)640-1052',
     webpage: 'https://www.speedpro.com/solutions-tx/',
     category: 'Service',
-    logo: '',
+    logo: 'static/img/logos/speed_pro.png',
     markerIcon: 'static/img/marker_logos/speed_pro.png',
+    ad: 'static/img/standard_ads/speed_pro.png',
     premium: false
   },
   {
@@ -369,8 +402,9 @@ var locations = [
     phone: '(512)359-5449',
     webpage: 'https://teriyakimadness.com/locations/roundrock/',
     category: 'Food & Drink',
-    logo: '',
+    logo: 'static/img/logos/teriyaki.png',
     markerIcon: 'static/img/marker_logos/teriyaki.png',
+    ad: 'static/img/standard_ads/teriyaki_madness.png',
     premium: false
   },
   {
@@ -380,8 +414,9 @@ var locations = [
     phone: '(512)589-2931',
     webpage: 'http://www.txspanishacademy.com/',
     category: 'Education',
-    logo: '',
+    logo: 'static/img/logos/tx_spanish_school.png',
     markerIcon: 'static/img/marker_logos/tx_spanish_school.png',
+    ad: 'static/img/standard_ads/texas_spanish_academy.png',
     premium: false
   },
   {
@@ -391,8 +426,9 @@ var locations = [
     phone: '512-954-7177',
     webpage: 'https://www.brasstapbeerbar.com/RoundRock',
     category: 'Food & Drink',
-    logo: '',
+    logo: 'static/img/logos/brass_tap.png',
     markerIcon: 'static/img/marker_logos/brass_tap.png',
+    ad: 'static/img/standard_ads/brass_tap.png',
     premium: false
   },
   {
@@ -402,8 +438,9 @@ var locations = [
     phone: '(512)218-0311',
     webpage: 'https://locations.theupsstore.com/tx/round-rock/402-a-west-palm-valley-blvd/',
     category: 'Service',
-    logo: '',
+    logo: 'static/img/logos/ups.png',
     markerIcon: 'static/img/marker_logos/ups.png',
+    ad: 'static/img/standard_ads/ups_1394.png',
     premium: false
   },
   {
@@ -413,8 +450,9 @@ var locations = [
     phone: '(512)943-1647',
     webpage: 'http://williamsonmuseum.org/',
     category: 'Education',
-    logo: '',
+    logo: 'static/img/logos/williamson.png',
     markerIcon: 'static/img/marker_logos/williamson.png',
+    ad: 'static/img/standard_ads/williamson_museum.png',
     premium: false
   },
   {
@@ -424,8 +462,9 @@ var locations = [
     phone: '(512)-255-1600',
     webpage: 'http://www.tntfinancial.com/',
     category: 'Financial',
-    logo: '',
+    logo: 'static/img/logos/tnt.png',
     markerIcon: 'static/img/marker_logos/tnt.png',
+    ad: 'static/img/standard_ads/tnt.png',
     premium: false
   },
   {
@@ -435,8 +474,9 @@ var locations = [
     phone: '512-672-4431',
     webpage: 'https://ubeo.com/',
     category: 'Service',
-    logo: '',
+    logo: 'static/img/logos/ubeo.png',
     markerIcon: 'static/img/marker_logos/ubeo.png',
+    ad: 'static/img/standard_ads/ubeo.png',
     premium: false
   },
   {
@@ -446,8 +486,9 @@ var locations = [
     phone: '(512)435-4545',
     webpage: 'https://www.uhcu.org/',
     category: 'Financial',
-    logo: '',
+    logo: 'static/img/logos/united_heritage.png',
     markerIcon: 'static/img/marker_logos/united_heritage.png',
+    ad: 'static/img/standard_ads/united_heritage.png',
     premium: false
   },
   {
@@ -457,8 +498,9 @@ var locations = [
     phone: '(512)576-6800',
     webpage: 'https://www.ushagent.com/JimmyWeaver/',
     category: 'Medical',
-    logo: '',
+    logo: 'static/img/logos/us_health.png',
     markerIcon: 'static/img/marker_logos/us_health.png',
+    ad: 'static/img/standard_ads/us_health_advisors.png',
     premium: false
   },
   {
@@ -468,8 +510,9 @@ var locations = [
     phone: '(512)310-9277',
     webpage: 'https://vhacpa.com/',
     category: 'Service',
-    logo: '',
+    logo: 'static/img/logos/van_houten.png',
     markerIcon: 'static/img/marker_logos/van_houten.png',
+    ad: 'static/img/standard_ads/van_houten.png',
     premium: false
   },
   {
@@ -479,8 +522,9 @@ var locations = [
     phone: '(512)218-1018',
     webpage: 'https://www.walmart.com/store/5480/round-rock-tx/details/',
     category: 'Retail',
-    logo: '',
+    logo: 'static/img/logos/walmart.png',
     markerIcon: 'static/img/marker_logos/walmart.png',
+    ad: 'static/img/standard_ads/walmart.png',
     premium: false
   },
   {
@@ -490,8 +534,9 @@ var locations = [
     phone: '(512)255-1015',
     webpage: 'http://webreins.com/',
     category: 'Service',
-    logo: '',
+    logo: 'static/img/logos/webre.png',
     markerIcon: 'static/img/marker_logos/webre.png',
+    ad: 'static/img/standard_ads/webre.png',
     premium: false
   },
   {
@@ -501,8 +546,9 @@ var locations = [
     phone: '(512)636-9106',
     webpage: 'https://www.wyndhamhotels.com/wingate/round-rock-texas/wingate-by-wyndham-round-rock/overview?CID=LC:WG::GGL:RIO:National:09220&iata=00065402/',
     category: 'Lodging',
-    logo: '',
+    logo: 'static/img/logos/wingate.png',
     markerIcon: 'static/img/marker_logos/wingate.png',
+    ad: 'static/img/standard_ads/wingate.png',
     premium: false
   }
 ];

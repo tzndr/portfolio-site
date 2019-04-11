@@ -8,14 +8,62 @@
   </head>
   <body>
     <div class="main-ad-button"
-         data-bind="visible: showMainAd, click: launchMap">Launch Map</div>
-    <img class='main-ad-popup' data-bind="visible: showMainAd, attr: {src: mainAdSelection}">
-    <div class="page-mask" data-bind="visible: showMainAd"></div>
+         data-bind="visible: showPremiumAd, click: launchMap">Launch Map</div>
+    <img class='main-ad-popup'
+         data-bind="visible: showPremiumAd, attr: {src: premiumAdSelection}">
+    <div class="page-mask" data-bind="visible: showPremiumAd"></div>
+
     <div id="map" class="map-canvas"></div>
+    <img class="grapevine-logo" src="static/img/RRTX_logo.png"
+         data-bind="visible: togglePanels">
+
+    <div class="filter-container box-shadow" data-bind="visible: togglePanels">
+      <div class="category-filter">
+        <select id="category-selection"
+                class="search-field"
+                data-bind="options: categories,
+                           optionsCaption: 'Categories',
+                           value: chosenCategory,
+                           event: {change: categorySearch}">
+        </select>
+      </div>
+
+      <div class="location-filter">
+        <select id="location-selection"
+                class="search-field"
+                data-bind="options: locationList,
+                           optionsText: 'title',
+                           optionsCaption: 'Locations',
+                           value: chosenLocation,
+                           event: {change: locationSelection}">
+        </select>
+      </div>
+
+      <div class="poi-filter">
+        <select id="location-selection"
+                class="search-field"
+                data-bind="options: poiCategories,
+                           optionsCaption: 'Points of Interest',
+                           value: chosenPOI,
+                           event: {change: poiCategorySearch}">
+        </select>
+      </div>
+    </div>
+    <!--<div class="hide-panels-btn" data-bind="text: togglePanelsText"></div>-->
+    <div class="directions-btn" data-bind="visible: togglePanels">Directions</div>
+    <div class="top-pane" data-bind="visible: togglePanelLocationList">
+      <ul class="panel-list" data-bind="foreach: panelLocationList, visible: togglePanelLocationList">
+        <li id="panel-company" class="panel-list-item"
+            data-bind="text: title">
+      </ul>
+    </div>
+    <!--<div class="right-pane"></div>-->
 
     <script src="static/js/cminc_js/libs/knockout-3.2.0.js"></script>
     <script src="static/js/cminc_js/libs/jquery.min.js"></script>
     <script src="static/js/cminc_js/locations.js"></script>
+    <script src="static/js/cminc_js/model.js"></script>
+    <script src="static/js/cminc_js/points_of_interest.js"></script>
     <script src="static/js/cminc_js/app.js"></script>
     <script async defer
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2TAmyKPBNc2JHtEjaEtIezSSSg6_R4zk&libraries=places,drawing,geometry&v=3&callback=initMap"
