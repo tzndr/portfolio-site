@@ -44,7 +44,7 @@ var locations = [
     category: 'Medical',
     logo: 'static/img/logos/austin_regional.png',
     markerIcon: 'static/img/marker_logos/austin_regional.png',
-    ad: 'static/img/standard_ads/ARC.png',
+    ad: 'static/img/standard_ads/arc.png',
     premium: false
   },
   {
