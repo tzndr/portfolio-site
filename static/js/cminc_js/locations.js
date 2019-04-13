@@ -416,7 +416,7 @@ var locations = [
     category: 'Education',
     logo: 'static/img/logos/tx_spanish_school.png',
     markerIcon: 'static/img/marker_logos/tx_spanish_school.png',
-    ad: 'static/img/standard_ads/texas_spanish_academy.png',
+    ad: 'static/img/standard_ads/tx_spanish_academy.png',
     premium: false
   },
   {

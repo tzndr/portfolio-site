@@ -33,7 +33,7 @@
                 class="search-field"
                 data-bind="options: locationList,
                            optionsText: 'title',
-                           optionsCaption: 'Locations',
+                           optionsCaption: 'All Locations',
                            value: chosenLocation,
                            event: {change: locationSelection}">
         </select>
@@ -51,13 +51,38 @@
     </div>
     <!--<div class="hide-panels-btn" data-bind="text: togglePanelsText"></div>-->
     <div class="directions-btn" data-bind="visible: togglePanels">Directions</div>
-    <div class="top-pane" data-bind="visible: togglePanelLocationList">
-      <ul class="panel-list" data-bind="foreach: panelLocationList, visible: togglePanelLocationList">
+
+    <div class="top-pane" data-bind="visible: togglePOIPanelLocationList">
+      <ul class="panel-list" data-bind="foreach: POIPanelLocationList, visible: togglePOIPanelLocationList">
         <li id="panel-company" class="panel-list-item"
-            data-bind="text: title">
+            data-bind="text: title, click: $parent.poiSelection">
       </ul>
     </div>
-    <!--<div class="right-pane"></div>-->
+    <div class="top-pane" data-bind="visible: toggleBizPanelLocationList">
+      <ul class="panel-list" data-bind="foreach: bizPanelLocationList, visible: toggleBizPanelLocationList">
+        <li id="panel-company" class="panel-list-item"
+            data-bind="text: title, click: $parent.bizSelection">
+      </ul>
+    </div>
+    <div class="bottom-pane-biz" data-bind="visible: toggleInfoPanelBiz">
+      <img class="location-logo" data-bind="attr: {src: locationLogo}"></img>
+      <div class="location-info">
+        <p class="location-info-text-title" data-bind="text: locationName"></p>
+        <p class="location-info-text-address" data-bind="text: locationAddress"></p>
+        <p class="location-info-text-phone" data-bind="text: locationPhone"></p>
+        <div class="location-website-btn" data-bind="attr: {href: locationWebsite}">Visit Website</div>
+      </div>
+      <img class="location-ad" data-bind="attr: {src: locationAd}">
+    </div>
+
+    <div class="bottom-pane-POI" data-bind="visible: toggleInfoPanelPOI">
+      <div class="location-info">
+        <p class="location-info-text-title" data-bind="text: locationName"></p>
+        <p class="location-info-text-address" data-bind="text: locationAddress"></p>
+        <p class="location-info-text-phone" data-bind="text: locationPhone"></p>
+        <div class="location-website-btn" data-bind="attr: {href: locationWebsite}">Visit Website</div>
+      </div>
+    </div>
 
     <script src="static/js/cminc_js/libs/knockout-3.2.0.js"></script>
     <script src="static/js/cminc_js/libs/jquery.min.js"></script>

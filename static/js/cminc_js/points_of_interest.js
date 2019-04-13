@@ -226,7 +226,7 @@ var pointsOfInterest = [
   },
   {
     title: 'Henry S. McNeil Park',
-    location: {lat: 0.554269, lng: -97.691891},
+    location: {lat: 30.554269, lng: -97.691891},
     address: 'McNeil Park, N Interstate 35 Frontage Rd, Round Rock, TX 78665',
     phone: '(512)218-5540',
     website: 'https://www.roundrocktexas.gov/departments/parks-and-recreation/parks-trails/parks/mcneil-park/',
@@ -514,7 +514,7 @@ var pointsOfInterest = [
   },
   {
     title: 'Caldwell Heights Elementary',
-    location: {lat: 30.565242, lng: 97.66863},
+    location: {lat: 30.565242, lng: -97.66863},
     address: '4010 Eagles Nest St Round Rock, TX 78665',
     phone: '(512)428-7300',
     website: 'https://roundrockisd.org/schools/elementary/caldwell-heights/',

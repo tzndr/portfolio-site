@@ -171,8 +171,83 @@ body {
   padding-bottom: 3px;
 }
 
-.location-ad-pane {
-  width: 200px;
+.bottom-pane-biz {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  margin: auto;
+  width: 90%;
+  height: 20%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+  overflow-y: auto;
+  text-align: center;
+  padding-bottom: 3px;
+  border-radius: 3px;
+}
+
+.bottom-pane-POI {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  margin: auto;
+  width: 50%;
+  height: 20%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+  overflow-y: auto;
+  text-align: center;
+  padding-bottom: 3px;
+  border-radius: 3px;
+}
+
+.location-ad {
+  height: 100%;
+  background-color: white;
+  margin-left: auto;
+  order: 2;
+}
+
+.location-logo {
+  height: 100%;
+  max-width: 450px;
+  margin-right: auto;
+}
+
+.location-info {
+  height: 100%;
+  text-align: center;
+  margin: auto;
+}
+
+.location-info-text-title {
+  font: 22pt bold impact, arial black;
+  color: white;
+  margin: auto;
+}
+
+.location-info-text-address {
+  font: 18pt bold helvetica, arial;
+  color: white;
+  margin: 20px auto 10px auto;
+}
+
+.location-info-text-phone {
+  font: 18pt bold helvetica, arial;
+  color: white;
+  margin: auto;
+}
+
+.location-website-btn {
+  font: 18pt bold helvetica, arial;
+  background-color: #E51515;
+  color: white;
+  width: 160px;
+  padding: 5px 0 5px 0;
+  margin: 20px auto auto auto;
+  border-radius: 3px;
 }
 
 .panel-list {
@@ -197,13 +272,4 @@ body {
 .panel-list-item:hover {
   color: white;
   background-color: #E51515;
-}
-
-.right-pane {
-  position: fixed;
-  right: 0; top: 0; bottom: 0;
-  margin: auto;
-  width: 200px;
-  height: 75%;
-  background-color: rgba(0, 0, 0, 0.3);
 }
