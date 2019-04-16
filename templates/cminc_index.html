@@ -70,7 +70,8 @@
         <p class="location-info-text-title" data-bind="text: locationName"></p>
         <p class="location-info-text-address" data-bind="text: locationAddress"></p>
         <p class="location-info-text-phone" data-bind="text: locationPhone"></p>
-        <div class="location-website-btn" data-bind="attr: {href: locationWebsite}">Visit Website</div>
+        <div class="location-website-btn" data-bind="click: openWesite">Visit Website</div>
+        <div class="location-zoom-btn" data-bind="click: zoomLocation, text: zoomButtonText"></div>
       </div>
       <img class="location-ad" data-bind="attr: {src: locationAd}">
     </div>
@@ -80,7 +81,8 @@
         <p class="location-info-text-title" data-bind="text: locationName"></p>
         <p class="location-info-text-address" data-bind="text: locationAddress"></p>
         <p class="location-info-text-phone" data-bind="text: locationPhone"></p>
-        <div class="location-website-btn" data-bind="attr: {href: locationWebsite}">Visit Website</div>
+        <div class="location-website-btn" data-bind="click: openWesite">Visit Website</div>
+        <div class="location-zoom-btn" data-bind="click: zoomLocation, text: zoomButtonText">Zoom</div>
       </div>
     </div>
 
