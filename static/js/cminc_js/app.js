@@ -7,6 +7,8 @@ function initMap() {
     center: {lat: 30.525316, lng:-97.672594},
     zoom: 12.7,
     mapTypeControl: false,
+    minZoom: 6,
+    maxZoom: 17,
     zoomControlOptions: {
                     style: google.maps.ZoomControlStyle.SMALL,
                     position: google.maps.ControlPosition.RIGHT_CENTER
@@ -19,11 +21,11 @@ function initMap() {
   locations = locations;
 
   var imageBounds = {
-        north: 30.5855,
-        south: 30.4625,
-        east: -97.5818,
-        west: -97.7677
-      };
+          north: 30.5855,
+          south: 30.4625,
+          east: -97.5818,
+          west: -97.7677
+        };
 
   roundRockOverlay = new google.maps.GroundOverlay(
     'static/img/round_rock_overlay_4.jpg', imageBounds);
