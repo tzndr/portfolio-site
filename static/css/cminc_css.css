@@ -181,7 +181,6 @@ body {
   height: 20%;
   color: white;
   background-color: rgba(0, 0, 0, 0.3);
-  overflow-y: auto;
   text-align: center;
   padding-bottom: 3px;
   border-radius: 3px;
@@ -198,7 +197,6 @@ body {
   height: 20%;
   color: white;
   background-color: rgba(0, 0, 0, 0.3);
-  overflow-y: auto;
   text-align: center;
   padding-bottom: 3px;
   border-radius: 3px;
@@ -206,6 +204,8 @@ body {
 
 .location-ad {
   height: 100%;
+  width: 25%;
+  max-width: 400px;
   background-color: white;
   margin-left: auto;
   order: 2;
@@ -213,6 +213,7 @@ body {
 
 .logo-container {
   width: 25%;
+  max-width: 400px;
   height: 100%;
   margin-right: auto;
   text-align: center;
