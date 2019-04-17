@@ -19,14 +19,14 @@ function initMap() {
   locations = locations;
 
   var imageBounds = {
-          north: 30.58635,
-          south: 30.461,
-          east: -97.5809,
-          west: -97.7683
-        };
+        north: 30.5855,
+        south: 30.4625,
+        east: -97.5818,
+        west: -97.7677
+      };
 
   roundRockOverlay = new google.maps.GroundOverlay(
-    'static/img/round_rock_overlay_4.png', imageBounds);
+    'static/img/round_rock_overlay_4.jpg', imageBounds);
     roundRockOverlay.setMap(map);
 
   function makeMarkerIcon(logo) {
