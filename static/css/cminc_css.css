@@ -149,7 +149,7 @@ body {
   text-align: center;
   padding: 5px 0;
   width: 125px;
-  background-color: #0E95D8;
+  background-color: #21497E;
   border-radius: 3px;
   color: white;
   font: 14pt bold helvetica, arial;
@@ -211,10 +211,16 @@ body {
   order: 2;
 }
 
+.logo-container {
+  width: 25%;
+  height: 100%;
+  margin-right: auto;
+  text-align: center;
+}
+
 .location-logo {
   height: 100%;
-  max-width: 35%;
-  margin-right: auto;
+  max-width: 100%;
 }
 
 .location-info {
@@ -244,7 +250,7 @@ body {
 .location-website-btn {
   display: inline-block;
   font: 18pt bold helvetica, arial;
-  background-color: #E51515;
+  background-color: #AF3C27;
   color: white;
   width: 160px;
   padding: 5px 0 5px 0;
@@ -256,7 +262,7 @@ body {
 .location-zoom-btn {
   display: inline-block;
   font: 18pt bold helvetica, arial;
-  color: #E51515;
+  color: #A8402D;
   background-color: white;
   width: 160px;
   padding: 5px 0 5px 0;

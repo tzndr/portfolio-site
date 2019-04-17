@@ -488,11 +488,11 @@ function initMap() {
     this.zoomLocation = function() {
       for (var i = 0; i < markers.length; i++) {
         if (self.locationName() === markers[i].title) {
-          markers[i].setAnimation(google.maps.Animation.BOUNCE);
+          //markers[i].setAnimation(google.maps.Animation.BOUNCE);
           if (self.zoomButtonText() === 'Zoom') {
-            self.zoomButtonText('Pan Out');
             map.panTo(markers[i].position);
             map.setZoom(15);
+            self.zoomButtonText('Pan Out');
           } else {
             map.setZoom(12.7);
             self.zoomButtonText('Zoom');
@@ -501,13 +501,16 @@ function initMap() {
           //self.populateInfoWindow(markers[i], mainInfoWindow);
         }
       }
+    };
+
+    this.zoomPOI = function() {
       for (var j = 0; j < poiMarkers.length; j++) {
         if (self.locationName() === poiMarkers[j].title) {
-          poiMarkers[j].setAnimation(google.maps.Animation.BOUNCE);
+          //poiMarkers[j].setAnimation(google.maps.Animation.BOUNCE);
           if (self.zoomButtonText() === 'Zoom') {
-            self.zoomButtonText('Pan Out');
             map.panTo(poiMarkers[j].position);
             map.setZoom(15);
+            self.zoomButtonText('Pan Out');
           } else {
             map.setZoom(12.7);
             self.zoomButtonText('Zoom');

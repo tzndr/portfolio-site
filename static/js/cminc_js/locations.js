@@ -498,7 +498,7 @@ var locations = [
     phone: '(512)576-6800',
     website: 'https://www.ushagent.com/JimmyWeaver/',
     category: 'Medical',
-    logo: 'static/img/logos/us_health.png',
+    logo: 'static/img/logos/us_health_2.png',
     markerIcon: 'static/img/marker_logos/us_health.png',
     ad: 'static/img/standard_ads/us_health_advisors.png',
     premium: false

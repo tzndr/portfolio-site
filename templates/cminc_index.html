@@ -65,7 +65,9 @@
       </ul>
     </div>
     <div class="bottom-pane-biz" data-bind="visible: toggleInfoPanelBiz">
-      <img class="location-logo" data-bind="attr: {src: locationLogo}"></img>
+      <div class="logo-container">
+        <img class="location-logo" data-bind="attr: {src: locationLogo}"></img>
+      </div>
       <div class="location-info">
         <p class="location-info-text-title" data-bind="text: locationName"></p>
         <p class="location-info-text-address" data-bind="text: locationAddress"></p>
@@ -82,7 +84,7 @@
         <p class="location-info-text-address" data-bind="text: locationAddress"></p>
         <p class="location-info-text-phone" data-bind="text: locationPhone"></p>
         <div class="location-website-btn" data-bind="click: openWesite">Visit Website</div>
-        <div class="location-zoom-btn" data-bind="click: zoomLocation, text: zoomButtonText">Zoom</div>
+        <div class="location-zoom-btn" data-bind="click: zoomPOI, text: zoomButtonText">Zoom</div>
       </div>
     </div>
 
