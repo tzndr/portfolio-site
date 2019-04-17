@@ -231,8 +231,12 @@ body {
 
 .location-info-text-title {
   font: 22pt bold impact, arial black;
-  color: white;
+  color: #21497E;
+  background-color: white;
   margin: auto;
+  text-align: center;
+  border-radius: 0 0 3px 3px;
+  padding: 0 10px 0 10px;
 }
 
 .location-info-text-address {
