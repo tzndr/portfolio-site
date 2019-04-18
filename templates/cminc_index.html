@@ -14,10 +14,10 @@
     <div class="page-mask" data-bind="visible: showPremiumAd"></div>
 
     <div id="map" class="map-canvas"></div>
-    <img class="round-rock-logo" src="static/img/RRTX_logo.png"
-         data-bind="visible: togglePanels">
 
     <div class="filter-container box-shadow" data-bind="visible: togglePanels">
+      <img class="round-rock-logo" src="static/img/RRTX_logo.png"
+           data-bind="visible: togglePanels">
       <div class="category-filter">
         <select id="category-selection"
                 class="search-field"
@@ -50,7 +50,6 @@
       </div>
     </div>
     <!--<div class="hide-panels-btn" data-bind="text: togglePanelsText"></div>-->
-    <div class="directions-btn" data-bind="visible: togglePanels">Directions</div>
 
     <div class="top-pane" data-bind="visible: togglePOIPanelLocationList">
       <ul class="panel-list" data-bind="foreach: POIPanelLocationList, visible: togglePOIPanelLocationList">
@@ -74,6 +73,7 @@
         <p class="location-info-text-phone" data-bind="text: locationPhone"></p>
         <div class="location-website-btn" data-bind="click: openWesite">Visit Website</div>
         <div class="location-zoom-btn" data-bind="click: zoomLocation, text: zoomButtonText"></div>
+        <div class="directions-btn" data-bind="visible: togglePanels">Directions</div>
       </div>
       <img class="location-ad" data-bind="attr: {src: locationAd}">
     </div>
@@ -85,6 +85,7 @@
         <p class="location-info-text-phone" data-bind="text: locationPhone"></p>
         <div class="location-website-btn" data-bind="click: openWesite">Visit Website</div>
         <div class="location-zoom-btn" data-bind="click: zoomPOI, text: zoomButtonText">Zoom</div>
+        <div class="directions-btn" data-bind="visible: togglePanels">Directions</div>
       </div>
     </div>
 
