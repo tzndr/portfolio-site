@@ -82,7 +82,7 @@ body {
 }
 
 .panel-filter-text {
-  font: 14pt bold helvetica, arial;
+  font: 14pt helvetica, arial;
   margin: 0;
 }
 
@@ -136,7 +136,7 @@ body {
   background-color: #21497E;
   border-radius: 3px;
   color: white;
-  font: 14pt bold helvetica, arial;
+  font: 14pt helvetica, arial;
   margin: 4px 0 0 0;
   cursor: pointer;
 }
@@ -213,7 +213,7 @@ body {
 }
 
 .location-info-text-title {
-  font: 22pt bold impact, arial black;
+  font: 22pt impact, arial black;
   color: #21497E;
   background-color: white;
   margin: auto;
@@ -223,13 +223,13 @@ body {
 }
 
 .location-info-text-address {
-  font: 18pt bold helvetica, arial;
+  font: bold 17pt helvetica, arial;
   color: white;
   margin: 20px auto 10px auto;
 }
 
 .location-info-text-phone {
-  font: 18pt bold helvetica, arial;
+  font: bold 17pt helvetica, arial;
   color: white;
   margin: auto;
 }
@@ -241,7 +241,7 @@ body {
   color: white;
   width: 160px;
   padding: 5px 0 5px 0;
-  margin: 20px 5px auto auto;
+  margin: 15px 5px auto auto;
   border-radius: 3px;
   cursor: pointer;
 }
@@ -253,7 +253,7 @@ body {
   background-color: white;
   width: 160px;
   padding: 5px 0 5px 0;
-  margin: 20px auto 5px auto;
+  margin: 15px auto 5px auto;
   border-radius: 3px;
   cursor: pointer;
 }
@@ -284,39 +284,39 @@ body {
 
 @media screen and (max-width: 1450px) {
   .location-info-text-title {
-    font: 18pt bold impact, arial black;
+    font: 18pt impact, arial black;
   }
 
   .location-info-text-address {
-    font: 14pt bold impact, arial black;
+    font: bold 13pt helvetica, arial;
   }
 
   .location-info-text-phone {
-    font: 14pt bold impact, arial black;
+    font: bold 13pt helvetica, arial;
   }
 
   .location-website-btn {
-    font: 14pt bold helvetica, arial;
+    font: 14pt helvetica, arial;
     width: 130px;
   }
 
   .location-zoom-btn {
-    font: 14pt bold helvetica, arial;
+    font: 14pt helvetica, arial;
     width: 130px;
   }
 }
 
 @media screen and (max-width: 1300px) {
   .location-info-text-title {
-    font: 16pt bold impact, arial black;
+    font: 16pt impact, arial black;
   }
 
   .location-info-text-address {
-    font: 12pt bold impact, arial black;
+    font: bold 11pt helvetica, arial;
   }
 
   .location-info-text-phone {
-    font: 12pt bold impact, arial black;
+    font: bold 11pt helvetica, arial;
   }
 
   .location-website-btn {
@@ -336,11 +336,11 @@ body {
   }
 
   .location-info-text-address {
-    font: 10pt bold impact, arial black;
+    font: bold 9pt helvetica, arial;
   }
 
   .location-info-text-phone {
-    font: 10pt bold impact, arial black;
+    font: bold 9pt helvetica, arial;
   }
 }
 
@@ -366,22 +366,17 @@ body {
 
   .search-field {
     margin: auto;
-    font: 10pt bold helvetica, arial;
+    font: 10pt helvetica, arial;
     width: 100%;
     text-align: center;
   }
 
   .location-info-text-title {
-    font: 10pt bold impact, arial;
+    font: 10pt impact, arial;
   }
 
   .location-info-text-address {
-    font: 10pt bold impact, arial;
     margin: 5px auto 5px auto;
-  }
-
-  .location-info-text-phone {
-    font: 10pt bold impact, arial;
   }
 
   .location-website-btn {
@@ -459,6 +454,21 @@ body {
   .bottom-pane-POI {
     height: 125px;
     width: 100%;
+  }
+
+  .location-info-text-address {
+    font: bold 9pt helvetica, arial;
+    margin-top: 10px;
+  }
+
+  .location-info-text-phone {
+    font: bold 9pt helvetica, arial;
+    margin-bottom: 10px;
+  }
+
+  .location-website-btn {
+    font: 14pt helvetica, arial;
+    width: 130px;
   }
 
   .location-ad {
