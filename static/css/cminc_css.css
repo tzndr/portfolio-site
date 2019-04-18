@@ -46,28 +46,12 @@ body {
   cursor: pointer;
 }
 
-.grapevine-logo {
+.round-rock-logo {
   position: absolute;
   top: 0; left: 5px;
   height: 60px;
   margin: auto;
   z-index: 1;
-}
-
-.main-panel {
-  position: absolute;
-  line-height: 30px;
-  width: 13%;
-  height: 60px;
-  min-width: 150px;
-  top: 40px;
-  left: 0;
-  z-index: 5;
-  background-color: white;
-  padding: 0;
-  border: 1px solid #464343;
-  border-radius: 0 5px 5px 0;
-  text-align: center;
 }
 
 .box-shadow {
@@ -159,13 +143,13 @@ body {
 
 .top-pane {
   position: absolute;
-  left: 0; top: 60px;
+  left: 0; top: 50px;
   margin: auto;
   width: 100%;
   height: auto;
   max-height: 100px;
   color: white;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.4);
   overflow-y: auto;
   text-align: center;
   padding-bottom: 3px;
@@ -179,11 +163,10 @@ body {
   margin: auto;
   width: 100%;
   height: 20%;
+  max-height: 175px;
   color: white;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.4);
   text-align: center;
-  padding-bottom: 3px;
-  border-radius: 3px;
 }
 
 .bottom-pane-POI {
@@ -194,12 +177,11 @@ body {
   margin: auto;
   width: 50%;
   max-width: 900px;
+  max-height: 175px;
   height: 20%;
   color: white;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.4);
   text-align: center;
-  padding-bottom: 3px;
-  border-radius: 3px;
 }
 
 .location-ad {
@@ -285,7 +267,7 @@ body {
 .panel-list-item {
   display: inline-block;
   margin: 5px;
-  font: bold 11pt helvetica, arial;
+  font: bold 9pt helvetica, arial;
   text-align: center;
   cursor: pointer;
   padding: 3px 7px;
@@ -297,5 +279,231 @@ body {
 
 .panel-list-item:hover {
   color: white;
-  background-color: #E51515;
+  background-color: #AF3C27;
+}
+
+@media screen and (max-width: 1450px) {
+  .location-info-text-title {
+    font: 18pt bold impact, arial black;
+  }
+
+  .location-info-text-address {
+    font: 14pt bold impact, arial black;
+  }
+
+  .location-info-text-phone {
+    font: 14pt bold impact, arial black;
+  }
+
+  .location-website-btn {
+    font: 14pt bold helvetica, arial;
+    width: 130px;
+  }
+
+  .location-zoom-btn {
+    font: 14pt bold helvetica, arial;
+    width: 130px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .location-info-text-title {
+    font: 16pt bold impact, arial black;
+  }
+
+  .location-info-text-address {
+    font: 12pt bold impact, arial black;
+  }
+
+  .location-info-text-phone {
+    font: 12pt bold impact, arial black;
+  }
+
+  .location-website-btn {
+    font: 12pt bold helvetica, arial;
+    width: 120px;
+  }
+
+  .location-zoom-btn {
+    font: 12pt bold helvetica, arial;
+    width: 120px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .location-info-text-title {
+    font: 14pt bold impact, arial black;
+  }
+
+  .location-info-text-address {
+    font: 10pt bold impact, arial black;
+  }
+
+  .location-info-text-phone {
+    font: 10pt bold impact, arial black;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  .round-rock-logo {
+    height: 40px;
+    top: 5px;
+  }
+
+  .directions-btn {
+    position: absolute;
+    top: 6px; right: 10px;
+    text-align: center;
+    padding: 5px 0;
+    width: 75px;
+    background-color: #21497E;
+    border-radius: 3px;
+    color: white;
+    font: 10pt bold helvetica, arial;
+    margin: 4px 0 0 0;
+    cursor: pointer;
+  }
+
+  .search-field {
+    margin: auto;
+    font: 10pt bold helvetica, arial;
+    width: 100%;
+    text-align: center;
+  }
+
+  .location-info-text-title {
+    font: 10pt bold impact, arial black;
+  }
+
+  .location-info-text-address {
+    font: 10pt bold impact, arial black;
+    margin: 5px auto 5px auto;
+  }
+
+  .location-info-text-phone {
+    font: 10pt bold impact, arial black;
+  }
+
+  .location-website-btn {
+    font: 12pt bold helvetica, arial;
+    width: 120px;
+    margin: 10px 5px auto auto;
+  }
+
+  .location-zoom-btn {
+    font: 12pt bold helvetica, arial;
+    width: 120px;
+    margin: 10px 5px auto auto;
+  }
+
+  .bottom-pane-biz {
+    height: 125px;
+  }
+
+  .bottom-pane-POI {
+    height: 125px;
+  }
+
+  .logo-container {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main-ad-popup {
+    height: auto;
+    width: 100%
+  }
+
+  .round-rock-logo {
+    display: none;
+    height: 40px;
+    top: 5px;
+  }
+
+  .location-ad {
+    position: absolute;
+    bottom: 125px; right: 0; left: 0;
+    height: 125px;
+    width: auto;
+    margin: auto;
+    order: 0;
+  }
+
+  .category-filter{
+    float: left;
+    width: 26%;
+    top: 0; left: 25%;
+    text-align: center;
+    margin: 12px 5px auto auto;
+  }
+
+  .location-filter {
+    float: left;
+    width: 26%;
+    text-align: center;
+    margin: 12px auto;
+  }
+
+  .poi-filter {
+    float: left;
+    width: 26%;
+    text-align: center;
+    margin: 12px auto auto 5px;
+    border-radius: 0 0 3px 3px;
+    background-color: white;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .bottom-pane-POI {
+    height: 125px;
+    width: 100%;
+  }
+
+  .location-ad {
+    height: 100px;
+  }
+
+  .search-field {
+    margin: auto;
+    font: 6pt bold helvetica, arial;
+    width: 100%;
+    text-align: center;
+  }
+
+  .category-filter{
+    width: 23%;
+    top: 0; left: 25%;
+    text-align: center;
+    margin: 12px 5px auto auto;
+  }
+
+  .location-filter {
+    width: 23%;
+    text-align: center;
+    margin: 12px auto;
+  }
+
+  .poi-filter {
+    width: 23%;
+    text-align: center;
+    margin: 12px auto auto 5px;
+    border-radius: 0 0 3px 3px;
+    background-color: white;
+  }
+
+  .directions-btn {
+    position: absolute;
+    top: 10px; right: 10px;
+    text-align: center;
+    padding: 5px 0;
+    width: 75px;
+    background-color: #21497E;
+    border-radius: 3px;
+    color: white;
+    font: 6pt bold helvetica, arial;
+    margin: 4px 0 0 0;
+    cursor: pointer;
+  }
 }
