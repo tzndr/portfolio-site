@@ -372,16 +372,16 @@ body {
   }
 
   .location-info-text-title {
-    font: 10pt bold impact, arial black;
+    font: 10pt bold impact, arial;
   }
 
   .location-info-text-address {
-    font: 10pt bold impact, arial black;
+    font: 10pt bold impact, arial;
     margin: 5px auto 5px auto;
   }
 
   .location-info-text-phone {
-    font: 10pt bold impact, arial black;
+    font: 10pt bold impact, arial;
   }
 
   .location-website-btn {
