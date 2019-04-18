@@ -328,12 +328,12 @@ body {
   }
 
   .location-website-btn {
-    font: 12pt bold helvetica, arial;
+    font: 12pt helvetica, arial;
     width: 120px;
   }
 
   .location-zoom-btn {
-    font: 12pt bold helvetica, arial;
+    font: 12pt helvetica, arial;
     width: 120px;
   }
 }
@@ -479,6 +479,11 @@ body {
   }
 
   .location-website-btn {
+    font: 14pt helvetica, arial;
+    width: 130px;
+  }
+
+  .location-zoom-btn {
     font: 14pt helvetica, arial;
     width: 130px;
   }
