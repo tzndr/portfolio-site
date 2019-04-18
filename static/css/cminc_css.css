@@ -162,7 +162,7 @@ body {
   bottom: 0; left: 0; right: 0;
   margin: auto;
   width: 100%;
-  height: 20%;
+  height: 225px;
   max-height: 175px;
   color: white;
   background-color: rgba(0, 0, 0, 0.4);
@@ -178,7 +178,7 @@ body {
   width: 50%;
   max-width: 900px;
   max-height: 175px;
-  height: 20%;
+  height: 225px;
   color: white;
   background-color: rgba(0, 0, 0, 0.4);
   text-align: center;
@@ -454,6 +454,10 @@ body {
   .bottom-pane-POI {
     height: 125px;
     width: 100%;
+  }
+
+  .bottom-pane-biz {
+    height: 125px;
   }
 
   .location-info-text-address {
