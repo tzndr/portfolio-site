@@ -472,6 +472,10 @@ body {
     height: 125px;
   }
 
+  .location-info-text-title {
+    font: bold 12pt helvetica, arial;
+  }
+
   .location-info-text-address {
     font: bold 9pt helvetica, arial;
     margin-top: 10px;
