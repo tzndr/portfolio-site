@@ -12,6 +12,9 @@
     <img class='main-ad-popup'
          data-bind="visible: showPremiumAd, attr: {src: premiumAdSelection}">
     <div class="page-mask" data-bind="visible: showPremiumAd"></div>
+    <div class="page-mask" data-bind="visible: toggleMask, click: enlargeAd"></div>
+    <img class="location-ad-enlarge"
+         data-bind="attr: {src: locationAd}, visible: toggleEnlargeAd, click: enlargeAd">
 
     <div id="map" class="map-canvas"></div>
 
@@ -75,7 +78,7 @@
         <div class="location-zoom-btn" data-bind="click: zoomLocation, text: zoomButtonText"></div>
         <div class="directions-btn" data-bind="visible: togglePanels, click: displayDirections">Directions</div>
       </div>
-      <img class="location-ad" data-bind="attr: {src: locationAd}">
+      <img class="location-ad" data-bind="attr: {src: locationAd}, click: enlargeAd">
     </div>
 
     <div class="bottom-pane-POI" data-bind="visible: toggleInfoPanelPOI">

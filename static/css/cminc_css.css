@@ -46,6 +46,17 @@ body {
   cursor: pointer;
 }
 
+.location-ad-enlarge {
+  position: absolute;
+  top: 0; bottom: 0;
+  left: 0; right: 0;
+  width: 50%;
+  max-width: 900px;
+  margin: auto;
+  z-index: 2;
+  background-color: white;
+}
+
 .round-rock-logo {
   position: absolute;
   top: 0; left: 5px;
@@ -429,6 +440,11 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+
+  .location-ad-enlarge {
+    width: 100%;
+  }
+
   .directions-pane {
     position: absolute;
     bottom: 0;

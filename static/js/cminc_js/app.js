@@ -96,6 +96,8 @@ function initMap() {
     this.toggleInfoPanelBiz = ko.observable(false);
     this.toggleInfoPanelPOI = ko.observable(false);
     this.toggleDirectionsPane = ko.observable(false);
+    this.toggleEnlargeAd = ko.observable(false);
+    this.toggleMask = ko.observable(false);
 
     this.chosenCategory = ko.observable();
     this.chosenLocation = ko.observable();
@@ -354,6 +356,7 @@ function initMap() {
 
     this.launchMap = function() {
       self.showPremiumAd(false);
+      self.toggleMask(false);
       self.togglePanels(true);
       self.populateMarkers();
       self.populatePOIMarkers();
@@ -667,6 +670,16 @@ function initMap() {
           self.togglePOIPanelLocationList(false);
         }
       //};
+    }
+
+    this.enlargeAd = function() {
+      if (self.toggleEnlargeAd() === false) {
+        self.toggleEnlargeAd(true);
+        self.toggleMask(true);
+      } else {
+        self.toggleEnlargeAd(false);
+        self.toggleMask(false);
+      }
     }
   }
   ko.applyBindings(new ViewModel());
