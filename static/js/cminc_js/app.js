@@ -651,7 +651,7 @@ function initMap() {
               window.alert('Directions request failed due to ' + status);
             }
           });
-        });
+        //});
         if (self.toggleInfoPanelBiz() === true) {
           self.toggleInfoPanelBiz(false);
         }
@@ -664,7 +664,7 @@ function initMap() {
         if (self.togglePOIPanelLocationList() === true) {
           self.togglePOIPanelLocationList(false);
         }
-      };
+      //};
     }
   }
   ko.applyBindings(new ViewModel());
