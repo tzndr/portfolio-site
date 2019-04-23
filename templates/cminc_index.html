@@ -73,7 +73,7 @@
         <p class="location-info-text-phone" data-bind="text: locationPhone"></p>
         <div class="location-website-btn" data-bind="click: openWesite">Visit Website</div>
         <div class="location-zoom-btn" data-bind="click: zoomLocation, text: zoomButtonText"></div>
-        <div class="directions-btn" data-bind="visible: togglePanels">Directions</div>
+        <div class="directions-btn" data-bind="visible: togglePanels, click: displayDirections">Directions</div>
       </div>
       <img class="location-ad" data-bind="attr: {src: locationAd}">
     </div>
@@ -85,8 +85,11 @@
         <p class="location-info-text-phone" data-bind="text: locationPhone"></p>
         <div class="location-website-btn" data-bind="click: openWesite">Visit Website</div>
         <div class="location-zoom-btn" data-bind="click: zoomPOI, text: zoomButtonText">Zoom</div>
-        <div class="directions-btn" data-bind="visible: togglePanels">Directions</div>
+        <div class="directions-btn" data-bind="visible: togglePanels, click: displayDirections">Directions</div>
       </div>
+    </div>
+
+    <div id="left-panel" class="directions-pane box-shadow" data-bind="visible: toggleDirectionsPane">
     </div>
 
     <script src="static/js/cminc_js/libs/knockout-3.2.0.js"></script>

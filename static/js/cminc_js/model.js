@@ -5,6 +5,12 @@ var premiumAdImages = [
 
 var markers = [];
 
+var map;
+
+var infoWindow;
+
+var directionsDisplay;
+
 var poiMarkers = [];
 
 var Location = function(data) {

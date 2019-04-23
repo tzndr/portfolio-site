@@ -140,6 +140,19 @@ body {
   padding-bottom: 3px;
 }
 
+.directions-pane {
+  position: fixed;
+  left: 0; top: 0; bottom: 0;
+  margin: auto;
+  height: 50%;
+  width: 300px;
+  background-color: white;
+  text-align: center;
+  overflow-y: auto;
+  border-radius: 0 3px 3px 0;
+  padding: 5px 10px 0 10px;
+}
+
 .bottom-pane-biz {
   display: flex;
   align-items: center;
@@ -150,7 +163,7 @@ body {
   height: 200px;
   max-height: 200px;
   color: white;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.3);
   text-align: center;
 }
 
@@ -365,6 +378,10 @@ body {
     top: 5px;
   }
 
+  .directions-pane {
+    width: 200px;
+  }
+
   .search-field {
     margin: auto;
     font: 10pt helvetica, arial;
@@ -412,6 +429,16 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+  .directions-pane {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 0;
+    height: 200px;
+    width: 100%;
+    border-radius: 0;
+    padding: 5px 10px 0 10px;
+    font-size: 14pt;
+  }
 
   .filter-container {
     display: flex;
@@ -463,6 +490,17 @@ body {
 }
 
 @media screen and (max-width: 415px) {
+  .directions-pane {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 0;
+    height: 165px;
+    width: 100%;
+    border-radius: 0;
+    padding: 5px 10px 0 10px;
+    font-size: 10pt;
+  }
+
   .bottom-pane-POI {
     height: 125px;
     width: 100%;

@@ -18,7 +18,37 @@ function initMap() {
       position: google.maps.ControlPosition.RIGHT_CENTER
     }
   });
+/*
+  infoWindow = new google.maps.InfoWindow;
 
+  //Try HTML5 geolocation.
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(function(position) {
+      var pos = {
+        lat: position.coords.latitude,
+        lng: position.coords.longitude
+      };
+
+      infoWindow.setPosition(pos);
+      infoWindow.setContent('Location found.');
+      infoWindow.open(map);
+      map.setCenter(pos);
+    }, function() {
+       handleLocationError(true, infoWindow, map.getCenter());
+    });
+  } else {
+     // Browser doesn't support Geolocation
+     handleLocationError(false, infoWindow, map.getCenter());
+   }
+
+  function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+    infoWindow.setPosition(pos);
+    infoWindow.setContent(browserHasGeolocation ?
+      'Error: The Geolocation service failed.' :
+      'Error: Your browser doesn\'t support geolocation.');
+    infoWindow.open(map);
+  }
+*/
   locations = locations;
 
   var imageBounds = {
@@ -31,6 +61,8 @@ function initMap() {
   roundRockOverlay = new google.maps.GroundOverlay(
     'static/img/round_rock_overlay_4.jpg', imageBounds);
     roundRockOverlay.setMap(map);
+
+
 
   function makeMarkerIcon(logo) {
     var markerImage = new google.maps.MarkerImage(logo);
@@ -63,6 +95,7 @@ function initMap() {
     this.toggleBizPanelLocationList = ko.observable(false);
     this.toggleInfoPanelBiz = ko.observable(false);
     this.toggleInfoPanelPOI = ko.observable(false);
+    this.toggleDirectionsPane = ko.observable(false);
 
     this.chosenCategory = ko.observable();
     this.chosenLocation = ko.observable();
@@ -128,6 +161,13 @@ function initMap() {
       }
     }
 
+    this.clearPOIMarkers = function() {
+      for (var i = 0; i < poiMarkers.length; i++) {
+        poiMarkers[i].setAnimation(null);
+        poiMarkers[i].setMap(null);
+      }
+    }
+
     this.showPremiumLocations = function () {
       for (i = 0; i < markers.length; i++) {
         for (var x = 0; x < self.premiumLocations().length; x++) {
@@ -152,16 +192,32 @@ function initMap() {
       }
     }
 
-    this.clearPOIMarkers = function() {
+    this.showCurrentBizMarker = function() {
+      for (var i = 0; i < markers.length; i++) {
+        if (self.locationName() === markers[i].title) {
+          markers[i].setAnimation(google.maps.Animation.BOUNCE);
+          markers[i].setMap(map);
+        }
+      }
+    }
+
+    this.showCurrentPOIMarker = function() {
       for (var i = 0; i < poiMarkers.length; i++) {
-        poiMarkers[i].setAnimation(null);
-        poiMarkers[i].setMap(null);
+        if (self.locationName() === poiMarkers[i].title) {
+          poiMarkers[i].setAnimation(google.maps.Animation.BOUNCE);
+          poiMarkers[i].setMap(map);
+        }
       }
     }
 
     this.showAllMarkers = function() {
       self.showLocationMarkers();
       self.showPOIMarkers();
+    }
+
+    this.hideAllMarkers = function() {
+      self.clearLocationMarkers();
+      self.clearPOIMarkers();
     }
 
     this.resetFiltersCategory = function() {
@@ -211,6 +267,7 @@ function initMap() {
           self.locationAd(this.ad);
           self.toggleInfoPanelBiz(true);
           self.toggleInfoPanelPOI(false);
+          self.toggleDirectionsPane(false);
           //self.sendAJAX();
           self.zoomButtonStatus(true);
           //if (self.showHidePanelText() != 'Show Panels') {
@@ -271,6 +328,7 @@ function initMap() {
           } else if (self.toggleInfoPanelPOI() === false) {
             self.toggleInfoPanelPOI(true);
           }
+          self.toggleDirectionsPane(false);
           //self.sendAJAX();
           self.zoomButtonStatus(true);
           //if (self.showHidePanelText() != 'Show Panels') {
@@ -302,12 +360,17 @@ function initMap() {
     };
 
     this.categorySearch = function() {
+      if (directionsDisplay) {
+        directionsDisplay.setMap(null);
+        directionsDisplay.set('directions', null);
+      }
       self.togglePOIPanelLocationList(false);
       self.bizPanelLocationList([]);
       self.clearLocationMarkers();
       self.clearPOIMarkers();
       self.toggleInfoPanelBiz(false);
       self.toggleInfoPanelPOI(false);
+      self.toggleDirectionsPane(false);
       for (var i = 0; i < self.locationList().length; i++) {
         var location = self.locationList()[i];
         if (self.chosenCategory() != null) {
@@ -331,6 +394,9 @@ function initMap() {
             self.toggleInfoPanelPOI(false);
             self.toggleBizPanelLocationList(false);
             self.togglePOIPanelLocationList(false);
+            self.toggleDirectionsPane(false);
+            map.setCenter({lat: 30.525316, lng:-97.672594});
+            map.setZoom(12.7);
             self.bizPanelLocationList.push(location);
             for (var z = 0; z < markers.length; z++) {
               markers[z].setAnimation(google.maps.Animation.DROP);
@@ -342,6 +408,10 @@ function initMap() {
     };
 
     this.locationSelection = function() {
+      if (directionsDisplay) {
+        directionsDisplay.setMap(null);
+        directionsDisplay.set('directions', null);
+      }
       self.toggleBizPanelLocationList(false);
       self.togglePOIPanelLocationList(false);
       self.clearLocationMarkers();
@@ -349,6 +419,7 @@ function initMap() {
       self.showPremiumLocations();
       self.toggleInfoPanelPOI(false);
       self.toggleInfoPanelBiz(true);
+      self.toggleDirectionsPane(false);
       for (var i = 0; i < self.locationList().length; i++) {
         var clickedLocation = self.locationList()[i];
         if (self.chosenLocation() != null) {
@@ -373,6 +444,7 @@ function initMap() {
           markers[j].setZIndex(100);
           markers[j].setAnimation(google.maps.Animation.BOUNCE);
           markers[j].setMap(map)
+          map.setZoom(12.7);
           map.panTo(markers[j].position);
             //self.populateInfoWindow(markers[j], mainInfoWindow);
         }
@@ -380,6 +452,10 @@ function initMap() {
     };
 
     this.poiCategorySearch = function() {
+      if (directionsDisplay) {
+        directionsDisplay.setMap(null);
+        directionsDisplay.set('directions', null);
+      }
       self.toggleBizPanelLocationList(false);
       self.POIPanelLocationList([]);
       self.panelPoiList([]);
@@ -389,6 +465,7 @@ function initMap() {
       self.chosenCategory(null);
       self.toggleInfoPanelBiz(false);
       self.toggleInfoPanelPOI(false);
+      self.toggleDirectionsPane(false);
       for (var i = 0; i < self.poiList().length; i++) {
         var poi = self.poiList()[i];
         if (self.chosenPOI() != null) {
@@ -414,6 +491,8 @@ function initMap() {
             self.panelPoiList.push(poi);
             self.POIPanelLocationList.push(poi);
             self.togglePOIPanelLocationList(false);
+            map.setCenter({lat: 30.525316, lng:-97.672594});
+            map.setZoom(12.7);
             for (var j = 0; j < poiMarkers.length; j++) {
               poiMarkers[j].setAnimation(google.maps.Animation.DROP);
               poiMarkers[j].setMap(map);
@@ -424,9 +503,14 @@ function initMap() {
     };
 
     this.poiSelection = function(selectedPOI) {
+      if (directionsDisplay) {
+        directionsDisplay.setMap(null);
+        directionsDisplay.set('directions', null);
+      }
       self.showPremiumLocations();
       self.toggleInfoPanelBiz(false);
       self.toggleInfoPanelPOI(true);
+      self.toggleDirectionsPane(false);
       for (var i = 0; i < self.poiList().length; i++) {
         var clickedLocation = self.poiList()[i];
         if (selectedPOI.title === clickedLocation.title) {
@@ -456,9 +540,14 @@ function initMap() {
     };
 
     this.bizSelection = function(selectedBiz) {
+      if (directionsDisplay) {
+        directionsDisplay.setMap(null);
+        directionsDisplay.set('directions', null);
+      }
       self.showPremiumLocations();
       self.toggleInfoPanelBiz(true);
       self.toggleInfoPanelPOI(false);
+      self.toggleDirectionsPane(false);
       for (var i = 0; i < self.locationList().length; i++) {
         var clickedLocation = self.locationList()[i];
         if (selectedBiz.title === clickedLocation.title) {
@@ -527,7 +616,56 @@ function initMap() {
     this.openWesite = function() {
       window.open(self.locationWebsite());
     };
-  };
 
+    this.displayDirections = function() {
+      if (directionsDisplay) {
+        directionsDisplay.setMap(null);
+        directionsDisplay.set('directions', null);
+      }
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(function (position) {                                                              //This gets the
+          var originLatitude = position.coords.latitude;
+          var originLongitude = position.coords.longitude;
+          var originCoords = new google.maps.LatLng(originLatitude, originLongitude);
+          var directionsService = new google.maps.DirectionsService;
+          var destinationAddress = self.locationAddress();
+          directionsService.route({
+            origin: "Round Rock Chamber of Commerce",
+            destination: destinationAddress,
+            travelMode: google.maps.TravelMode.DRIVING
+          }, function(response, status) {
+            if (status === google.maps.DirectionsStatus.OK) {
+              directionsDisplay = new google.maps.DirectionsRenderer({
+                map: map,
+                directions: response,
+                draggable: true,
+                polylineOptions: {
+                  strokeColor: 'blue',
+                  strokeWeight: 10,
+                  strokeOpacity: 0.6
+                }
+              });
+            directionsDisplay.setPanel(document.getElementById('left-panel'));
+            self.toggleDirectionsPane(true);
+            } else {
+              window.alert('Directions request failed due to ' + status);
+            }
+          });
+        });
+        if (self.toggleInfoPanelBiz() === true) {
+          self.toggleInfoPanelBiz(false);
+        }
+        if (self.toggleInfoPanelPOI() === true) {
+          self.toggleInfoPanelPOI(false);
+        }
+        if (self.toggleBizPanelLocationList() === true) {
+        self.toggleBizPanelLocationList(false);
+        }
+        if (self.togglePOIPanelLocationList() === true) {
+          self.togglePOIPanelLocationList(false);
+        }
+      };
+    }
+  }
   ko.applyBindings(new ViewModel());
 }
