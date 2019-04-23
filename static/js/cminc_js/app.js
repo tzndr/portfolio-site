@@ -652,6 +652,8 @@ function initMap() {
             }
           });
         //});
+        this.clearLocationMarkers();
+        this.clearPOIMarkers();
         if (self.toggleInfoPanelBiz() === true) {
           self.toggleInfoPanelBiz(false);
         }
