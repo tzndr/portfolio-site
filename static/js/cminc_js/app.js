@@ -622,11 +622,11 @@ function initMap() {
         directionsDisplay.setMap(null);
         directionsDisplay.set('directions', null);
       }
-      if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(function (position) {                                                              //This gets the
-          var originLatitude = position.coords.latitude;
-          var originLongitude = position.coords.longitude;
-          var originCoords = new google.maps.LatLng(originLatitude, originLongitude);
+      //if (navigator.geolocation) {
+      //  navigator.geolocation.getCurrentPosition(function (position) {                                                              //This gets the
+      //    var originLatitude = position.coords.latitude;
+      //    var originLongitude = position.coords.longitude;
+      //    var originCoords = new google.maps.LatLng(originLatitude, originLongitude);
           var directionsService = new google.maps.DirectionsService;
           var destinationAddress = self.locationAddress();
           directionsService.route({
