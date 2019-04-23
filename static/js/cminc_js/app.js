@@ -70,6 +70,11 @@ function initMap() {
   }
 
   var ViewModel = function() {
+    for (var i = 0; i < locations.length; i++) {
+      if (locations[i].premium === true) {
+        premiumAdImages.push(locations[i].premiumAd);
+      }
+    }
     var self = this;
     this.locationList = ko.observableArray();
     this.POIPanelLocationList = ko.observableArray();
@@ -88,6 +93,12 @@ function initMap() {
 
     this.showPremiumAd = ko.observable(true);
     this.premiumAdSelection = ko.observable(premiumAdImages[Math.floor(Math.random()*premiumAdImages.length)]);
+
+    for (var i = 0; i < locations.length; i++) {
+      if (self.premiumAdSelection() === locations[i].premiumAd) {
+        self.locationWebsite(locations[i].website);
+      }
+    }
 
     this.togglePanels = ko.observable(false);
     this.togglePanelsText = ko.observable('Hide Panels');
@@ -616,7 +627,7 @@ function initMap() {
       }
     };
 
-    this.openWesite = function() {
+    this.openWebsite = function() {
       window.open(self.locationWebsite());
     };
 

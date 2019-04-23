@@ -4,13 +4,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" type="text/css" href="static/css/cminc_css.css">
+    <link rel="shortcut icon" href="static/img/RR_thumbnail.png">
+    <link rel="image_src" href="static/img/RR_thumbnail.png">
+    <meta property="og:title" content="Round Rock, TX Interactive Map">
+    <meta property="og:image" content="https://1y9fuc1k1bla4577e1loggol-wpengine.netdna-ssl.com/wp-content/uploads/2017/03/round-rock-texas-logo.png">
+    <meta property="og:description"
+      content="View an interactive map of Round Rock Texas">
     <title>Round Rock Interactive Map</title>
   </head>
   <body>
     <div class="main-ad-button"
          data-bind="visible: showPremiumAd, click: launchMap">Launch Map</div>
     <img class='main-ad-popup'
-         data-bind="visible: showPremiumAd, attr: {src: premiumAdSelection}">
+         data-bind="visible: showPremiumAd, attr: {src: premiumAdSelection}, click: openWebsite">
     <div class="page-mask" data-bind="visible: showPremiumAd"></div>
     <div class="page-mask" data-bind="visible: toggleMask, click: enlargeAd"></div>
     <img class="location-ad-enlarge"
@@ -74,7 +80,7 @@
         <p class="location-info-text-title" data-bind="text: locationName"></p>
         <p class="location-info-text-address" data-bind="text: locationAddress"></p>
         <p class="location-info-text-phone" data-bind="text: locationPhone"></p>
-        <div class="location-website-btn" data-bind="click: openWesite">Visit Website</div>
+        <div class="location-website-btn" data-bind="click: openWebsite">Visit Website</div>
         <div class="location-zoom-btn" data-bind="click: zoomLocation, text: zoomButtonText"></div>
         <div class="directions-btn" data-bind="visible: togglePanels, click: displayDirections">Directions</div>
       </div>
@@ -86,7 +92,7 @@
         <p class="location-info-text-title" data-bind="text: locationName"></p>
         <p class="location-info-text-address" data-bind="text: locationAddress"></p>
         <p class="location-info-text-phone" data-bind="text: locationPhone"></p>
-        <div class="location-website-btn" data-bind="click: openWesite">Visit Website</div>
+        <div class="location-website-btn" data-bind="click: openWebsite">Visit Website</div>
         <div class="location-zoom-btn" data-bind="click: zoomPOI, text: zoomButtonText">Zoom</div>
         <div class="directions-btn" data-bind="visible: togglePanels, click: displayDirections">Directions</div>
       </div>

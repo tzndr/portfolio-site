@@ -1,7 +1,4 @@
-var premiumAdImages = [
-  "static/img/premium_ads/ad_1.jpg",
-  "static/img/premium_ads/ad_2.jpg"
-];
+var premiumAdImages = [];
 
 var markers = [];
 

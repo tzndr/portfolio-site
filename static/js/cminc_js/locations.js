@@ -9,7 +9,8 @@ var locations = [
     logo: 'static/img/logos/seton_medical.png',
     markerIcon: 'static/img/marker_logos/seton_medical.png',
     ad: 'static/img/standard_ads/seton_med_williamson.png',
-    premium: true
+    premium: true,
+    premiumAd: "static/img/premium_ads/ad_1.jpg"
   },
   {
     title: 'University Federal Credit Union',
@@ -21,7 +22,8 @@ var locations = [
     logo: 'static/img/logos/ufcu.png',
     markerIcon: 'static/img/marker_logos/ufcu.png',
     ad: 'static/img/standard_ads/UFCU.png',
-    premium: true
+    premium: true,
+    premiumAd: "static/img/premium_ads/ad_2.jpg"
   },
   {
     title: "Angie's Discount Groceries",
@@ -33,7 +35,8 @@ var locations = [
     logo: 'static/img/logos/angies.png',
     markerIcon: 'static/img/marker_logos/angies.png',
     ad: 'static/img/standard_ads/angies.png',
-    premium: false
+    premium: false,
+    premiumAd: ""
   },
   {
     title: 'Austin Regional Clinic - Round Rock',
@@ -45,7 +48,8 @@ var locations = [
     logo: 'static/img/logos/austin_regional.png',
     markerIcon: 'static/img/marker_logos/austin_regional.png',
     ad: 'static/img/standard_ads/arc.png',
-    premium: false
+    premium: false,
+    premiumAd: ""
   },
   {
     title: 'Austin Regional Clinic - Sendero Springs',
@@ -57,7 +61,8 @@ var locations = [
     logo: 'static/img/logos/austin_regional.png',
     markerIcon: 'static/img/marker_logos/austin_regional.png',
     ad: 'static/img/standard_ads/arc.png',
-    premium: false
+    premium: false,
+    premiumAd: ""
   },
   {
     title: 'Best Western Round Rock',
@@ -69,7 +74,8 @@ var locations = [
     logo: 'static/img/logos/best_western.png',
     markerIcon: 'static/img/marker_logos/best_western.png',
     ad: 'static/img/standard_ads/best_western.png',
-    premium: false
+    premium: false,
+    premiumAd: ""
   },
   {
     title: 'Celebration Church',
@@ -81,7 +87,8 @@ var locations = [
     logo: 'static/img/logos/celebration_church.png',
     markerIcon: 'static/img/marker_logos/celebration_church.png',
     ad: 'static/img/standard_ads/celebration_church.png',
-    premium: false
+    premium: false,
+    premiumAd: ""
   },
   {
     title: 'Central Texas Regional Mobility Authority',
@@ -93,7 +100,8 @@ var locations = [
     logo: 'static/img/logos/central_texas_mobility.png',
     markerIcon: 'static/img/marker_logos/central_texas_mobility.png',
     ad: 'static/img/standard_ads/CTRMA.png',
-    premium: false
+    premium: false,
+    premiumAd: ""
   },
   {
     title: 'Christian Brothers Automotive',
@@ -105,7 +113,8 @@ var locations = [
     logo: 'static/img/logos/christian_brothers.png',
     markerIcon: 'static/img/marker_logos/christian_brothers.png',
     ad: 'static/img/standard_ads/christian_bros.png',
-    premium: false
+    premium: false,
+    premiumAd: ""
   },
   {
     title: 'City of Round Rock',
@@ -117,7 +126,8 @@ var locations = [
     logo: 'static/img/logos/city_round_rock.png',
     markerIcon: 'static/img/marker_logos/city_round_rock.png',
     ad: 'static/img/standard_ads/city_of_round_rock.png',
-    premium: false
+    premium: false,
+    premiumAd: ""
   },
   {
     title: 'COJO Unlimited Catering',
@@ -129,7 +139,8 @@ var locations = [
     logo: 'static/img/logos/cojo.png',
     markerIcon: 'static/img/marker_logos/cojo.png',
     ad: 'static/img/standard_ads/cojo.png',
-    premium: false
+    premium: false,
+    premiumAd: ""
   },
   {
     title: 'Cynergy Data Texas',
@@ -141,7 +152,8 @@ var locations = [
     logo: 'static/img/logos/cynergy_data.png',
     markerIcon: 'static/img/marker_logos/cynergy_data.png',
     ad: 'static/img/standard_ads/cynergy_data.png',
-    premium: false
+    premium: false,
+    premiumAd: ""
   },
   {
     title: 'Holiday Inn',
@@ -153,7 +165,8 @@ var locations = [
     logo: 'static/img/logos/holiday_inn.png',
     markerIcon: 'static/img/marker_logos/holiday_inn.png',
     ad: 'static/img/standard_ads/holiday_inn.png',
-    premium: false
+    premium: false,
+    premiumAd: ""
   },
   {
     title: 'Meridian World School',
@@ -165,7 +178,8 @@ var locations = [
     logo: 'static/img/logos/meridian_school.png',
     markerIcon: 'static/img/marker_logos/meridian_school.png',
     ad: 'static/img/standard_ads/meridian.png',
-    premium: false
+    premium: false,
+    premiumAd: ""
   },
   {
     title: 'Novak Brothers',
@@ -177,7 +191,8 @@ var locations = [
     logo: 'static/img/logos/novak.png',
     markerIcon: 'static/img/marker_logos/novak.png',
     ad: 'static/img/standard_ads/novak_bros.png',
-    premium: false
+    premium: false,
+    premiumAd: ""
   },
   {
     title: 'OCPD Cleaning Service',
@@ -189,7 +204,8 @@ var locations = [
     logo: 'static/img/logos/ocpd.png',
     markerIcon: 'static/img/marker_logos/ocpd.png',
     ad: 'static/img/standard_ads/ocpd.png',
-    premium: false
+    premium: false,
+    premiumAd: ""
   },
   {
     title: 'Physicians Premier',
@@ -201,7 +217,8 @@ var locations = [
     logo: 'static/img/logos/physician_premier.png',
     markerIcon: 'static/img/marker_logos/physician_premier.png',
     ad: 'static/img/standard_ads/physicians_premier.png',
-    premium: false
+    premium: false,
+    premiumAd: ""
   },
   {
     title: 'Pie Jacked',
@@ -213,7 +230,8 @@ var locations = [
     logo: 'static/img/logos/pie_jacked.png',
     markerIcon: 'static/img/marker_logos/pie_jacked.png',
     ad: 'static/img/standard_ads/pie_jacked.png',
-    premium: false
+    premium: false,
+    premiumAd: ""
   },
   {
     title: 'Quality Inn',
@@ -225,7 +243,8 @@ var locations = [
     logo: 'static/img/logos/quality_inn.png',
     markerIcon: 'static/img/marker_logos/quality_inn.png',
     ad: 'static/img/standard_ads/quality_inn.png',
-    premium: false
+    premium: false,
+    premiumAd: ""
   },
   {
     title: 'IKEA',
@@ -237,7 +256,8 @@ var locations = [
     logo: 'static/img/logos/ikea.png',
     markerIcon: 'static/img/marker_logos/ikea.png',
     ad: 'static/img/standard_ads/ikea.png',
-    premium: false
+    premium: false,
+    premiumAd: ""
   },
   {
     title: 'Karavel Shoes',
@@ -249,7 +269,8 @@ var locations = [
     logo: 'static/img/logos/karavel.png',
     markerIcon: 'static/img/marker_logos/karavel.png',
     ad: 'static/img/standard_ads/karavel.png',
-    premium: false
+    premium: false,
+    premiumAd: ""
   },
   {
     title: 'Keller Williams - Tara Knight',
@@ -261,7 +282,8 @@ var locations = [
     logo: 'static/img/logos/keller_williams.png',
     markerIcon: 'static/img/marker_logos/keller_williams.png',
     ad: 'static/img/standard_ads/KW_tara.png',
-    premium: false
+    premium: false,
+    premiumAd: ""
   },
   {
     title: 'La Frontera Property Owners Association',
@@ -273,7 +295,8 @@ var locations = [
     logo: 'static/img/logos/la_frontera.png',
     markerIcon: 'static/img/marker_logos/la_frontera.png',
     ad: 'static/img/standard_ads/la_frontera.png',
-    premium: false
+    premium: false,
+    premiumAd: ""
   },
   {
     title: 'Local Plumbing Service',
@@ -285,7 +308,8 @@ var locations = [
     logo: 'static/img/logos/local_plumbing.png',
     markerIcon: 'static/img/marker_logos/local_plumbing.png',
     ad: 'static/img/standard_ads/local_plumbing.png',
-    premium: false
+    premium: false,
+    premiumAd: ""
   },
   {
     title: 'RE/MAX - Cathy Kinney',
@@ -297,7 +321,8 @@ var locations = [
     logo: 'static/img/logos/remax_cathy.png',
     markerIcon: 'static/img/marker_logos/remax_cathy.png',
     ad: 'static/img/standard_ads/remax_cathy.png',
-    premium: false
+    premium: false,
+    premiumAd: ""
   },
   {
     title: 'Realty Texas',
@@ -309,7 +334,8 @@ var locations = [
     logo: 'static/img/logos/realty_texas.png',
     markerIcon: 'static/img/marker_logos/realty_texas.png',
     ad: 'static/img/standard_ads/realty_texas.png',
-    premium: false
+    premium: false,
+    premiumAd: ""
   },
   {
     title: 'RejuviYouth Health & Wellness Spa',
@@ -321,7 +347,8 @@ var locations = [
     logo: 'static/img/logos/rejuvi.png',
     markerIcon: 'static/img/marker_logos/rejuvi.png',
     ad: 'static/img/standard_ads/rejuvi.png',
-    premium: false
+    premium: false,
+    premiumAd: ""
   },
   {
     title: 'Round Rock Chamber of Commerce',
@@ -333,7 +360,8 @@ var locations = [
     logo: 'static/img/logos/round_rock_chamber.png',
     markerIcon: 'static/img/marker_logos/round_rock_chamber.png',
     ad: 'static/img/standard_ads/chamber.png',
-    premium: false
+    premium: false,
+    premiumAd: ""
   },
   {
     title: 'Round Rock Christian Academy',
@@ -345,7 +373,8 @@ var locations = [
     logo: 'static/img/logos/round_rock_christian.png',
     markerIcon: 'static/img/marker_logos/round_rock_christian.png',
     ad: 'static/img/standard_ads/round_rock_christian.png',
-    premium: false
+    premium: false,
+    premiumAd: ""
   },
   {
     title: 'Rush Automotive',
@@ -357,7 +386,8 @@ var locations = [
     logo: 'static/img/logos/rush_auto.png',
     markerIcon: 'static/img/marker_logos/rush_auto.png',
     ad: 'static/img/standard_ads/rush_auto.png',
-    premium: false
+    premium: false,
+    premiumAd: ""
   },
   {
     title: 'Senior Care/Trinity Care Center',
@@ -369,7 +399,8 @@ var locations = [
     logo: 'static/img/logos/senior_care.png',
     markerIcon: 'static/img/marker_logos/senior_care.png',
     ad: 'static/img/standard_ads/trinity_care.png',
-    premium: false
+    premium: false,
+    premiumAd: ""
   },
   {
     title: 'Skinny Bobs Billiards',
@@ -381,7 +412,8 @@ var locations = [
     logo: 'static/img/logos/skinny_bobs.png',
     markerIcon: 'static/img/marker_logos/skinny_bobs.png',
     ad: 'static/img/standard_ads/skinny_bobs.png',
-    premium: false
+    premium: false,
+    premiumAd: ""
   },
   {
     title: 'Speed Pro Imaging',
@@ -393,7 +425,8 @@ var locations = [
     logo: 'static/img/logos/speed_pro.png',
     markerIcon: 'static/img/marker_logos/speed_pro.png',
     ad: 'static/img/standard_ads/speed_pro.png',
-    premium: false
+    premium: false,
+    premiumAd: ""
   },
   {
     title: 'Teriyaki Madness',
@@ -405,7 +438,8 @@ var locations = [
     logo: 'static/img/logos/teriyaki.png',
     markerIcon: 'static/img/marker_logos/teriyaki.png',
     ad: 'static/img/standard_ads/teriyaki_madness.png',
-    premium: false
+    premium: false,
+    premiumAd: ""
   },
   {
     title: 'Texas Spanish Academy',
@@ -417,7 +451,8 @@ var locations = [
     logo: 'static/img/logos/tx_spanish_school.png',
     markerIcon: 'static/img/marker_logos/tx_spanish_school.png',
     ad: 'static/img/standard_ads/tx_spanish_academy.png',
-    premium: false
+    premium: false,
+    premiumAd: ""
   },
   {
     title: 'The Brass Tap',
@@ -429,7 +464,8 @@ var locations = [
     logo: 'static/img/logos/brass_tap.png',
     markerIcon: 'static/img/marker_logos/brass_tap.png',
     ad: 'static/img/standard_ads/brass_tap.png',
-    premium: false
+    premium: false,
+    premiumAd: ""
   },
   {
     title: 'The UPS Store #1394',
@@ -441,7 +477,8 @@ var locations = [
     logo: 'static/img/logos/ups.png',
     markerIcon: 'static/img/marker_logos/ups.png',
     ad: 'static/img/standard_ads/ups_1394.png',
-    premium: false
+    premium: false,
+    premiumAd: ""
   },
   {
     title: 'The Williamson Museum',
@@ -453,7 +490,8 @@ var locations = [
     logo: 'static/img/logos/williamson.png',
     markerIcon: 'static/img/marker_logos/williamson.png',
     ad: 'static/img/standard_ads/williamson_museum.png',
-    premium: false
+    premium: false,
+    premiumAd: ""
   },
   {
     title: 'TNT Asset Management',
@@ -465,7 +503,8 @@ var locations = [
     logo: 'static/img/logos/tnt.png',
     markerIcon: 'static/img/marker_logos/tnt.png',
     ad: 'static/img/standard_ads/tnt.png',
-    premium: false
+    premium: false,
+    premiumAd: ""
   },
   {
     title: 'U.B.E.O. Business Services',
@@ -477,7 +516,8 @@ var locations = [
     logo: 'static/img/logos/ubeo.png',
     markerIcon: 'static/img/marker_logos/ubeo.png',
     ad: 'static/img/standard_ads/ubeo.png',
-    premium: false
+    premium: false,
+    premiumAd: ""
   },
   {
     title: 'United Heritage Credit Union',
@@ -489,7 +529,8 @@ var locations = [
     logo: 'static/img/logos/united_heritage.png',
     markerIcon: 'static/img/marker_logos/united_heritage.png',
     ad: 'static/img/standard_ads/united_heritage.png',
-    premium: false
+    premium: false,
+    premiumAd: ""
   },
   {
     title: 'US Health Advisors - Round Rock',
@@ -501,7 +542,8 @@ var locations = [
     logo: 'static/img/logos/us_health_2.png',
     markerIcon: 'static/img/marker_logos/us_health.png',
     ad: 'static/img/standard_ads/us_health_advisors.png',
-    premium: false
+    premium: false,
+    premiumAd: ""
   },
   {
     title: 'Van Houten & Associates',
@@ -513,7 +555,8 @@ var locations = [
     logo: 'static/img/logos/van_houten.png',
     markerIcon: 'static/img/marker_logos/van_houten.png',
     ad: 'static/img/standard_ads/van_houten.png',
-    premium: false
+    premium: false,
+    premiumAd: ""
   },
   {
     title: 'Walmart Store 5480',
@@ -525,7 +568,8 @@ var locations = [
     logo: 'static/img/logos/walmart.png',
     markerIcon: 'static/img/marker_logos/walmart.png',
     ad: 'static/img/standard_ads/walmart.png',
-    premium: false
+    premium: false,
+    premiumAd: ""
   },
   {
     title: 'Webre-Sherrill Insurance Advisors',
@@ -537,7 +581,8 @@ var locations = [
     logo: 'static/img/logos/webre.png',
     markerIcon: 'static/img/marker_logos/webre.png',
     ad: 'static/img/standard_ads/webre.png',
-    premium: false
+    premium: false,
+    premiumAd: ""
   },
   {
     title: 'Wingate By Wyndham',
@@ -549,6 +594,7 @@ var locations = [
     logo: 'static/img/logos/wingate.png',
     markerIcon: 'static/img/marker_logos/wingate.png',
     ad: 'static/img/standard_ads/wingate.png',
-    premium: false
+    premium: false,
+    premiumAd: ""
   }
 ];
