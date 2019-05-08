@@ -26,10 +26,6 @@ def showConnect():
 def showInteractiveMap():
     return render_template('interactive_map.html')
 
-@app.route('/cminc_demo')
-def showCommunityMatters():
-    return render_template('cminc_index.html')
-
 if __name__ == '__main__':
     app.config['DEBUG'] = True
     app.run(host='0.0.0.0', port=8000)
