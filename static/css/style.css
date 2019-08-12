@@ -20,6 +20,45 @@ a {
   z-index: -1;
 }
 
+.type-container {
+  text-align: center;
+  height: 100px;
+  width: 95%;
+  position: absolute;
+  top: 30%;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.type-text {
+	display: inline;
+  vertical-align: middle;
+  padding: 10px;
+	color: black;
+	letter-spacing: 2px;
+  font: bold 42pt monospace;
+  margin: auto;
+}
+
+.type-cursor {
+	display: inline-block;
+  vertical-align: middle;
+	width: 15px;
+	height: 80%;
+	background-color: orange;
+	animation: blink .75s step-end infinite;
+}
+
+@keyframes blink {
+	from, to {
+		background-color: transparent
+	}
+	50% {
+		background-color: orange;
+	}
+}
+
 .nav-bar {
   display: inline-flex;
   position: absolute;

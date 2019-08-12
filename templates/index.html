@@ -17,9 +17,14 @@
     {% block content %}
       {% include "header.html" %}
     {% endblock %}
-    <img class="background-img" src="../static/img/ocean.png">
+    <img class="background-img" src="../static/img/home-background.jpg">
+    <div id="container" class="type-container">
+	     <span id="text" class="type-text"></span>
+       <span id="cursor" class="type-cursor"></span>
+    </div>
     <script src="../static/js/libs/knockout-3.2.0.js"></script>
     <script src="../static/js/model.js"></script>
     <script src="../static/js/app.js"></script>
+    <script src="../static/js/typeIt.js"></script>
   </body>
 </html>
