@@ -28,17 +28,17 @@ a {
 }
 
 .logo {
-  width: 45px;
+  width: 55px;
   position: absolute;
   top: 7px;
   left: 7px;
 }
 
 .slogan {
-  width: 400px;
+  width: 140px;
   position: absolute;
-  bottom: 30px;
-  right: 40px;
+  left: 75px;
+  top: 8px
 }
 
 .nav-link {
@@ -447,10 +447,6 @@ a {
 
   .contact-options-container {
     margin: 0 10px auto;
-  }
-
-  .slogan {
-    width: 200px;
   }
 }
 
