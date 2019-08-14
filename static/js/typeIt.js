@@ -1,7 +1,7 @@
 var _CONTENT = [
   "Hello.",
   "I'm Tim, a Full-Stack Developer.",
-  "I build beautiful and efficient web-based programs and applications.",
+  "I build beautiful and functional web-based software and applications.",
   "I can't wait for the chance to build yours."
 ];
 

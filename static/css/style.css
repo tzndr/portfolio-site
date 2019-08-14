@@ -46,7 +46,7 @@ a {
   vertical-align: middle;
 	width: 15px;
 	height: 80%;
-	background-color: orange;
+	background-color: red;
 	animation: blink .75s step-end infinite;
 }
 
@@ -55,7 +55,7 @@ a {
 		background-color: transparent
 	}
 	50% {
-		background-color: orange;
+		background-color: red;
 	}
 }
 
@@ -794,5 +794,9 @@ a {
   .language-img-large {
     height: 40px;
     margin: 10px 10px;
+  }
+
+  .type-container {
+    top: 25%;
   }
 }

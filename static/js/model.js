@@ -14,7 +14,7 @@ var featuredWork = [
       "for each created category and item.",
      link: "https://github.com/tzndr/content-management-system",
     languages: [
-      {path: "../static/img/python.png"},
+      {path: "../static/img/python1.png"},
       {path: "../static/img/flask.png"},
       {path: "../static/img/postgresql.png"},
       {path: "../static/img/html_css.png"}
@@ -32,7 +32,7 @@ var featuredWork = [
       "detailed answers to specific questions regarding the site's reader activity.",
       link: "https://github.com/tzndr/logs-analysis-reporting-tool",
       languages: [
-        {path: "../static/img/python.png"},
+        {path: "../static/img/python1.png"},
         {path: "../static/img/postgresql.png"},
       ]
   },
@@ -49,7 +49,7 @@ var featuredWork = [
       "articles populated using AJAX, JSON, and third party API requests.",
       link: "http://timzander.com/interactive_map",
       languages: [
-        {path: "../static/img/javascript.png"},
+        {path: "../static/img/js.png"},
         {path: "../static/img/googlemapslogo.png"},
         {path: "../static/img/api.png"},
         {path: "../static/img/kojs.png"},
