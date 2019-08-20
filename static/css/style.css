@@ -91,7 +91,11 @@ a {
 .nav-link {
   margin: auto;
   padding: 0 30px 0 0;
-  font: 14pt helvetica, arial;
+  font: bold 14pt helvetica, arial;
+}
+
+.nav-link:hover {
+  color: red;
 }
 
 .social-link-1 {
@@ -651,7 +655,7 @@ a {
 
   .nav-link {
     padding: 0 8px 0 0;
-    font: 9pt helvetica, arial;
+    font: bold 9pt helvetica, arial;
   }
 
   .social-link-1 {
@@ -759,6 +763,15 @@ a {
 
 @media screen and (max-width: 415px) {
 
+  .type-text {
+    font: bold 26pt monospace;
+  }
+
+  .type-cursor {
+    width: 11px;
+    height: 40%;
+  }
+
   .info-box-data {
     font: 17pt helvetica, arial;
     font-weight: 700;
@@ -798,5 +811,20 @@ a {
 
   .type-container {
     top: 25%;
+  }
+}
+
+@media screen and (max-width: 325px) {
+  .nav-link {
+    font: 8pt helvetica, arial;
+  }
+
+  .type-text {
+    font: bold 22pt monospace;
+  }
+
+  .type-cursor {
+    width: 9px;
+    height: 35%;
   }
 }
