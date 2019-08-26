@@ -15,24 +15,24 @@
   </head>
   <body>
     <div>
-      <a href="{{url_for('showMain')}}">
+      <a data-bind="click: changeNavColor" href="{{url_for('showMain')}}">
         <img class="logo" src="../static/img/tz.png">
         <img class="slogan" src="../static/img/slogan_black.png">
       </a>
     </div>
-    <div class='nav-bar'>
-      <span class="nav-link typewriter">
+    <ul class='nav-bar'>
+      <li class="nav-link">
         <a href="{{url_for('showMyStory')}}">My Story</a>
-      </span>
-      <span class="nav-link">
+      </li>
+      <li class="nav-link">
         <a href="{{url_for('showSkillSet')}}">Skill Set</a>
-      </span>
-      <span class="nav-link">
+      </li>
+      <li class="nav-link">
         <a href="{{url_for('showFeaturedWork')}}">Featured Work</a>
-      </span>
-      <span class="nav-link">
+      </li>
+      <li class="nav-link">
         <a href="{{url_for('showConnect')}}">Connect</a>
-      </span>
+      </li>
       <span class="social-link">
         <a href="https://www.linkedin.com/in/timothyzander/">
         <img class="social-link-1" src="../static/img/linked_in.png"></a>
@@ -41,6 +41,10 @@
         <a href="https://github.com/tzndr">
         <img class="social-link-2" src="../static/img/github.png"></a>
       </span>
-    </div>
+    </ul>
+    <script src="../static/js/libs/jquery.min.js"></script>
+    <script src="../static/js/libs/knockout-3.2.0.js"></script>
+    <script src="../static/js/model.js"></script>
+    <script src="../static/js/app.js"></script>
   </body>
 </html>

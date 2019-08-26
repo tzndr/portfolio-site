@@ -1,4 +1,5 @@
 //Declaring global variables
+var navSelector = 0;
 
 var Work = function(data) {
   this.title = data.title;
@@ -34,9 +35,55 @@ var ViewModel = function() {
 
   this.projectIsLive = ko.observable(false);
 
+  this.nav1 = ko.observable(false);
+
+  this.nav2 = ko.observable(false);
+
+  this.nav3 = ko.observable(false);
+
+  this.nav4 = ko.observable(false);
+
   featuredWork.forEach(function(workInfo) {
     self.featuredWorkList.push(new Work(workInfo));
   });
+
+  this.changeNavColor = function() {
+    $(document).click(function(event) {
+      var selectedNav = $(event.target).text();
+      console.log(selectedNav)
+      if (selectedNav === "") {
+        self.nav1(false);
+        self.nav2(false);
+        self.nav3(false);
+        self.nav4(false);
+      }
+      else if (selectedNav === "My Story") {
+        self.nav1(true);
+        self.nav2(false);
+        self.nav3(false);
+        self.nav4(false);
+      }
+      else if (selectedNav === "Skill Set") {
+        self.nav1(false);
+        self.nav2(true);
+        self.nav3(false);
+        self.nav4(false);
+      }
+      else if (selectedNav === "Featured Work") {
+        self.nav1(false);
+        self.nav2(false);
+        self.nav3(true);
+        self.nav4(false);
+      }
+      else if (selectedNav === "Connect") {
+        self.nav1(false);
+        self.nav2(false);
+        self.nav3(false);
+        self.nav4(true);
+      }
+    });
+    return true;
+  }
 
   this.changeFeaturedWork = function(clickedWork) {
     for (var i = 0; i < self.featuredWorkList().length; i++) {

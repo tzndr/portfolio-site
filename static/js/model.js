@@ -116,3 +116,10 @@ var connectInformation = [
     info: "1.214.713.1096"
   }
 ];
+
+var navArray = [
+  "My Story",
+  "Skill Set",
+  "Featured Work",
+  "Connect"
+]
