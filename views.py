@@ -22,6 +22,10 @@ def showFeaturedWork():
 def showConnect():
     return render_template('connect.html')
 
+@app.route('/blog')
+def showBlog():
+    return render_template('blog.html')
+
 @app.route('/interactive_map')
 def showInteractiveMap():
     return render_template('interactive_map.html')
