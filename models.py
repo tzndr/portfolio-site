@@ -103,7 +103,6 @@ class BlogPost(Base):
         }
 
 
-#instance of create_engine
 engine = create_engine('sqlite:///tzdb.db')
 
 Base.metadata.create_all(engine)

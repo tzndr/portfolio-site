@@ -35,6 +35,8 @@ var ViewModel = function() {
 
   this.projectIsLive = ko.observable(false);
 
+  this.togglePageMask = ko.observable(false);
+
   this.nav1 = ko.observable(false);
 
   this.nav2 = ko.observable(false);

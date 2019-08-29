@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../../static/css/style.css">
+    <link rel="shortcut icon" href="../../static/img/tz.png">
+    <link rel="image_src" href="../../static/img/tz.png">
+    <meta property="og:title" content="Tim Zander's Portfolio">
+    <meta property="og:image" content="http://timzander.com/static/img/og_tz.png">
+    <meta property="og:description"
+          content="View Tim's professional story, featured works, and contact information">
+    <meta property="og:url" content="www.timzander.com">
+    <title>Tim Zander Portfolio</title>
+  </head>
+  <body>
+    <div>
+      <a href="{{url_for('showMain')}}">
+        <img class="logo" src="../../static/img/tz.png">
+        <img class="slogan" src="../../static/img/slogan_black.png">
+      </a>
+    </div>
+    <ul class='nav-bar'>
+      <li class="nav-link">
+        <a href="{{url_for('showMyStory')}}">My Story</a>
+      </li>
+      <li class="nav-link">
+        <a href="{{url_for('showSkillSet')}}">Skill Set</a>
+      </li>
+      <li class="nav-link">
+        <a href="{{url_for('showFeaturedWork')}}">Featured Work</a>
+      </li>
+      <li class="nav-link">
+        <a href="{{url_for('showConnect')}}">Connect</a>
+      </li>
+      <li class="nav-link">
+        <a href="{{url_for('showBlog')}}">Blog</a>
+      </li>
+      <span class="social-link">
+        <a href="https://www.linkedin.com/in/timothyzander/">
+        <img class="social-link-1" src="../../static/img/linked_in.png"></a>
+      </span>
+      <span>
+        <a href="https://github.com/tzndr">
+        <img class="social-link-2" src="../../static/img/github.png"></a>
+      </span>
+    </ul>
+    <script src="../../static/js/libs/jquery.min.js"></script>
+    <script src="../../static/js/libs/knockout-3.2.0.js"></script>
+    <script src="../../static/js/model.js"></script>
+    <script src="../../static/js/app.js"></script>
+  </body>
+</html>

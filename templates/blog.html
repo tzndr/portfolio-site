@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+  </head>
+  <body>
+    {% block content %}
+      {% include "header.html" %}
+    {% endblock %}
+    {%with messages = get_flashed_messages()%}
+      {%if messages%}
+        {%for message in messages%}
+          <div id="flash-message" class="flash">
+            {{message}}
+          </div>
+        {%endfor%}
+      {%endif%}
+    {%endwith%}
+    <a href="{{url_for('newBlogPost')}}" class="add-new-blog-post-btn">Add New Blog Post</a>
+    <div class="blog-thumbnail-container">
+      {%for post in posts%}
+        <a href="{{url_for('readBlogPost', blogPost_id=post.id)}}">
+          <div class="blog-thumbnail">
+            <p class="blog-thumbnail-header">{{post.title}}</p>
+            <img class="blog-thumbnail-img" src="{{post.mainImg}}">
+            <p class="blog-thumbnail-date">{{post.date}}</p>
+          </div>
+        </a>
+      {%endfor%}
+    </div>
+    <script src="../static/js/libs/knockout-3.2.0.js"></script>
+    <script src="../static/js/model.js"></script>
+    <script src="../static/js/app.js"></script>
+    <script src="../static/js/libs/jquery.min.js"></script>
+    <script>
+      $(function() {
+        $('#flash-message').delay(500).fadeIn('normal', function() {
+          $(this).delay(5000).fadeOut();
+        });
+      });
+    </script>
+  </body>
+</html>

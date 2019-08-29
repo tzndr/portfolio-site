@@ -44,7 +44,7 @@ def showBlog():
     posts = session.query(BlogPost).all()
     return render_template('blog.html', posts=posts)
 
-@app.route('/blog/<int:blogPost_id>/read', methods=['GET', 'POST'])
+@app.route('/blog/<int:blogPost_id>/read', methods=['GET'])
 def readBlogPost(blogPost_id):
     selected_post = session.query(BlogPost).filter_by(id = blogPost_id).one()
     return render_template('read_blog_post.html', selected_post = selected_post)
@@ -61,6 +61,7 @@ def newBlogPost():
             authorDescription = request.form['authorDescription'],
             mainImg = request.form['mainImg'],
             date = request.form['date'],
+            category = request.form['category'],
             img_1 = request.form['img_1'],
             body_header_1 = request.form['body_header_1'],
             body_1 = request.form['body_1'],
@@ -117,6 +118,8 @@ def editBlogPost(blogPost_id):
             editedPost.mainImg = request.form['mainImg']
         if request.form ['date']:
             editedPost.date = request.form['date']
+        if request.form['category']:
+            editedPost.category = request.form['category']
         if request.form['img_1']:
             editedPost.img_1 = request.form['img_1']
         if request.form['body_header_1']:
@@ -176,7 +179,7 @@ def editBlogPost(blogPost_id):
         if request.form['body_header_10']:
             editedPost.body_header_10 = request.form['body_header_10']
         if request.form['body_10']:
-                    editedPost.body_10 = request.form['body_10']
+            editedPost.body_10 = request.form['body_10']
         session.add(editedPost)
         session.commit()
         flash("%s has been updated." % editedPost.title)
@@ -200,5 +203,6 @@ def showInteractiveMap():
     return render_template('interactive_map.html')
 
 if __name__ == '__main__':
+    app.secret_key='magnesium21!'
     app.config['DEBUG'] = True
     app.run(host='0.0.0.0', port=8000)
