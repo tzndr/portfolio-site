@@ -182,7 +182,7 @@ def editBlogPost(blogPost_id):
             editedPost.body_10 = request.form['body_10']
         session.add(editedPost)
         session.commit()
-        flash("%s has been updated." % editedPost.title)
+        flash("%s has been updated" % editedPost.title)
         return redirect(url_for('showBlog'))
     else:
         return render_template('edit_blog_post.html', editedPost=editedPost, blogPost_id=blogPost_id)
@@ -193,7 +193,7 @@ def deleteBlogPost(blogPost_id):
     if request.method == 'POST':
         session.delete(deletedPost)
         session.commit()
-        flash("%s has been sucessfully deleted." % deletedPost.title)
+        flash("%s has been sucessfully deleted" % deletedPost.title)
         return redirect(url_for('showBlog'))
     else:
         return render_template('delete_blog_post.html', deletedPost=deletedPost, blogPost_id=blogPost_id)

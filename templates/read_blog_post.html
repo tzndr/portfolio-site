@@ -24,15 +24,8 @@
         <h2 class="blog-subtitle">{{selected_post.subtitle}}</h2>
         <img class="blog-main-img" src="../{{selected_post.mainImg}}">
         <img class="blog-author-img" src="../{{selected_post.authorImg}}"
-        <p class="blog-author-name">By: {{selected_post.authorName}}
+        <p class="blog-author-name">By: {{selected_post.authorName}}</p>
           <span><time class="blog-date">Published: {{selected_post.date}}</time></span>
-
-          <span class="edit-delete-blog-btn-wrapper">
-            <a class="blog-post-edit-btn" href="{{url_for('editBlogPost', blogPost_id=selected_post.id)}}">Edit</a>
-            <a class="blog-post-delete-btn" href="{{url_for('deleteBlogPost',
-              blogPost_id=selected_post.id)}}">Delete</a>
-          </span>
-        </p>
       </header>
       <h3 class="blog-body-header">{{selected_post.body_header_1}}</h3>
       {%if selected_post.img_1%}
@@ -89,6 +82,11 @@
       {%endif%}
       <p class="blog-body">{{selected_post.body_10}}</p>
     </article>
+    <div class="edit-delete-blog-btn-wrapper">
+      <a class="blog-post-edit-btn" href="{{url_for('editBlogPost', blogPost_id=selected_post.id)}}">Edit</a>
+      <a class="blog-post-delete-btn" href="{{url_for('deleteBlogPost',
+        blogPost_id=selected_post.id)}}">Delete</a>
+    </div>
     <script src="../../static/js/libs/knockout-3.2.0.js"></script>
     <script src="../../static/js/model.js"></script>
     <script src="../../static/js/app.js"></script>
