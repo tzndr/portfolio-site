@@ -264,8 +264,8 @@ li {
   width: 90%;
   height: auto;
   border-radius: 50%;
-  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.50),
-              0 5px 15px 0 rgba(0, 0, 0, 0.47);
+  box-shadow: 0 13px 16px 0 rgba(0, 0, 0, 0.70),
+              0 15px 25px 0 rgba(242, 25, 25, 0.77);
 }
 
 .udacity-img {
@@ -431,19 +431,53 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 80%;
-  margin: auto;
+  width: 85%;
+  margin: 125px auto 150px auto;
 }
 
 .blog-title {
   font: bold 48pt helvetica, arial;
-  color: #9932CC;
+  color: red;
   margin: auto;
 }
 
 .blog-subtitle {
-  font: bold 28pt helvetica, arial;
-  margin: 20px auto auto auto;
+  font: bold 28pt georgia, arial;
+  margin: auto;
+  margin-top: 15px;
+}
+
+.blog-details-wrapper {
+  display: inline-flex;
+  align-items: center;
+  margin: 50px auto;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.blog-author-info-wrapper {
+  display: inline-flex;
+  text-align: center;
+  align-items: center;
+  margin: auto;
+}
+
+.blog-author-img-name-wrapper {
+  align-self: flex-start;
+  display: inline-block;
+  text-align: left;
+  margin: auto;
+  margin-left: 10px;
+}
+
+.blog-date-cat-wrapper {
+  display: block;
+  margin: 0 0 20px 0;
+  margin: auto;
+}
+
+.blog-post-pub-cat-hr {
+
 }
 
 .blog-author-img {
@@ -452,36 +486,48 @@ li {
 }
 
 .blog-author-name {
+  font: bold italic 14pt times, georgia;
+  margin: 10px 0 0 0;
+  margin-bottom: 15px;
+}
+
+.blog-author-description {
+  position: relative;
+  bottom: 20px;
+  display: inline-block;
   font: italic 14pt times, georgia;
-  margin: 10px 0 35px 0;
-  align-self: flex-start;
+  margin: 10px 0 0 0;
 }
 
 .blog-main-img {
-  width: 75%;
+  width: 100%;
   align-self: center;
-  margin-bottom: 25px;
+  margin-bottom: 75px;
   border-radius: 5px;
 }
 
 .blog-img {
   width: 50%;
   border-radius: 5px;
+  margin-bottom: 20px;
 }
 
 .blog-body-header {
-  font: bold 20pt helvetica, arial;
-  margin: 25px 0 10px 0;
+  font: bold 20pt georgia, arial;
+  margin: 35px 0 5px 0;
+  color: #696868;
 }
 
 .blog-body {
-  font: 18pt helvetica, arial;
+  font: 16pt georgia, arial;
   margin: auto;
+  color: #696868;
 }
 
-.blog-date {
+.blog-date-cat {
+  display: block;
   font: italic 14pt times, georgia;
-  margin-left: 20px;
+  margin: 0 20px 0 20px;
 }
 
 .blog-hr {
@@ -722,7 +768,7 @@ li {
   margin: auto;
   font: bold 18pt helvetica, arial;
   color: white;
-  background-color: rgba(0,0,0,0.7);
+  background-color: rgba(242,25,25,0.8);
   text-align: center;
 }
 

@@ -183,7 +183,7 @@ def editBlogPost(blogPost_id):
         session.add(editedPost)
         session.commit()
         flash("%s has been updated" % editedPost.title)
-        return redirect(url_for('showBlog'))
+        return redirect(url_for('readBlogPost', blogPost_id=blogPost_id))
     else:
         return render_template('edit_blog_post.html', editedPost=editedPost, blogPost_id=blogPost_id)
 

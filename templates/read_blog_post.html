@@ -22,10 +22,21 @@
       <header>
         <h1 class="blog-title">{{selected_post.title}}</h1>
         <h2 class="blog-subtitle">{{selected_post.subtitle}}</h2>
+        <div class="blog-details-wrapper">
+          <div class="blog-author-info-wrapper">
+            <img class="blog-author-img" src="../{{selected_post.authorImg}}">
+            <div class="blog-author-img-name-wrapper">
+              <p class="blog-author-name">By: {{selected_post.authorName}}</p>
+              <p class="blog-author-description">{{selected_post.authorDescription}}</p>
+            </div>
+          </div>
+          <div class="blog-date-cat-wrapper">
+            <time class="blog-date-cat">Published: {{selected_post.date}}</time>
+            <hr class="blog-post-pub-cat-hr">
+            <p class="blog-date-cat">Filed under: {{selected_post.category}}</p>
+          </div>
+        </div>
         <img class="blog-main-img" src="../{{selected_post.mainImg}}">
-        <img class="blog-author-img" src="../{{selected_post.authorImg}}"
-        <p class="blog-author-name">By: {{selected_post.authorName}}</p>
-          <span><time class="blog-date">Published: {{selected_post.date}}</time></span>
       </header>
       <h3 class="blog-body-header">{{selected_post.body_header_1}}</h3>
       {%if selected_post.img_1%}
@@ -57,25 +68,21 @@
         <img class="blog-img" src="../{{selected_post.img_6}}">
       {%endif%}
       <p class="blog-body">{{selected_post.body_6}}</p>
-
       <h3 class="blog-body-header">{{selected_post.body_header_7}}</h3>
       {%if selected_post.img_7%}
         <img class="blog-img" src="../{{selected_post.img_7}}">
       {%endif%}
       <p class="blog-body">{{selected_post.body_7}}</p>
-
       <h3 class="blog-body-header">{{selected_post.body_header_8}}</h3>
       {%if selected_post.img_8%}
         <img class="blog-img" src="../{{selected_post.img_8}}">
       {%endif%}
       <p class="blog-body">{{selected_post.body_8}}</p>
-
       <h3 class="blog-body-header">{{selected_post.body_header_9}}</h3>
       {%if selected_post.img_9%}
         <img class="blog-img" src="../{{selected_post.img_9}}">
       {%endif%}
       <p class="blog-body">{{selected_post.body_9}}</p>
-
       <h3 class="blog-body-header">{{selected_post.body_header_10}}</h3>
       {%if selected_post.img_10%}
         <img class="blog-img" src="../{{selected_post.img_10}}">
