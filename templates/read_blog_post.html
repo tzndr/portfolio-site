@@ -4,6 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="../../static/css/style.css">
+    <link rel="shortcut icon" href="../../static/img/tz.png">
+    <link rel="image_src" href="../../static/img/tz.png">
+    <meta property="og:title" content="{{selected_post.title}}">
+    <meta property="og:image" content="{{selected_post.authorImg}}">
+    <meta property="og:description"
+          content="{{selected_post.subtitle}}">
+    <meta property="og:url" content="www.timzander.com/blog/" + {{selected_post.id}} + "/read">
+    <title>{{selected_post.title}}</title>
   </head>
   <body>
     {% block content %}
@@ -34,6 +42,27 @@
             <time class="blog-date-cat">Published: {{selected_post.date}}</time>
             <hr class="blog-post-pub-cat-hr">
             <p class="blog-date-cat">Filed under: {{selected_post.category}}</p>
+          </div>
+        </div>
+        <div class="social-btn-wrapper">
+          <div>
+            <a
+              href="https://twitter.com/share?ref_src=twsrc%5Etfw"
+              class="twitter-share-button"
+              data-show-count="false">Tweet
+            </a>
+          </div>
+          <div class="fb-share-button"
+               data-href="http://timzander.com/blog/{{selected_post.id}}/read"
+               data-layout="button">
+          </div>
+          <script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script>
+          <script type="IN/Share" data-url="https://www.linkedin.com"></script>
+          <div class="email-share-btn">
+            <a href="mailto:?subject=Thought you'd like this article&amp;body=Here is the link: http://timzander.com/blog/{{selected_post.id}}/read">
+              <img class="email-share-btn-img" src="../../static/img/email_blog.png">
+              <p class="email-share-btn-text">Email</p>
+            </a>
           </div>
         </div>
         <img class="blog-main-img" src="../{{selected_post.mainImg}}">
@@ -89,15 +118,44 @@
       {%endif%}
       <p class="blog-body">{{selected_post.body_10}}</p>
     </article>
+    <div class="social-btn-wrapper">
+      <div>
+        <a
+          href="https://twitter.com/share?ref_src=twsrc%5Etfw"
+          class="twitter-share-button"
+          data-show-count="false">Tweet
+        </a>
+      </div>
+      <div class="fb-share-button"
+           data-href="http://timzander.com/blog/{{selected_post.id}}/read"
+           data-layout="button">
+      </div>
+      <script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script>
+      <script type="IN/Share" data-url="https://www.linkedin.com"></script>
+      <div class="email-share-btn">
+        <a href="mailto:?subject=I thought you might like this article&amp;body=Here is the link: http://timzander.com/blog/{{selected_post.id}}/read">
+          <img class="email-share-btn-img" src="../../static/img/email_blog.png">
+          <p class="email-share-btn-text">Email</p>
+        </a>
+      </div>
+    </div>
     <div class="edit-delete-blog-btn-wrapper">
       <a class="blog-post-edit-btn" href="{{url_for('editBlogPost', blogPost_id=selected_post.id)}}">Edit</a>
       <a class="blog-post-delete-btn" href="{{url_for('deleteBlogPost',
         blogPost_id=selected_post.id)}}">Delete</a>
     </div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
     <script src="../../static/js/libs/knockout-3.2.0.js"></script>
     <script src="../../static/js/model.js"></script>
     <script src="../../static/js/app.js"></script>
     <script src="../../static/js/libs/jquery.min.js"></script>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     <script>
       $(function() {
         $('#flash-message').delay(500).fadeIn('normal', function() {
