@@ -483,6 +483,7 @@ li {
 .blog-author-img {
   width: 100px;
   border-radius: 50%;
+  border: 1px solid red;
 }
 
 .blog-author-name {
@@ -750,6 +751,40 @@ li {
   color: white;
   font: bold 14pt helvetica, arial;
   cursor: pointer;
+}
+
+.blog-footer {
+  height: auto;
+  width: 800px;
+  background-color: #F7F7F7;
+  margin: 75px auto 50px auto;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid red;
+}
+
+.blog-footer-content {
+  display: flex;
+  padding: 20px;
+}
+
+.blog-footer-author-img {
+  height: 250px;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.blog-footer-author-description {
+  font: italic 14pt georgia, arial;
+  align-self: center;
+  width: 55%;
+  margin: auto;
+}
+
+.blog-foooter-connect-link {
+  color: red;
 }
 
 .page-mask {

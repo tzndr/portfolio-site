@@ -59,7 +59,7 @@
           <script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script>
           <script type="IN/Share" data-url="https://www.linkedin.com"></script>
           <div class="email-share-btn">
-            <a href="mailto:?subject=Thought you'd like this article&amp;body=Here is the link: http://timzander.com/blog/{{selected_post.id}}/read">
+            <a href="mailto:?subject=Check out this article&amp;body={{selected_post.title}}: http://timzander.com/blog/{{selected_post.id}}/read">
               <img class="email-share-btn-img" src="../../static/img/email_blog.png">
               <p class="email-share-btn-text">Email</p>
             </a>
@@ -137,6 +137,19 @@
           <img class="email-share-btn-img" src="../../static/img/email_blog.png">
           <p class="email-share-btn-text">Email</p>
         </a>
+      </div>
+    </div>
+    <div class="blog-footer">
+      <div class=blog-footer-content>
+        <img class="blog-footer-author-img" src="../../static/img/story_img.jpg">
+        <p class="blog-footer-author-description">Tim is a freelance software
+          developer specializing in web-based software and applications. In addition
+          to his love for technology and development, he's passionate about travel,
+          science and history, is an avid runner and golfer, and is a certified
+          advanced open-water scuba diver. He lives in Dallas, TX with his wife
+          Maria and 3 dogs. To consult or collaborate with Tim on one of your projects,
+          you can view his contact information
+          <a class="blog-foooter-connect-link" href="{{url_for('showConnect')}}">here</a>.</p>
       </div>
     </div>
     <div class="edit-delete-blog-btn-wrapper">
