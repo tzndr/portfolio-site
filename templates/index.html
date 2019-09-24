@@ -17,6 +17,15 @@
     {% block content %}
       {% include "header.html" %}
     {% endblock %}
+    {%with messages = get_flashed_messages()%}
+      {%if messages%}
+        {%for message in messages%}
+          <div id="flash-message" class="flash">
+            {{message}}
+          </div>
+        {%endfor%}
+      {%endif%}
+    {%endwith%}
     <img class="background-img" src="../static/img/home-background_comp.jpg">
     <div id="container" class="type-container">
 	     <span id="text" class="type-text"></span>
@@ -27,5 +36,13 @@
     <script src="../static/js/model.js"></script>
     <script src="../static/js/app.js"></script>
     <script src="../static/js/typeIt.js"></script>
+    <script src="../static/js/libs/jquery.min.js"></script>
+    <script>
+      $(function() {
+        $('#flash-message').delay(500).fadeIn('normal', function() {
+          $(this).delay(5000).fadeOut();
+        });
+      });
+    </script>
   </body>
 </html>
