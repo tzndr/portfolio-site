@@ -15,7 +15,7 @@
   </head>
   <body>
     <div>
-      <a data-bind="click: changeNavColor" href="{{url_for('showMain')}}">
+      <a href="{{url_for('showMain')}}">
         <img class="logo" src="../static/img/tz.png">
         <img class="slogan" src="../static/img/slogan_black.png">
       </a>
@@ -45,6 +45,38 @@
         <img class="social-link-2" src="../static/img/github.png"></a>
       </span>
     </ul>
+    <div class="nav-bar-collapsible-icon" data-bind="click: toggleCollapsibleNavbarFunc">
+      <div class="nav-bar-collapsible-icon-line"></div>
+      <div class="nav-bar-collapsible-icon-line"></div>
+      <div class="nav-bar-collapsible-icon-line"></div>
+    </div>
+    <div class="nav-bar-collapsible" data-bind="visible: toggleCollapsibleNavbar">
+      <ul class="nav-bar-collapsible-content">
+        <li class="collapsible-nav-link">
+          <a href="{{url_for('showMyStory')}}">My Story</a>
+        </li>
+        <li class="collapsible-nav-link">
+          <a href="{{url_for('showSkillSet')}}">Skill Set</a>
+        </li>
+        <li class="collapsible-nav-link">
+          <a href="{{url_for('showFeaturedWork')}}">Featured Work</a>
+        </li>
+        <li class="collapsible-nav-link">
+          <a href="{{url_for('showBlog')}}">Blog</a>
+        </li>
+        <li class="collapsible-nav-link">
+          <a href="{{url_for('showConnect')}}">Connect</a>
+        </li>
+        <span class="social-link">
+          <a href="https://www.linkedin.com/in/timothyzander/">
+          <img class="social-link-1" src="../static/img/linked_in.png"></a>
+        </span>
+        <span>
+          <a href="https://github.com/tzndr">
+          <img class="social-link-2" src="../static/img/github.png"></a>
+        </span>
+      </ul>
+    </div>
     <script src="../static/js/libs/jquery.min.js"></script>
     <script src="../static/js/libs/knockout-3.2.0.js"></script>
     <script src="../static/js/model.js"></script>
