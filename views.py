@@ -141,6 +141,7 @@ def gdisconnect():
         response.headers['Content-Type'] = 'application/json'
         return response
 
+
 @app.route('/')
 def showMain():
     return render_template('index.html')
@@ -164,63 +165,73 @@ def showConnect():
 @app.route('/blog')
 def showBlog():
     posts = session.query(BlogPost).all()
-    return render_template('blog.html', posts=posts)
+    if 'email' not in login_session or login_session['email'] != 'tzcode35@gmail.com':
+        return render_template('public_blog.html', posts=posts)
+    else:
+        return render_template('blog.html', posts=posts)
 
 @app.route('/blog/<int:blogPost_id>/read', methods=['GET'])
 def readBlogPost(blogPost_id):
     selected_post = session.query(BlogPost).filter_by(id = blogPost_id).one()
-    return render_template('read_blog_post.html', selected_post = selected_post)
+    if 'email' not in login_session or login_session['email'] != 'tzcode35@gmail.com':
+        return render_template('read_blog_post_public.html', selected_post = selected_post)
+    else:
+        return render_template('read_blog_post.html', selected_post = selected_post)
 
 @app.route('/blog/new', methods=['GET', 'POST'])
 def newBlogPost():
     posts = session.query(BlogPost).all()
-    if request.method == 'POST':
-        newPost = BlogPost(
-            title = request.form['title'],
-            subtitle = request.form['subtitle'],
-            authorName = request.form['authorName'],
-            authorImg = request.form['authorImg'],
-            authorDescription = request.form['authorDescription'],
-            mainImg = request.form['mainImg'],
-            date = request.form['date'],
-            category = request.form['category'],
-            img_1 = request.form['img_1'],
-            body_header_1 = request.form['body_header_1'],
-            body_1 = request.form['body_1'],
-            img_2 = request.form['img_2'],
-            body_header_2 = request.form['body_header_2'],
-            body_2 = request.form['body_2'],
-            img_3 = request.form['img_3'],
-            body_header_3 = request.form['body_header_3'],
-            body_3 = request.form['body_3'],
-            img_4 = request.form['img_4'],
-            body_header_4 = request.form['body_header_4'],
-            body_4 = request.form['body_4'],
-            img_5 = request.form['img_5'],
-            body_header_5 = request.form['body_header_5'],
-            body_5 = request.form['body_5'],
-            img_6 = request.form['img_6'],
-            body_header_6 = request.form['body_header_6'],
-            body_6 = request.form['body_6'],
-            img_7 = request.form['img_7'],
-            body_header_7 = request.form['body_header_7'],
-            body_7 = request.form['body_7'],
-            img_8 = request.form['img_8'],
-            body_header_8 = request.form['body_header_8'],
-            body_8 = request.form['body_8'],
-            img_9 = request.form['img_9'],
-            body_header_9 = request.form['body_header_9'],
-            body_9 = request.form['body_9'],
-            img_10 = request.form['img_10'],
-            body_header_10 = request.form['body_header_10'],
-            body_10 = request.form['body_10']
-        )
-        session.add(newPost)
-        session.commit()
-        flash("%s has been posted sucessfully!" % newPost.title)
-        return redirect(url_for('showBlog'))
+    if 'email' not in login_session or login_session['email'] != 'tzcode35@gmail.com':
+        flash("You are not authorized to view the requested page")
+        return render_template('index.html')
     else:
-        return render_template('new_blog_post.html', posts = posts)
+        if request.method == 'POST':
+            newPost = BlogPost(
+                title = request.form['title'],
+                subtitle = request.form['subtitle'],
+                authorName = request.form['authorName'],
+                authorImg = request.form['authorImg'],
+                authorDescription = request.form['authorDescription'],
+                mainImg = request.form['mainImg'],
+                date = request.form['date'],
+                category = request.form['category'],
+                img_1 = request.form['img_1'],
+                body_header_1 = request.form['body_header_1'],
+                body_1 = request.form['body_1'],
+                img_2 = request.form['img_2'],
+                body_header_2 = request.form['body_header_2'],
+                body_2 = request.form['body_2'],
+                img_3 = request.form['img_3'],
+                body_header_3 = request.form['body_header_3'],
+                body_3 = request.form['body_3'],
+                img_4 = request.form['img_4'],
+                body_header_4 = request.form['body_header_4'],
+                body_4 = request.form['body_4'],
+                img_5 = request.form['img_5'],
+                body_header_5 = request.form['body_header_5'],
+                body_5 = request.form['body_5'],
+                img_6 = request.form['img_6'],
+                body_header_6 = request.form['body_header_6'],
+                body_6 = request.form['body_6'],
+                img_7 = request.form['img_7'],
+                body_header_7 = request.form['body_header_7'],
+                body_7 = request.form['body_7'],
+                img_8 = request.form['img_8'],
+                body_header_8 = request.form['body_header_8'],
+                body_8 = request.form['body_8'],
+                img_9 = request.form['img_9'],
+                body_header_9 = request.form['body_header_9'],
+                body_9 = request.form['body_9'],
+                img_10 = request.form['img_10'],
+                body_header_10 = request.form['body_header_10'],
+                body_10 = request.form['body_10']
+            )
+            session.add(newPost)
+            session.commit()
+            flash("%s has been posted sucessfully!" % newPost.title)
+            return redirect(url_for('showBlog'))
+        else:
+            return render_template('new_blog_post.html', posts = posts)
 
 @app.route('/blog/<int:blogPost_id>/edit', methods=['GET', 'POST'])
 def editBlogPost(blogPost_id):
@@ -325,6 +336,6 @@ def showInteractiveMap():
     return render_template('interactive_map.html')
 
 if __name__ == '__main__':
-    app.secret_key='magnesium21!'
+    app.secret_key='Magnesium21!'
     app.config['DEBUG'] = True
     app.run(host='0.0.0.0', port=8000)

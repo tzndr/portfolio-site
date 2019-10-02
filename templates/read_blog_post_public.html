@@ -17,15 +17,6 @@
     {% block content %}
       {% include "header_deep.html" %}
     {% endblock %}
-    {%with messages = get_flashed_messages()%}
-      {%if messages%}
-        {%for message in messages%}
-          <div id="flash-message" class="flash">
-            {{message}}
-          </div>
-        {%endfor%}
-      {%endif%}
-    {%endwith%}
     <article class="blog-container">
       <header>
         <h1 class="blog-title">{{selected_post.title}}</h1>
@@ -151,11 +142,6 @@
           you can view his contact information
           <a class="blog-foooter-connect-link" href="{{url_for('showConnect')}}">here</a>.</p>
       </div>
-    </div>
-    <div class="edit-delete-blog-btn-wrapper">
-      <a class="blog-post-edit-btn" href="{{url_for('editBlogPost', blogPost_id=selected_post.id)}}">Edit</a>
-      <a class="blog-post-delete-btn" href="{{url_for('deleteBlogPost',
-        blogPost_id=selected_post.id)}}">Delete</a>
     </div>
     <script>(function(d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0];

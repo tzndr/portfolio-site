@@ -17,15 +17,6 @@
     {% block content %}
       {% include "header.html" %}
     {% endblock %}
-    {%with messages = get_flashed_messages()%}
-      {%if messages%}
-        {%for message in messages%}
-          <div id="flash-message" class="flash">
-            {{message}}
-          </div>
-        {%endfor%}
-      {%endif%}
-    {%endwith%}
     <div class="blog-thumbnail-container">
       {%for post in posts%}
         <a href="{{url_for('readBlogPost', blogPost_id=post.id)}}">
@@ -36,20 +27,9 @@
           </div>
         </a>
       {%endfor%}
-      <div class="add-new-blog-post-btn-container">
-        <a href="{{url_for('newBlogPost')}}" class="add-new-blog-post-btn">Add New Blog Post</a>
-      </div>
     </div>
     <script src="../static/js/libs/knockout-3.2.0.js"></script>
     <script src="../static/js/model.js"></script>
     <script src="../static/js/app.js"></script>
-    <script src="../static/js/libs/jquery.min.js"></script>
-    <script>
-      $(function() {
-        $('#flash-message').delay(500).fadeIn('normal', function() {
-          $(this).delay(2000).fadeOut();
-        });
-      });
-    </script>
   </body>
 </html>

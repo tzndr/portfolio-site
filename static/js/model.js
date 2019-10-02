@@ -123,3 +123,5 @@ var navArray = [
   "Featured Work",
   "Connect"
 ]
+
+var tims_email = "tzcode35@gmail.com";
