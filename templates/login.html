@@ -17,6 +17,9 @@
     </script>
   </head>
   <body>
+    {% block content %}
+      {% include "header.html" %}
+    {% endblock %}
     <img class="login-main-img" src="../static/img/tz.png">
     <button id="signinButton" class="signin-btn">Sign In with Google</button>
     <div id="result" class="login-result"></div>
@@ -36,7 +39,7 @@
                 $('#result').html('Login Successful!</br>'+ result + '</br>Redirecting...')
                      setTimeout(function() {
                       window.location.href = "/";
-                    }, 300000);
+                    }, 3000);
               },
               processData:false,
               data:authResult['code']
