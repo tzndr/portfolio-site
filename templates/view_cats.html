@@ -7,13 +7,13 @@
     <link rel="shortcut icon" href="../../static/img/tz.png">
     <link rel="image_src" href="../../static/img/tz.png">
 
-    <title>Blog:{{blogPost_cat}}</title>
+    <title>Blog: {{returned_cat}}</title>
   </head>
   <body>
     {% block content %}
       {% include "header_deep.html" %}
     {% endblock %}
-    <h1 class="blog-recent-posts-header">{{selected_cat.category}}</h1>
+    <h1 class="blog-recent-posts-header">Posts Filed Under: {{returned_cat}}</h1>
     <div class="blog-cat-thumbnail-container">
     {%for post in selected_cat%}
       <a href="{{url_for('readBlogPost', blogPost_id=post.id)}}">
