@@ -164,11 +164,24 @@ def showConnect():
 
 @app.route('/blog')
 def showBlog():
-    posts = session.query(BlogPost).all()
+    recent_posts = session.query(BlogPost).order_by(BlogPost.id.desc()).limit(6).all()
+    all_posts = session.query(BlogPost).all()
+    all_cats = session.query(BlogPost.category).all()
+    all_cats_list = [value for value, in all_cats]
+    unique_cats = list(set(all_cats_list))
     if 'email' not in login_session or login_session['email'] != 'tzcode35@gmail.com':
-        return render_template('public_blog.html', posts=posts)
+        return render_template('public_blog.html', recent_posts=recent_posts, all_posts=all_posts,
+            cats=unique_cats)
     else:
-        return render_template('blog.html', posts=posts)
+        return render_template('blog.html', recent_posts=recent_posts, all_posts=all_posts,
+            cats=unique_cats)
+
+@app.route('/blog/<string:blogPost_cat>/view', methods=['GET'])
+def showBlogCat(blogPost_cat):
+    selected_cat = session.query(BlogPost).filter_by(category=blogPost_cat).all()
+    returned_cat = blogPost_cat
+    return render_template('view_cats.html', selected_cat=selected_cat, returned_cat=returned_cat)
+
 
 @app.route('/blog/<int:blogPost_id>/read', methods=['GET'])
 def readBlogPost(blogPost_id):
@@ -195,7 +208,6 @@ def newBlogPost():
                 mainImg = request.form['mainImg'],
                 date = request.form['date'],
                 category = request.form['category'],
-                img_1 = request.form['img_1'],
                 body_header_1 = request.form['body_header_1'],
                 body_1 = request.form['body_1'],
                 img_2 = request.form['img_2'],
@@ -253,8 +265,6 @@ def editBlogPost(blogPost_id):
             editedPost.date = request.form['date']
         if request.form['category']:
             editedPost.category = request.form['category']
-        if request.form['img_1']:
-            editedPost.img_1 = request.form['img_1']
         if request.form['body_header_1']:
             editedPost.body_header_1 = request.form['body_header_1']
         if request.form['body_1']:

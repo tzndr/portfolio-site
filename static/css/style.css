@@ -430,7 +430,22 @@ li {
   color: white;
 }
 
+.blog-recent-posts-header {
+  font: bold 32pt helvetica, arial;
+  margin: 100px 0 0 0;
+}
+
 .blog-thumbnail-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.blog-cat-thumbnail-container {
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -444,15 +459,21 @@ li {
   position: relative;
   display: flex;
   flex-direction: column;
-  max-width: 250px;
-  min-width: 250px;
-  max-height: 300px;
-  min-height: 300px;
+  max-width: 200px;
+  min-width: 200px;
+  max-height: 250px;
+  min-height: 250px;
   align-items: center;
-  border-radius: 5px;
   text-align: center;
   margin: 20px;
-  border: 1px solid black
+  border-radius: 5px;
+  padding-top: 20px;
+  border: 1px solid red;
+}
+
+.blog-thumbnail:hover {
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.50),
+              0 5px 15px 0 rgba(0, 0, 0, 0.47);
 }
 
 .blog-thumbnail-img {
@@ -472,11 +493,44 @@ li {
   margin: auto;
 }
 
+.blog-thumbnail-category {
+  font: italic 12pt helvetica, arial;
+  margin: auto;
+  position: absolute;
+  bottom: 35px;
+  color: #696868;
+}
+
 .blog-thumbnail-date {
   font: 12pt georgia;
   margin: auto;
   position: absolute;
   bottom: 10px;
+  color: #696868;
+}
+
+.blog-all-categories-header {
+  font: bold 32pt helvetica, arial;
+  margin: 35px auto;
+}
+
+.blog-cat-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-bottom: 100px;
+}
+
+.blog-cat-btn {
+  margin: 0 5px 0 5px;
+  border: 1px solid red;
+  border-radius: 3px;
+  padding: 8px;
+  font: 18pt helvetica, arial;
 }
 
 .blog-container {
@@ -589,14 +643,14 @@ li {
 .blog-main-img {
   width: 100%;
   align-self: center;
-  margin-bottom: 75px;
+  margin-bottom: 40px;
   border-radius: 5px;
 }
 
 .blog-img {
   width: 50%;
   border-radius: 5px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .blog-body-header {
@@ -608,7 +662,7 @@ li {
 
 .blog-body {
   font: 14pt georgia, arial;
-  margin: auto;
+  margin: auto auto 17px auto;
   color: #696868;
   text-align: justify;
 }
@@ -833,6 +887,7 @@ li {
   align-self: center;
   width: 55%;
   margin: auto;
+  text-align: left;
 }
 
 .blog-foooter-connect-link {
@@ -1409,7 +1464,6 @@ li {
 @media screen and (max-width: 442px) {
   .blog-footer-author-description {
     font-size: 8pt;
-    text-align: center;
     margin-left: 10px;
   }
 

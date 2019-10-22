@@ -26,16 +26,26 @@
         {%endfor%}
       {%endif%}
     {%endwith%}
+    <h1 class="blog-recent-posts-header">Recent Posts</h1>
     <div class="blog-thumbnail-container">
-      {%for post in posts%}
+      {%for post in recent_posts%}
         <a href="{{url_for('readBlogPost', blogPost_id=post.id)}}">
           <div class="blog-thumbnail">
             <p class="blog-thumbnail-header">{{post.title}}</p>
             <img class="blog-thumbnail-img" src="{{post.mainImg}}">
+            <p class="blog-thumbnail-category">{{post.category}}</p>
             <p class="blog-thumbnail-date">{{post.date}}</p>
           </div>
         </a>
       {%endfor%}
+      <!--ADD THIS CODE TO PUBLIC-->
+      <h1 class="blog-all-categories-header">All Categories</h1>
+      <div class="blog-cat-container">
+        {%for cat in cats%}
+          <a class="blog-cat-btn" href="{{url_for('showBlogCat', blogPost_cat=cat)}}">{{cat}}</a>
+        {%endfor%}
+      </div>
+      <!--ADD THIS CODE TO PUBLIC-->
       <div class="add-new-blog-post-btn-container">
         <a href="{{url_for('newBlogPost')}}" class="add-new-blog-post-btn">Add New Blog Post</a>
       </div>

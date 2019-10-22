@@ -17,17 +17,20 @@
     {% block content %}
       {% include "header.html" %}
     {% endblock %}
+    <h1 class="blog-recent-posts-header">Recent Posts</h1>
     <div class="blog-thumbnail-container">
-      {%for post in posts%}
+      {%for post in recent_posts%}
         <a href="{{url_for('readBlogPost', blogPost_id=post.id)}}">
           <div class="blog-thumbnail">
             <p class="blog-thumbnail-header">{{post.title}}</p>
             <img class="blog-thumbnail-img" src="{{post.mainImg}}">
+            <p class="blog-thumbnail-category">{{post.category}}</p>
             <p class="blog-thumbnail-date">{{post.date}}</p>
           </div>
         </a>
       {%endfor%}
     </div>
+    <h1 class="blog-all-categories-header">All Categories</h1>
     <script src="../static/js/libs/knockout-3.2.0.js"></script>
     <script src="../static/js/model.js"></script>
     <script src="../static/js/app.js"></script>

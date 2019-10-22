@@ -16,6 +16,7 @@
                placeholder="Article Title"
                name="title"
                value="{{editedPost.title}}"
+               maxlength = "50"
                required>
         <input class="add-blog-input"
                placeholder="Subtitle"
@@ -52,10 +53,6 @@
                name="category"
                value="{{editedPost.category}}">
         <div class="add-blog-post-input-wrapper">
-          <input class="add-blog-input-header"
-                 placeholder="Image File Path(../static/img/blog/)"
-                 name="img_1"
-                 value="{{editedPost.img_1}}">
           <input class="add-blog-input-header"
                  placeholder="Paragraph Header 1 (optional)"
                  name="body_header_1"
