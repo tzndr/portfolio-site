@@ -510,6 +510,8 @@ li {
 }
 
 .blog-all-categories-header {
+  display: block;
+  width: 100%;
   font: bold 32pt helvetica, arial;
   margin: 35px auto 15px auto;
 }
